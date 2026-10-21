@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://seongmin-aistatdata.github.io/github-blog/sitemap.xml

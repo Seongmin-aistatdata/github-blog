@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://seongmin-aistatdata.github.io/github-blog/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://seongmin-aistatdata.github.io/github-blog/</loc>
+</url>
+<url>
+<loc>https://seongmin-aistatdata.github.io/github-blog/about-me/</loc>
+<lastmod>2026-10-21T23:39:43+09:00</lastmod>
+</url>
+<url>
+<loc>https://seongmin-aistatdata.github.io/github-blog/jagisogae/</loc>
+<lastmod>2026-10-21T23:38:58+09:00</lastmod>
+</url>
+<url>
+<loc>https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/</loc>
+<lastmod>2026-10-21T23:40:12+09:00</lastmod>
+</url>
+</urlset>

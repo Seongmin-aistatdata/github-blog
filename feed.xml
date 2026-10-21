@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>A blog for lecture notes, reviews, diary entries, and everything in between!</title>
+    <link href="https://seongmin-aistatdata.github.io/github-blog/feed.xml" rel="self" />
+    <link href="https://seongmin-aistatdata.github.io/github-blog" />
+    <updated>2026-10-21T23:40:12+09:00</updated>
+    <author>
+        <name>Seongmin-aistatdata</name>
+    </author>
+    <id>https://seongmin-aistatdata.github.io/github-blog</id>
+
+    <entry>
+        <title>自己紹介？</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/</id>
+            <category term="日本語"/>
+
+        <updated>2026-10-21T23:40:12+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    GitHubでブログを始めました。 こんにちは。韓国に住む、ごく普通の大学生です。 大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。 ずっとこれをやってみたくて、このブログを開設しました。 私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。 このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。 最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。 このブログが皆さんの学習の助けになれば、心からうれしく思います。 これからどうぞよろしくお願いします。
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>GitHubでブログを始めました。</p>
+<p>こんにちは。韓国に住む、ごく普通の大学生です。</p>
+<p>大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。</p>
+<ul>
+<li>講義で学んだことや、時間をかけて勉強したことを人に教えてみる。そして、その過程で自分が学んだことを活かしてみる。</li>
+</ul>
+<p>ずっとこれをやってみたくて、このブログを開設しました。</p>
+<p>私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。</p>
+<p>このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。</p>
+<p>最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。</p>
+<p>このブログが皆さんの学習の助けになれば、心からうれしく思います。</p>
+<p>これからどうぞよろしくお願いします。</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>About Me?</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/about-me/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/about-me/</id>
+            <category term="English"/>
+
+        <updated>2026-10-21T23:39:43+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    I've just started my GitHub blog. Hello! I'm just an ordinary undergraduate student living in South Korea. Since starting university, I've attended lectures and studied hard. But it would be such a waste to forget all the knowledge I worked&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>I've just started my GitHub blog.</p>
+<p>Hello! I'm just an ordinary undergraduate student living in South Korea.</p>
+<p>Since starting university, I've attended lectures and studied hard. But it would be such a waste to forget all the knowledge I worked so hard (and suffered!) to gain.</p>
+<ul>
+<li>I wanted to try teaching others what I've learned in lectures and what I've spent time studying, and put that knowledge to good use in the process.</li>
+</ul>
+<p>I've been wanting to do this for a long time, so I finally decided to start this blog.</p>
+<p>I've also learned a lot from other people's blogs while studying my major, so I'd love to share what I know and hopefully help others in the same way.</p>
+<p>I plan to use this blog for all sorts of things: sharing educational articles, reviewing what I've learned, keeping a diary... and much more.</p>
+<p>There's already so much to read these days, so there's no need to make this introduction any longer than necessary. I'll wrap it up here.</p>
+<p>I sincerely hope this blog will be helpful to you in your studies.</p>
+<p>Thanks for stopping by, and I hope you'll stick around!</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>자기소개?</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/jagisogae/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/jagisogae/</id>
+            <category term="한국어"/>
+
+        <updated>2026-10-21T20:53:21+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    깃허브 블로그를 처음 열었습니다.&nbsp; 안녕하세요. 저는 대한민국에 사는 평범한 학부생입니다.&nbsp; 대학 와서 강의 듣고 공부 열심히 했는데 고통받으며 얻은 지식들을 까먹기 너무 아까워서&nbsp; - 강의 들으며 배운 것들, 시간 들여 공부한 것들 가르쳐보기. 이를 통해 배운 것들 써먹어 보기 이걸&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    깃허브 블로그를 처음 열었습니다.&nbsp;
+  </p>
+
+  <p>
+    안녕하세요. 저는 대한민국에 사는 평범한 학부생입니다.&nbsp;
+  </p>
+
+  <p>
+    대학 와서 강의 듣고 공부 열심히 했는데 고통받으며 얻은 지식들을 까먹기 너무 아까워서&nbsp;<br>- 강의 들으며 배운 것들, 시간 들여 공부한 것들 가르쳐보기. 이를 통해 배운 것들 써먹어 보기<br>이걸 너무 해보고 싶어서 블로그 개설해 봤습니다.&nbsp;
+  </p>
+
+  <p>
+    저도 전공 공부할 때 타 블로그들에서 배운 것들이 많았어서 지식적인 도움을 드리고 싶기도 합니다.&nbsp;<br><br>이 블로그는 강의글 업로드 공간, 제 복습 공간, 일기장... 정말 여러 가지 방면으로 활용해볼 예정입니다.
+  </p>
+
+  <p>
+    요즘 읽을 것도 많은데 길이 굳이 길 필요가 없으므로 여기서 자기소개 마치겠습니다.
+  </p>
+
+  <p>
+    제 블로그가 여러분들의 학습에 도움이 되었길 진심으로 바랍니다.&nbsp;
+  </p>
+
+  <p>
+    많은 관심 부탁드립니다.
+  </p>
+            ]]>
+        </content>
+    </entry>
+</feed>
