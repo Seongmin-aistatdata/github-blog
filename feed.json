@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://seongmin-aistatdata.github.io/github-blog/studychatbot/",
+            "url": "https://seongmin-aistatdata.github.io/github-blog/studychatbot/",
+            "title": "STUDY!!!!",
+            "summary": "```html ```",
+            "content_html": "<p>```html</p>\n<div class=\"post__iframe\"><iframe width=\"100%\" height=\"1100\" style=\"border: 0; border-radius: 20px;\" src=\"https://seongmin-aistatdata.github.io/github-blog/study-bot.html\" title=\"결국공부 챗봇\" loading=\"lazy\"></iframe></div>\n<p>```</p>",
+            "author": {
+                "name": "Seongmin-aistatdata"
+            },
+            "tags": [
+                   "챗봇/chatbot/チャットボット"
+            ],
+            "date_published": "2026-10-23T18:58:15+09:00",
+            "date_modified": "2026-10-23T18:58:15+09:00"
+        },
+        {
             "id": "https://seongmin-aistatdata.github.io/github-blog/jp-lessons-music-basicsofmusictheory1/",
             "url": "https://seongmin-aistatdata.github.io/github-blog/jp-lessons-music-basicsofmusictheory1/",
             "title": "音楽理論の基礎を学ぶ 第1回 ―（ver.261023）",
@@ -158,21 +173,6 @@
             ],
             "date_published": "2026-10-22T08:47:23+09:00",
             "date_modified": "2026-10-22T11:16:59+09:00"
-        },
-        {
-            "id": "https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/",
-            "url": "https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/",
-            "title": "自己紹介？",
-            "summary": "GitHubでブログを始めました。 こんにちは。韓国に住む、ごく普通の大学生です。 大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。 ずっとこれをやってみたくて、このブログを開設しました。 私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。 このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。 最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。 このブログが皆さんの学習の助けになれば、心からうれしく思います。 お役に立ちましたら、1ドルからご支援いただけます。ページの一番下にKo-fiの支援ボタンがあります！皆さんのご支援が、ブログを続ける大きな励みになります。 これからどうぞよろしくお願いします。",
-            "content_html": "<p>GitHubでブログを始めました。</p>\n<p>こんにちは。韓国に住む、ごく普通の大学生です。</p>\n<p>大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。</p>\n<ul>\n<li>講義で学んだことや、時間をかけて勉強したことを人に教えてみる。そして、その過程で自分が学んだことを活かしてみる。</li>\n</ul>\n<p>ずっとこれをやってみたくて、このブログを開設しました。</p>\n<p>私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。</p>\n<p>このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。</p>\n<p>最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。</p>\n<p>このブログが皆さんの学習の助けになれば、心からうれしく思います。</p>\n<p>お役に立ちましたら、1ドルからご支援いただけます。ページの一番下にKo-fiの支援ボタンがあります！皆さんのご支援が、ブログを続ける大きな励みになります。</p>\n<p>これからどうぞよろしくお願いします。</p>",
-            "author": {
-                "name": "Seongmin-aistatdata"
-            },
-            "tags": [
-                   "日本語"
-            ],
-            "date_published": "2026-10-21T23:40:12+09:00",
-            "date_modified": "2026-10-23T15:08:46+09:00"
         }
     ]
 }

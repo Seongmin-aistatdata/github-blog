@@ -3,12 +3,35 @@
     <title>A blog for lecture notes, reviews, diary entries, and everything in between!</title>
     <link href="https://seongmin-aistatdata.github.io/github-blog/feed.xml" rel="self" />
     <link href="https://seongmin-aistatdata.github.io/github-blog" />
-    <updated>2026-10-23T15:08:46+09:00</updated>
+    <updated>2026-10-23T18:58:15+09:00</updated>
     <author>
         <name>Seongmin-aistatdata</name>
     </author>
     <id>https://seongmin-aistatdata.github.io/github-blog</id>
 
+    <entry>
+        <title>STUDY!!!!</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/studychatbot/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/studychatbot/</id>
+            <category term="챗봇/chatbot/チャットボット"/>
+
+        <updated>2026-10-23T18:58:15+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    ```html ```
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>```html</p>
+<div class="post__iframe"><iframe width="100%" height="1100" style="border: 0; border-radius: 20px;" src="https://seongmin-aistatdata.github.io/github-blog/study-bot.html" title="결국공부 챗봇" loading="lazy"></iframe></div>
+<p>```</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>音楽理論の基礎を学ぶ 第1回 ―（ver.261023）</title>
         <author>
@@ -469,39 +492,6 @@
 <p>라고 이해하시면 되겠습니다. 아직도 이해가 잘 안가시면 밑에서 더 설명을 드리겠습니다.<strong><br></strong></p>
 <p><br>예를들어 <strong>선형회귀모형</strong>을 기반으로 설명해보죠. 선형회귀모형이라는 모델은 AI 방법, 좀 더 좁혀서 머신러닝 방법 중에 하나입니다. <br><figure class="post__image"><img loading="lazy"  src="https://seongmin-aistatdata.github.io/github-blog/media/posts/5/seonhyeong-hoegwi-inpogeuraepig.png" alt="" width="591" height="444"></figure>
 <p>먼저 시각적인 요소를 하나 추가하여 이해를 돕겠습니다.<br>여기 보이시는 건 x축, y축을 가진 좌표평면이 대표적일텐데요.<br>저희가 가지고 있는 데이터가 (x,y)=(1,2) 같은 데이터들이라고 생각해보겠습니다.<br>이런 데이터들이 좌표평면 위에 표시되면 파란 점들 처럼 표시가 될 것입니다.<br>근데 저희가 만약 x=4일 때의 y값을 알고 싶은데 그 때의 y 값이 없다면?<br>선형회귀모델을 써서 x=4일 때의 y값을 예측해볼 수 있는 것이죠. <br>선형회귀모델은 y = wx+b입니다. 저희의 목표는 (x,y) 데이터들을 이용해서 이 w,b라는 숫자들을 <strong>학습</strong>시키는 것 입니다. <br>상식적으로 생각해서 저희가 가지고 있는 데이터들을 바탕으로 x=4일 때 y=4라는 값을 예측하고 싶으면 그림에 나온 것과 비슷하게 y= wx+b라는 일차그래프를 그려야지 거의 y축 급의 기울기를 가지는 일차 그래프를 그리면 안되잖아요?<br>그래서 또 머리 좋으신 분들이 그렇게 그래프를 그리지 않게, 데이터에 잘 맞는 일차그래프를 그리는, 즉, 선형회귀모형을 학습시키는 방법을 만들어 놓았습니다. 그 방법이 각 점들과 직선 사이의 차이(잔차)의 제곱을 최소화하는 방식(최소제곱법 등) 이라는 것입니다. <br>이렇게 학습을 시켜서(즉, w랑 b라는 숫자들을 바꾸고 바꿔서 일차방정식에 넣어서) 나온 것이 학습된 선형회귀모형이 되는 것이구요.<br>원래 선형회귀모형이라는 방법은 수학적으로 데이터를 처리하거나 예측하는 구조 중에 하나인 모형이라고 할 수 있겠습니다. <br><br>인공지능의 기본 1편 마치겠습니다. 2편에서 이어집니다. </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>自己紹介？</title>
-        <author>
-            <name>Seongmin-aistatdata</name>
-        </author>
-        <link href="https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/"/>
-        <id>https://seongmin-aistatdata.github.io/github-blog/zi-ji-shao-jie/</id>
-            <category term="日本語"/>
-
-        <updated>2026-10-21T23:40:12+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    GitHubでブログを始めました。 こんにちは。韓国に住む、ごく普通の大学生です。 大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。 ずっとこれをやってみたくて、このブログを開設しました。 私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。 このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。 最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。 このブログが皆さんの学習の助けになれば、心からうれしく思います。 お役に立ちましたら、1ドルからご支援いただけます。ページの一番下にKo-fiの支援ボタンがあります！皆さんのご支援が、ブログを続ける大きな励みになります。 これからどうぞよろしくお願いします。
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>GitHubでブログを始めました。</p>
-<p>こんにちは。韓国に住む、ごく普通の大学生です。</p>
-<p>大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。</p>
-<ul>
-<li>講義で学んだことや、時間をかけて勉強したことを人に教えてみる。そして、その過程で自分が学んだことを活かしてみる。</li>
-</ul>
-<p>ずっとこれをやってみたくて、このブログを開設しました。</p>
-<p>私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。</p>
-<p>このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。</p>
-<p>最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。</p>
-<p>このブログが皆さんの学習の助けになれば、心からうれしく思います。</p>
-<p>お役に立ちましたら、1ドルからご支援いただけます。ページの一番下にKo-fiの支援ボタンがあります！皆さんのご支援が、ブログを続ける大きな励みになります。</p>
-<p>これからどうぞよろしくお願いします。</p>
             ]]>
         </content>
     </entry>

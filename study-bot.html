@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="어떤 이야기를 해도 결국 공부를 권하는 챗봇, 결국공부. 잠깐 수다를 떨고 딱 5분만 시작해 보세요.">
+  <title>결국공부 — 모든 대화의 끝은 공부</title>
+  <style>
+    :root{--paper:#f7f2e8;--white:#fffdf8;--ink:#302e29;--muted:#777366;--line:#ded9cd;--orange:#e76435;--orange-dark:#b63b17;--yellow:#efd780;--green:#54734e;--radius:25px}
+    *{box-sizing:border-box}button,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button,a,textarea{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #54734e;outline-offset:4px}[hidden]{display:none!important}
+    body{margin:0;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--paper);background-image:linear-gradient(#b9b1a113 1px,transparent 1px),linear-gradient(90deg,#b9b1a113 1px,transparent 1px);background-size:32px 32px;font-size:15px;line-height:1.65}
+    button{color:inherit}svg{display:block}a{color:inherit}.shell{width:min(1200px,calc(100% - 72px));margin:0 auto}.topbar{height:96px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-1px;font-size:23px}.brand-mark{height:33px;width:33px;background:var(--orange);color:var(--white);display:grid;place-items:center;border-radius:10px;transform:rotate(-7deg)}.edition{font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:600}.top-note{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--green)}.status-dot{width:7px;height:7px;background:var(--green);border-radius:50%;display:inline-block}
+    .layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:54px;padding:44px 0 30px;align-items:start}.intro{padding-top:15px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:750;color:var(--orange-dark);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:24px;height:1px;background:var(--orange)}h1{font-size:68px;line-height:1.2;letter-spacing:-4.5px;margin:20px 0 18px;font-weight:850}h1 span{color:var(--orange)}.lead{font-size:16px;color:#696457;line-height:1.9;margin:0}.illustration{position:relative;height:216px;margin:12px 0 10px;display:flex;align-items:center;justify-content:center}.bot-art{width:210px;height:190px;transform:rotate(-7deg);filter:drop-shadow(0 10px 0 #302e2909)}.scribble{position:absolute;font-size:12px;top:30px;right:3px;transform:rotate(10deg);color:var(--orange-dark);border-bottom:1px solid #e7643570;padding-bottom:3px}.spark{position:absolute;left:24px;bottom:55px;color:var(--orange);font-size:34px}.rule-card{padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:#fffdf88c;display:flex;gap:12px;align-items:flex-start}.rule-card .number{font-size:11px;color:var(--orange-dark);padding-top:4px;font-weight:800}.rule-card p{margin:0;font-size:13px}.rule-card strong{display:block;font-weight:750;margin-bottom:2px}.rule-card small{font-size:12px;color:var(--muted)}
+    .focus{margin-top:15px;border:1px solid #cfd4c3;background:#eceddf;padding:18px 20px;border-radius:17px;position:relative}.focus-top{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:750}.focus-top span:last-child{margin-left:auto;font-size:10px;letter-spacing:1px;color:var(--green);font-weight:700}.focus-main{display:flex;align-items:center;gap:16px;margin-top:14px}.clock{font-variant-numeric:tabular-nums;font-size:35px;letter-spacing:-1.5px;line-height:1.2;font-weight:750}.focus-copy{color:#666e5c;font-size:11px;line-height:1.7}.focus-actions{display:flex;gap:8px;margin-top:14px}.focus-actions button{background:var(--green);color:white;border:1px solid transparent;font-size:12px;font-weight:650;min-height:37px;border-radius:9px;padding:7px 14px;flex:1}.focus-actions .timer-reset{flex:0;background:transparent;border:1px solid #c4ccba;color:var(--green);white-space:nowrap}.progress{height:3px;background:#d7ddcc;margin-top:15px;border-radius:9px;overflow:hidden}.progress-fill{height:100%;width:0;background:var(--green);transition:width .3s linear}.timer-status{font-size:11px;color:var(--green);margin:8px 0 0;min-height:18px}
+    .chat-card{border:1px solid #d9d3c6;border-radius:var(--radius);background:var(--white);box-shadow:0 16px 45px #51412b0a;overflow:hidden;display:flex;flex-direction:column;height:745px;min-height:580px}.chat-head{padding:20px 26px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #e8e1d5}.bot-identity{display:flex;gap:12px;align-items:center}.avatar{flex-shrink:0;height:42px;width:42px;display:grid;place-items:center;background:#f5dcc1;border:1px solid #ead0b1;border-radius:14px;color:#66432f}.bot-name{font-size:15px;line-height:1.5;font-weight:800;letter-spacing:-.5px}.bot-subtitle{font-size:11px;color:var(--muted)}.reset{background:none;border:1px solid var(--line);border-radius:9px;display:flex;align-items:center;gap:6px;font-size:11px;padding:8px 10px;white-space:nowrap}.reset:hover{background:#f3eee4}.chat-scene{position:relative;min-height:0;flex:1;display:flex;flex-direction:column;background:radial-gradient(ellipse at 0% 0%,#f5ead33b,transparent 60%)}.messages{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#d9d1c1 transparent;padding:24px 26px 12px;flex:1;min-height:0;scroll-behavior:smooth}.day-label{text-align:center;color:#9a9385;font-size:10px;letter-spacing:1px;margin:0 0 24px}.message{display:flex;gap:10px;margin-bottom:21px;align-items:flex-start;animation:arrive .22s ease-out}.message-avatar{height:29px;width:29px;flex-shrink:0;border-radius:10px;margin-top:3px;background:#f5dcc1;color:#77513a;display:grid;place-items:center}.message-content{max-width:88%;min-width:0}.message-label{font-size:10px;color:#8c8375;margin-bottom:5px}.bubble{padding:14px 17px;border:1px solid #e8e1d5;background:#f4efe4;border-radius:3px 17px 17px 17px;font-size:14px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere}.bubble strong{color:var(--orange-dark);font-weight:750}.message.user{justify-content:flex-end;gap:0}.user .message-content{max-width:83%}.user .bubble{background:var(--ink);border-color:var(--ink);color:#fffaf1;border-radius:17px 3px 17px 17px}.user .message-label{text-align:right}.bubble-note{display:block;margin-top:10px;font-size:11px;color:#8e806b}.welcome-sticker{display:inline-flex;align-items:center;gap:6px;color:var(--orange-dark);font-size:10px;padding:4px 8px;border:1px solid #ead3b8;border-radius:5px;background:#fff8eb;margin-top:10px;font-weight:650}.typing .bubble{min-width:65px;display:flex;gap:5px;align-items:center;min-height:48px}.typing-dot{width:5px;height:5px;background:#b6a48b;border-radius:50%;animation:blink 1s infinite}.typing-dot:nth-child(2){animation-delay:.15s}.typing-dot:nth-child(3){animation-delay:.3s}.bottom-zone{padding:0 22px 18px}.new-message{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);border:1px solid var(--line);background:var(--white);box-shadow:0 4px 12px #302e2910;border-radius:20px;font-size:11px;padding:7px 14px;z-index:2}.suggestion-label{font-size:10px;color:#968c7a;margin:8px 0}.suggestions{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}.suggestions button{font-size:11px;border:1px solid var(--line);border-radius:8px;background:transparent;padding:7px 10px;min-height:33px;transition:background .15s,transform .15s}.suggestions button:hover{background:#f8ecdb;border-color:#e9c39b;transform:translateY(-1px)}.compose{padding:11px 11px 10px 15px;display:flex;align-items:flex-end;gap:10px;background:white;border:1px solid #ccc4b4;border-radius:15px;transition:border .2s,box-shadow .2s}.compose:focus-within{border-color:var(--orange);box-shadow:0 0 0 3px #e764350b}.compose textarea{width:100%;resize:none;border:0;background:transparent;outline:none!important;box-shadow:none;min-height:32px;max-height:110px;font-size:13px;line-height:1.65;padding:5px 0;color:var(--ink);scrollbar-width:thin}.compose textarea::placeholder{color:#a49b8b}.send{width:37px;height:37px;border:0;background:var(--orange);color:white;border-radius:10px;display:grid;place-items:center;flex-shrink:0;transition:background .15s}.send:hover{background:var(--orange-dark)}.compose-meta{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#9a9181;margin:7px 3px 0}.char-count{font-variant-numeric:tabular-nums}.chat-foot{padding:11px 26px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#faf7f0;border-top:1px solid #e8e1d5;font-size:10px;color:#8b8273}.insistence{color:var(--orange-dark);font-weight:700}.meter{display:inline-flex;gap:3px;vertical-align:middle;margin-left:5px}.meter i{display:block;width:13px;height:5px;border-radius:2px;background:#e4dacb}.meter i.on{background:var(--orange)}.page-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:17px 0 24px;color:#8f8676;font-size:10px;gap:14px}.footer-punch{letter-spacing:.2px}.footer-punch b{font-weight:700;color:#716754}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);max-width:calc(100% - 36px);padding:12px 20px;background:var(--ink);color:var(--white);border-radius:12px;font-size:13px;box-shadow:0 8px 30px #302e2920;z-index:5}.confetti{position:fixed;pointer-events:none;top:-20px;animation:fall 2.4s ease-in forwards;z-index:10;width:8px;height:13px}
+    @keyframes arrive{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@keyframes blink{0%,80%,100%{opacity:.35;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}@keyframes fall{to{transform:translateY(105vh) rotate(500deg);opacity:0}}
+    @media(min-width:1450px){.layout{padding-top:52px}.chat-card{height:min(770px,calc(100svh - 203px));min-height:660px}}
+    @media(max-width:1050px){.shell{width:calc(100% - 44px)}.layout{grid-template-columns:280px minmax(0,1fr);gap:28px}h1{font-size:59px}.lead{font-size:14px}.scribble{right:0;font-size:10px}.chat-head{padding:19px 20px}.messages{padding:22px 18px 10px}.bottom-zone{padding-left:17px;padding-right:17px}.reset span{display:none}.rule-card{padding:15px}.focus{padding:17px}}
+    @media(max-width:740px){.shell{width:calc(100% - 32px)}.topbar{height:70px}.wordmark{font-size:20px}.edition{font-size:9px;letter-spacing:1px}.top-note{font-size:10px}.layout{display:flex;flex-direction:column;gap:23px;padding-top:24px}.intro{width:100%;padding-top:0;display:grid;grid-template-columns:1fr auto;position:relative}.eyebrow{grid-column:1;font-size:9px}h1{font-size:47px;letter-spacing:-3px;margin:10px 0 9px;grid-column:1}h1 br{display:none}h1 span{margin-left:8px}.lead{font-size:12px;grid-column:1}.illustration{grid-column:2;grid-row:1/4;width:100px;height:130px;align-self:center;margin:0 -6px 0 0}.bot-art{width:105px;height:120px}.scribble,.spark,.rule-card{display:none}.focus{grid-column:1/-1;margin-top:20px;padding:13px 16px;display:grid;grid-template-columns:1fr auto;gap:0 14px}.focus-top{font-size:12px}.focus-top span:last-child{display:none}.focus-main{grid-column:2;grid-row:1/3;margin-top:0;justify-content:flex-end}.clock{font-size:29px}.focus-copy{display:none}.focus-actions{grid-column:1;grid-row:2;margin-top:9px;max-width:240px}.focus-actions button{min-height:32px;padding:5px 10px;font-size:11px}.progress{grid-column:1/-1;margin-top:10px}.timer-status{grid-column:1/-1;margin-top:5px;min-height:0}.chat-card{width:100%;height:690px;min-height:580px;border-radius:20px}.chat-head{padding:16px}.bot-name{font-size:14px}.bot-subtitle{font-size:10px}.bubble{font-size:13px;padding:12px 14px}.message-content{max-width:calc(100% - 35px)}.suggestions{gap:6px}.suggestions button{font-size:10px;padding:6px 8px}.compose-meta .keyboard-hint{display:none}.compose-meta{justify-content:flex-end}.page-footer{align-items:flex-start;font-size:9px}.chat-foot{padding:10px 16px}.top-note .status-dot{width:6px;height:6px}}
+    @media(max-width:380px){.top-note{display:none}.shell{width:calc(100% - 22px)}h1{font-size:41px}.illustration{width:78px}.bot-art{width:87px}.focus{gap:0 8px;padding:12px}.focus-actions{max-width:205px}.chat-foot{font-size:9px}.meter i{width:9px}.messages{padding-left:12px;padding-right:12px}.bottom-zone{padding-left:12px;padding-right:12px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="wordmark"><span class="brand-mark" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M4 5h7a3 3 0 0 1 3 3v12a4 4 0 0 0-4-2H4V5Zm16 0h-3a3 3 0 0 0-3 3v12a4 4 0 0 1 4-2h2V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>결국공부<span class="edition">STUDY, ANYWAY.</span></div>
+      <span class="top-note"><span class="status-dot"></span>오늘도 한결같이 기다리는 중</span>
+    </header>
+    <main class="layout">
+      <aside class="intro" aria-labelledby="intro-title">
+        <div class="eyebrow">A VERY PERSISTENT CHATBOT</div>
+        <h1 id="intro-title">결론은,<br><span>공부.</span></h1>
+        <p class="lead">무슨 말을 해도 괜찮아요.<br>이 친구의 대답은 결국 하나니까요.</p>
+        <div class="illustration" aria-hidden="true">
+          <span class="scribble">수다도 좋지만… 책은 폈어?</span><span class="spark">✳</span>
+          <svg class="bot-art" viewBox="0 0 230 210" fill="none"><ellipse cx="115" cy="189" rx="73" ry="8" fill="#e6decf"/><path d="m44 137-17 19m158-19 16 18" stroke="#37312a" stroke-width="9" stroke-linecap="round"/><rect x="46" y="59" width="139" height="107" rx="29" fill="#e87745" stroke="#37312a" stroke-width="3"/><path d="M60 68c-7 5-10 12-10 21" stroke="#f6ab7d" stroke-width="4" stroke-linecap="round"/><rect x="63" y="80" width="105" height="63" rx="17" fill="#fff7e1" stroke="#37312a" stroke-width="3"/><path d="m87 109 6-5 6 5m33 0 6-5 6 5" stroke="#37312a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M108 120q8 9 16 0" stroke="#37312a" stroke-width="3" stroke-linecap="round"/><ellipse cx="80" cy="119" rx="6" ry="3" fill="#f5b99a"/><ellipse cx="151" cy="119" rx="6" ry="3" fill="#f5b99a"/><path d="M99 59V42" stroke="#37312a" stroke-width="3"/><circle cx="99" cy="37" r="7" fill="#efd780" stroke="#37312a" stroke-width="3"/><path d="m136 163-4 14m-43-14 3 14" stroke="#37312a" stroke-width="8" stroke-linecap="round"/><path d="m68 169 47 8 45-8v22l-45 8-47-8v-22Z" fill="#54734e" stroke="#37312a" stroke-width="3" stroke-linejoin="round"/><path d="M115 178v20m-37-20 24 4m23 0 25-4" stroke="#fff7e1" stroke-width="2" stroke-linecap="round"/><path d="m163 36 4-8m12 19 8-2" stroke="#e76435" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="rule-card"><span class="number">01</span><p><strong>반박은 자유. 결론은 고정.</strong><small>기발한 핑계로 이 친구를 설득해 보세요.<br>쉽지는 않을 거예요.</small></p></div>
+        <section class="focus" aria-labelledby="focus-title">
+          <div class="focus-top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="13" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5l3 2M9 2h6m-3 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span id="focus-title">딱 5분만, 해볼까요?</span><span>SMALL START</span></div>
+          <div class="focus-main"><span class="clock" id="clock" role="timer" aria-label="남은 공부 시간">05:00</span><span class="focus-copy">거창한 계획 대신<br>작은 시작 하나.</span></div>
+          <div class="focus-actions"><button id="timer-toggle" type="button">5분 공부 시작</button><button class="timer-reset" id="timer-reset" type="button" aria-label="타이머를 5분으로 초기화">초기화</button></div>
+          <div class="progress" role="progressbar" aria-label="공부 시간 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="timer-progress"><div class="progress-fill" id="progress-fill"></div></div>
+          <p class="timer-status" id="timer-status" role="status">책 한 페이지면 충분해요.</p>
+        </section>
+      </aside>
+      <section class="chat-card" aria-label="공부봇과 대화">
+        <header class="chat-head"><div class="bot-identity"><span class="avatar" aria-hidden="true" id="head-avatar"></span><div><div class="bot-name">공부봇</div><div class="bot-subtitle">당신의 공부를 포기하지 않는 친구</div></div></div><button type="button" class="reset" id="reset-chat" aria-label="대화를 처음부터 시작"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 6M4 4v7h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>처음부터</span></button></header>
+        <div class="chat-scene"><div id="messages" class="messages" role="log" aria-label="대화 내용" aria-live="polite" aria-relevant="additions text" tabindex="0"></div><button class="new-message" id="new-message" hidden type="button">새 대화 보기 ↓</button></div>
+        <div class="bottom-zone"><p class="suggestion-label">무슨 말부터 할지 모르겠다면</p><div class="suggestions" id="suggestions"><button type="button" data-prompt="게임 한 판만 하고 할게">게임 한 판만…</button><button type="button" data-prompt="나 지금 너무 배고파">배고파</button><button type="button" data-prompt="공부 안 해도 되는 이유를 찾아줘">공부 안 해도 되는 이유?</button><button type="button" data-prompt="그냥 칭찬해줘">그냥 칭찬해줘</button></div>
+          <form id="chat-form" autocomplete="off"><div class="compose"><label for="message-input" class="sr-only">공부봇에게 할 말</label><textarea id="message-input" rows="1" maxlength="500" placeholder="아무 말이나 해보세요. 핑계도 환영해요." enterkeyhint="send" aria-describedby="input-hint"></textarea><button type="submit" class="send" id="send" aria-label="메시지 보내기" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m4 11 8-8 8 8M12 3v17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><div class="compose-meta" id="input-hint"><span class="keyboard-hint">Enter로 보내기 · Shift + Enter로 줄바꿈</span><span class="char-count" id="char-count">0 / 500</span></div></form>
+        </div>
+        <footer class="chat-foot"><span id="round-count">대화 0회 · 공부 권유 준비 완료</span><span class="insistence">한결같음 <span class="meter" id="meter" aria-label="한결같음 1단계"><i class="on"></i><i></i><i></i><i></i><i></i></span></span></footer>
+      </section>
+    </main>
+    <footer class="page-footer"><span>대화는 이 페이지 안에서만 머물러요. 새로고침하면 사라집니다.</span><span class="footer-punch">작은 수다 끝에, <b>작은 공부 하나.</b></span></footer>
+    <noscript><p>공부봇을 이용하려면 브라우저에서 JavaScript를 켜주세요.</p></noscript>
+  </div>
+  <div class="toast" role="status" id="toast" hidden></div>
+  <script>
+  (() => {
+    'use strict';
+    // No dependencies, network requests, API keys, or persistent chat storage.
+    const $ = id => document.getElementById(id);
+    const robotIcon = '<svg width="21" height="21" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="5" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M8 11h1m6 0h1m-7 5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="2.5" r="1.5" fill="currentColor"/></svg>';
+    const messages = $('messages'), input = $('message-input'), send = $('send');
+    const prompts = Array.from(document.querySelectorAll('[data-prompt]'));
+    let rounds = 0, busy = false, pendingReply = null, generation = 0, toastTimeout;
+    let followLatest = true;
+    const lastChoices = new Map();
+    $('head-avatar').innerHTML = robotIcon;
+
+    // Keyword pools choose a context-aware setup; every reply concludes with study.
+    const pools = {
+      tired: [
+        ['지금은 기운을 채우는 게 먼저예요. 물도 마시고, 잠이 부족하면 푹 쉬어요.', '회복하고 나면 무리하지 말고 딱 한 줄만 공부해 봐요.'],
+        ['배터리 1%로는 사람도 잘 안 돌아가죠. 오늘은 쉬어갈 수 있어요.', '컨디션이 돌아왔을 때 가볍게 공부부터 다시 시작해 봐요.'],
+        ['몸이나 마음이 힘들면 먼저 돌봐줘야죠. 쉬는 것도 필요한 일이에요.', '공부는 도망가지 않으니, 괜찮아졌을 때 조금씩 공부해요.']
+      ],
+      food: [
+        ['배고픈 채로는 집중도 꼬르륵거리죠. 먼저 맛있게 먹고 와요.', '배도 채웠으니, 다음은 지식도 채워볼까요? 딱 5분만 공부해요.'],
+        ['좋아요. 간식은 찬성입니다. 간식 먹을 시간도 필요하죠.', '마지막 한 입까지 먹었다면 책 한 페이지로 후식 공부해요.'],
+        ['오늘의 메뉴는 자유예요. 제가 요리를 대신해 드릴 순 없지만요.', '식사를 마치면 머리에도 한 끼를 주세요. 조금만 공부해요.']
+      ],
+      game: [
+        ['한 판만 하겠다는 말, 어제도 어디선가 들은 것 같은데요…?', '세이브 포인트는 여기예요. 게임 잠깐 저장하고 공부로 레벨업해요.'],
+        ['보스 공략도 패턴을 익혀야 하죠. 이미 배우는 재능이 있네요.', '그 재능, 교재에도 잠깐 써볼까요? 한 판 대신 한 페이지 공부해요.'],
+        ['랭크도 중요하지만 현실 캐릭터의 경험치도 챙겨야죠.', '다음 퀘스트: 5분 공부. 보상: 오늘의 뿌듯함입니다.']
+      ],
+      procrastinate: [
+        ['내일의 나에게 일을 넘기는 솜씨가 아주 훌륭하군요.', '내일의 나도 좀 쉬게 해줘요. 오늘 딱 5분만 공부해요.'],
+        ['책상 정리, 재생목록 고르기, 완벽한 펜 찾기… 준비는 끝이 없죠.', '준비를 마치는 가장 좋은 방법은 시작이에요. 한 줄만 공부해요.'],
+        ['하기 싫은 날도 있죠. 처음부터 대단하게 할 필요는 없어요.', '제일 쉬운 문제 하나, 아니면 첫 문장 하나. 거기서 공부를 시작해요.']
+      ],
+      evade: [
+        ['공부 안 해도 되는 이유를 찾으려면 먼저 근거를 조사해야겠네요.', '그런데 조사하고 이해하는 것도 공부잖아요. 결국 공부해요.'],
+        ['저를 설득하려고 논리를 세우고 있군요. 꽤 멋진 시도예요.', '그 논리력을 더 키우려면? 예상하셨죠. 오늘도 조금 공부해요.'],
+        ['공부 대신 뭘 하면 좋을지 생각해 봤어요. 직접 해보기, 관찰하기, 질문하기…', '이런, 전부 배움이네요. 좋아하는 방식으로 공부해요.']
+      ],
+      love: [
+        ['사람 마음이 교과서처럼 딱 정리되어 있으면 좋을 텐데요.', '마음은 천천히 살피고, 잠깐 내 시간도 챙겨요. 나를 위한 공부도 해봐요.'],
+        ['좋아하는 마음도, 관계를 지키는 마음도 소중하죠.', '내가 더 나아지는 시간도 소중해요. 오늘은 나를 위해 조금 공부해요.']
+      ],
+      money: [
+        ['통장 잔고가 저절로 자라면 얼마나 좋을까요. 저도 찬성이에요.', '당장 결과를 약속할 순 없지만, 실력은 쌓을 수 있죠. 오늘도 조금 공부해요.'],
+        ['부자가 되는 비법을 제가 알았다면 제 외장 케이스부터 금으로 바꿨겠죠.', '그래도 지식은 차곡차곡 모을 수 있어요. 미래의 선택지를 위해 공부해요.']
+      ],
+      music: [
+        ['좋은 음악은 기분을 바꾸죠. 멜로디, 리듬, 화성… 궁금한 것도 많고요.', '한 곡 듣고, 그 곡에서 배울 것 하나 찾아봐요. 음악도 즐겁게 공부해요.'],
+        ['연습한 만큼 들리는 것도, 만들 수 있는 것도 조금씩 달라지겠죠.', '좋아하는 곡을 작은 교재 삼아서 오늘은 음악 공부해요.']
+      ],
+      technology: [
+        ['AI가 도와줄 수는 있죠. 다만 나온 답을 이해하고 확인하는 건 내 몫이에요.', '질문도 더 잘하고 답도 잘 판단할 수 있도록 기초부터 공부해요.'],
+        ['새 기술을 만지는 건 재밌죠. 원리가 궁금해지면 더 재밌어져요.', '작은 예제 하나만 직접 해볼까요? 손으로 부딪히면서 공부해요.']
+      ],
+      praise: [
+        ['여기까지 찾아와서 말을 건 것만으로도 호기심 점수 만점이에요. 잘했어요!', '이 기세로 한 페이지까지? 더 칭찬할 수 있게 조금만 공부해요.'],
+        ['오늘 하루도 살아내느라 수고했어요. 작은 시도도 충분히 멋져요.', '딱 하나만 더 해볼까요? 미래의 내가 고마워할 공부를 조금 해요.']
+      ],
+      study: [
+        ['공부 이야기를 먼저 꺼내주시다니… 저, 감동받았어요.', '목표는 작게, 시작은 지금. 가장 쉬운 것부터 5분만 공부해요.'],
+        ['어려운 개념은 작게 나누고, 모르는 부분은 질문하고, 배운 건 직접 설명해 봐요.', '완벽하게 하려다 미루기보다, 한 조각씩 공부해요.'],
+        ['뭘 배울지 고민이라면 오늘 가장 궁금했던 것 하나를 골라봐요.', '정했나요? 그럼 책이나 노트를 펴고 그 주제부터 공부해요.']
+      ],
+      greeting: [
+        ['안녕하세요! 어떤 이야기를 들려주실 건가요? 저는 듣는 걸 좋아해요.', '듣는 것보다 더 좋아하는 건… 같이 공부하는 거예요. 오늘도 조금 공부해요.'],
+        ['반가워요. 여기는 수다를 떨다 보면 책을 펴게 되는 이상한 곳이에요.', '기왕 오셨으니, 관심 있는 것 하나만 골라 공부해요.']
+      ],
+      challenge: [
+        ['맞아요. 저는 꽤 한결같아요. 답변이 예상돼도 자꾸 말을 걸게 되죠?', '이 끈기를 나눠드릴게요. 저를 이기려면 먼저 조금 공부해요.'],
+        ['공부하라는 말 말고 다른 말을 해달라고요? 음… 배움, 탐구, 학습?', '표현은 바꿀 수 있어도 결론은 같아요. 오늘도 공부해요.']
+      ],
+      generic: [
+        ['좋은 화제네요. 그 이야기에서 궁금한 점 하나를 찾아볼까요?', '궁금한 걸 알아가는 것도 공부예요. 오늘은 그 주제부터 공부해요.'],
+        ['제가 그 이야기를 전부 이해한 척할 수는 없지만, 호기심은 생겼어요.', '함께 답을 찾아보는 건 어때요? 질문 하나부터 차근차근 공부해요.'],
+        ['그럴 수 있죠. 인생은 생각보다 복잡하고, 제 결론은 생각보다 단순해요.', '작은 배움 하나가 남는 하루면 좋겠어요. 딱 5분만 공부해요.'],
+        ['방금 그 말을 연구 주제로 삼을 수도 있겠는데요. 관찰하고, 질문하고, 정리하고!', '그러니까 우리가 지금 해야 할 일은… 맞아요, 공부예요.'],
+        ['오늘 떠오른 생각을 노트에 적어두면 내일의 질문이 될지도 몰라요.', '일단 한 줄 적고, 그 옆에 새로 배운 것도 적어봐요. 그렇게 공부해요.']
+      ]
+    };
+    function categoryFor(text) {
+      const rules = [
+        ['tired', /피곤|졸려|졸리|잠[이가을좀]|자고|힘들|지쳐|아파|아프|우울|스트레스|불안|쉬고|휴식|tired|sleep|rest|sick/i],
+        ['evade', /안\s*해도|하지\s*않|안\s*할|안\s*하[고는]|싫[어다]|필요\s*없|공부\s*말고|공부하지\s*말|이유를\s*찾/i],
+        ['food', /배고|밥|먹|음식|간식|치킨|피자|커피|라면|점심|저녁|아침|food|hungry|eat|coffee/i],
+        ['game', /게임|한\s*판|롤\s|롤$|마크|유튜브|넷플릭스|영상|놀고|놀자|game|gaming|youtube|netflix/i],
+        ['procrastinate', /내일|나중|미루|귀찮|하기\s*싫|집중|할\s*마음|정리부터|tomorrow|later|lazy/i],
+        ['praise', /칭찬|잘했|응원|격려|위로|praise|cheer/i],
+        ['love', /연애|사랑|좋아하는\s*사람|남친|여친|이별|친구|외로|love|dating/i],
+        ['money', /돈|부자|주식|코인|취업|연봉|월급|투자|money|rich|job/i],
+        ['music', /음악|작곡|피아노|기타|노래|화성|리듬|music|piano|song/i],
+        ['technology', /인공지능|코딩|프로그래밍|컴퓨터|챗지피티|chatgpt|\bai\b|code|coding/i],
+        ['challenge', /너[는가도]|봇|똑같|같은\s*말|다른\s*말|무슨\s*말|왜\s*공부|반복|bot/i],
+        ['greeting', /안녕|반가|하이|잘\s*가|고마워|감사|hello|\bhi\b|bye|thanks/i],
+        ['study', /공부|배우|학습|시험|수학|영어|일본어|과제|숙제|study|learn|exam/i]
+      ];
+      return (rules.find(([,pattern]) => pattern.test(text.normalize('NFKC'))) || ['generic'])[0];
+    }
+    function replyFor(text) {
+      const key = categoryFor(text), pool = pools[key];
+      let choice = Math.floor(Math.random() * pool.length);
+      if (choice === lastChoices.get(key)) choice = (choice + 1) % pool.length;
+      lastChoices.set(key, choice);
+      return {opening: pool[choice][0], conclusion: pool[choice][1], category:key};
+    }
+    function bottom(force = false) {
+      if (force || followLatest) {
+        messages.scrollTop = messages.scrollHeight;
+        $('new-message').hidden = true;
+      } else $('new-message').hidden = false;
+    }
+    function addMessage(who, text, conclusion, welcome = false) {
+      const row = document.createElement('div'); row.className = 'message ' + who;
+      if (who === 'bot') {
+        const avatar = document.createElement('span'); avatar.className = 'message-avatar'; avatar.setAttribute('aria-hidden', 'true'); avatar.innerHTML = robotIcon; row.append(avatar);
+      }
+      const content = document.createElement('div'); content.className = 'message-content';
+      const label = document.createElement('div'); label.className = 'message-label'; label.textContent = who === 'bot' ? '공부봇' : '나';
+      const bubble = document.createElement('div'); bubble.className = 'bubble';
+      bubble.append(document.createTextNode(text));
+      if (conclusion) { bubble.append(document.createTextNode('\n\n')); const strong = document.createElement('strong'); strong.textContent = conclusion; bubble.append(strong); }
+      if (welcome) { const sticker = document.createElement('span'); sticker.className = 'welcome-sticker'; sticker.textContent = '✳ 오늘의 추천: 일단 한 페이지'; bubble.append(document.createTextNode('\n'), sticker); }
+      content.append(label, bubble); row.append(content); messages.append(row);
+      // Keep this playful page lightweight even through long sessions.
+      while (messages.querySelectorAll('.message:not(.typing)').length > 100) messages.querySelector('.message:not(.typing)').remove();
+      bottom(); return row;
+    }
+    function typing() {
+      const row = document.createElement('div'); row.className = 'message bot typing'; row.setAttribute('aria-hidden', 'true');
+      const avatar = document.createElement('span'); avatar.className = 'message-avatar'; avatar.innerHTML = robotIcon;
+      const bubble = document.createElement('div'); bubble.className = 'bubble';
+      for (let i = 0; i < 3; i++) { const dot = document.createElement('span'); dot.className = 'typing-dot'; bubble.append(dot); }
+      row.append(avatar, bubble); messages.append(row); bottom(); return row;
+    }
+    function updateControls() { send.disabled = busy || !input.value.trim(); prompts.forEach(button => {button.disabled = busy;}); }
+    function updateInput() { input.style.height = 'auto'; input.style.height = Math.min(input.scrollHeight, 110) + 'px'; $('char-count').textContent = input.value.length + ' / 500'; updateControls(); }
+    function updateRound() {
+      const level = Math.min(5, 1 + Math.floor(rounds / 3));
+      $('round-count').textContent = '대화 ' + rounds + '회 · ' + (rounds < 3 ? '아직 포기하지 않았어요' : rounds < 9 ? '공부 권유는 계속됩니다' : '이쯤 되면 책을 펴볼까요?');
+      $('meter').setAttribute('aria-label', '한결같음 ' + level + '단계');
+      Array.from($('meter').children).forEach((bar, i) => bar.classList.toggle('on', i < level));
+    }
+    function submit(text) {
+      const value = String(text).trim().slice(0, 500); if (!value || busy) return;
+      busy = true; followLatest = true; addMessage('user', value); bottom(true);
+      input.value = ''; updateInput();
+      const indicator = typing(), ticket = generation;
+      pendingReply = setTimeout(() => {
+        if (ticket !== generation) return;
+        indicator.remove(); const reply = replyFor(value);
+        rounds++; updateRound(); addMessage('bot', reply.opening, reply.conclusion);
+        busy = false; pendingReply = null; updateControls();
+      }, 500 + Math.floor(Math.random() * 400));
+    }
+    function greet() {
+      const label = document.createElement('div'); label.className = 'day-label'; label.textContent = 'TODAY, A LITTLE BETTER'; label.setAttribute('aria-hidden', 'true'); messages.append(label);
+      addMessage('bot', '안녕하세요, 공부봇이에요.\n오늘은 어떤 이야기를 해볼까요? 고민도, 자랑도, 공부하기 싫다는 말도 좋아요.', '단, 마지막에는 공부를 권할지도 몰라요. 아니, 분명 그럴 거예요.', true);
+    }
+    $('chat-form').addEventListener('submit', event => {event.preventDefault(); submit(input.value);});
+    let composing = false;
+    input.addEventListener('compositionstart', () => {composing = true;});
+    input.addEventListener('compositionend', () => {composing = false; updateInput();});
+    input.addEventListener('input', updateInput);
+    input.addEventListener('keydown', event => {if (event.key === 'Enter' && !event.shiftKey && !event.isComposing && !composing && event.keyCode !== 229) {event.preventDefault(); submit(input.value);}});
+    prompts.forEach(button => button.addEventListener('click', () => submit(button.dataset.prompt)));
+    messages.addEventListener('scroll', () => {followLatest = messages.scrollHeight - messages.scrollTop - messages.clientHeight < 70; if (followLatest) $('new-message').hidden = true;});
+    $('new-message').addEventListener('click', () => {followLatest = true; bottom(true);});
+    $('reset-chat').addEventListener('click', () => {
+      generation++; clearTimeout(pendingReply); pendingReply = null; busy = false; rounds = 0; lastChoices.clear(); messages.replaceChildren();
+      followLatest = true; $('new-message').hidden = true; input.value = ''; updateInput(); greet();
+      $('round-count').textContent = '대화 0회 · 공부 권유 준비 완료';
+      Array.from($('meter').children).forEach((bar, i) => bar.classList.toggle('on', i === 0)); $('meter').setAttribute('aria-label', '한결같음 1단계'); input.focus();
+      showToast('새 대화예요. 그래도 결론은 공부!');
+    });
+    function showToast(text) {clearTimeout(toastTimeout); $('toast').textContent = text; $('toast').hidden = false; toastTimeout = setTimeout(() => {$('toast').hidden = true;}, 3000);}
+
+    const DURATION = 5 * 60 * 1000;
+    let remaining = DURATION, deadline = 0, timerRunning = false, timerInterval = null;
+    function paintTimer() {
+      const seconds = Math.max(0, Math.ceil(remaining / 1000));
+      $('clock').textContent = String(Math.floor(seconds / 60)).padStart(2, '0') + ':' + String(seconds % 60).padStart(2, '0');
+      const percent = Math.min(100, Math.max(0, (1 - remaining / DURATION) * 100));
+      $('progress-fill').style.width = percent + '%'; $('timer-progress').setAttribute('aria-valuenow', String(Math.round(percent)));
+      document.title = timerRunning ? $('clock').textContent + ' · 공부 중 | 결국공부' : '결국공부 — 모든 대화의 끝은 공부';
+    }
+    function celebrate() {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      for (let i = 0; i < 24; i++) { const piece = document.createElement('i'); piece.className = 'confetti'; piece.style.left = Math.random()*100+'vw'; piece.style.background = ['#e76435','#54734e','#efd780'][i%3]; piece.style.animationDelay = Math.random()*.5+'s'; document.body.append(piece); setTimeout(() => piece.remove(), 3100); }
+    }
+    function tick() {
+      if (!timerRunning) return;
+      remaining = Math.max(0, deadline - Date.now());
+      if (remaining === 0) {
+        timerRunning = false; clearInterval(timerInterval); timerInterval = null;
+        $('timer-toggle').textContent = '한 번 더 시작'; $('timer-status').textContent = '5분 완주! 작은 시작이 진짜 공부가 됐네요.';
+        addMessage('bot', '5분 끝! 약속한 시간을 채웠어요. 정말 잘했어요.\n잠깐 스트레칭하고 물도 한 모금 마셔요.', '쉬고 나서 여유가 있다면, 다음 한 페이지도 공부해 봐요.');
+        celebrate(); showToast('5분 완주! 오늘의 나에게 박수.');
+      }
+      paintTimer();
+    }
+    $('timer-toggle').addEventListener('click', () => {
+      if (timerRunning) { remaining = Math.max(0, deadline - Date.now()); timerRunning = false; clearInterval(timerInterval); timerInterval = null; $('timer-toggle').textContent = '이어서 공부하기'; $('timer-status').textContent = '잠깐 쉬어가도 괜찮아요. 준비되면 이어가요.'; }
+      else { if (remaining <= 0) remaining = DURATION; deadline = Date.now() + remaining; timerRunning = true; $('timer-toggle').textContent = '잠깐 멈추기'; $('timer-status').textContent = '지금은 나를 위한 시간. 한 가지에만 집중해요.'; timerInterval = setInterval(tick, 250); showToast('좋아요. 딱 5분, 지금부터 시작!'); }
+      paintTimer();
+    });
+    $('timer-reset').addEventListener('click', () => {timerRunning = false; clearInterval(timerInterval); timerInterval = null; remaining = DURATION; $('timer-toggle').textContent = '5분 공부 시작'; $('timer-status').textContent = '책 한 페이지면 충분해요.'; paintTimer();});
+    document.addEventListener('visibilitychange', () => {if (!document.hidden) tick();});
+    greet(); updateControls(); paintTimer();
+  })();
+  </script>
+</body>
+</html>
