@@ -3,14 +3,158 @@
     <title>A blog for lecture notes, reviews, diary entries, and everything in between!</title>
     <link href="https://seongmin-aistatdata.github.io/github-blog/feed.xml" rel="self" />
     <link href="https://seongmin-aistatdata.github.io/github-blog" />
-    <updated>2026-10-22T11:24:31+09:00</updated>
+    <updated>2026-10-23T15:08:46+09:00</updated>
     <author>
         <name>Seongmin-aistatdata</name>
     </author>
     <id>https://seongmin-aistatdata.github.io/github-blog</id>
 
     <entry>
-        <title>お知らせ (ver.261022)</title>
+        <title>音楽理論の基礎を学ぶ 第1回 ―（ver.261023）</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/jp-lessons-music-basicsofmusictheory1/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/jp-lessons-music-basicsofmusictheory1/</id>
+            <category term="音楽"/>
+            <category term="講義ノート (こうぎノート)"/>
+            <category term="日本語"/>
+
+        <updated>2026-10-23T14:54:56+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    作曲のために、音楽の勉強を始めました。 今日は、勉強したことを皆さんにも説明してみようと思います。少しでもお役に立てたらうれしいです！ 私たちになじみのある楽器といえば、ピアノがありますよね。 ピアノでは、白鍵と黒鍵の両方を数えて、すぐ隣の鍵盤へ一つ上がると半音上がります。同じように二つ分上がると、全音上がると考えてください。 ピアノの鍵盤を見ると、ミとファの間には黒鍵がありません。でも、ミからファへ上がるときの音程は半音です。 黒鍵がないからといって、全音になるわけではありません！ それでは、音について説明していきます。 音は、物体の振動によって生まれます。 音源が振動すると、その振動が周りの空気の粒子に伝わります。その粒子が隣の粒子に振動を伝え、さらにその隣の粒子へと伝わっていく……というように、振動が次々と広がっていきます。 やがて、その振動が私たちの耳に届き、鼓膜を振動させます。そして、その信号を脳が「音」として認識するわけです。 私たちが聞いている音は、目に見える形にしたり、数値で表したりすることができます。簡単な表し方の一つが、波形グラフです。 波形と聞くと、同じ形を繰り返すグラフや、それに対応する220 Hzのような数値を思い浮かべるかもしれません。 思い浮かばなくても大丈夫です。これから覚えていけばいいのですから！ [画像] このように、ある音は周波数という数値で表すことができます。単位は**Hz（ヘルツ）**で、1秒間に何回振動するかを示します。 この例では、220 Hzなので、1秒間に220回振動するという意味です。 この繰り返しの振動をグラフにしたものが、波形グラフです。 横軸は時間を表し、縦軸は振動による変位を表します。振幅とは、振動の中心からどれだけ離れるかを示すものです。ここでは、上下にどれくらい大きく揺れるか、と考えてください。 一般に、振幅が大きいほど音は大きく聞こえます。 また、周期が短いほど、つまり横方向の繰り返しの間隔が狭いほど、音は高くなります。 音楽を勉強していると、協和音や不協和音という言葉をよく耳にします。 一緒に鳴らすと、きれいに調和して聞こえる音もあれば、「ん？ 何だか不思議な響きだな」と感じる音もありますよね。 協和する音の組み合わせを見つける方法として、音同士の周波数の比を単純にする、という考え方があります。 とても単純な比には、どのようなものがあるでしょうか？ 例えば、**1:2、1:3……**といった比が考えられますね。 つまり、ある周波数を整数倍するということです。 **1、2、3、4、5……**のような整数を、周波数に掛けていきます。 例えば、次のようになります。 このように、ある基本の周波数と、その正の整数倍に当たる周波数を並べたものが、倍音列です。 音の中で、最も低く、基本となる音を**基音（Fundamental）**と呼びます。 そして、基音と同時に鳴る、基音の整数倍の周波数を持つ高い音が、ここでいう倍音です。 第1回はここまでです。 それでは、第2回でお会いしましょう！
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>作曲のために、音楽の勉強を始めました。</p>
+<p>今日は、勉強したことを皆さんにも説明してみようと思います。少しでもお役に立てたらうれしいです！</p>
+<p>私たちになじみのある楽器といえば、ピアノがありますよね。</p>
+<p>ピアノでは、白鍵と黒鍵の両方を数えて、すぐ隣の鍵盤へ一つ上がると<strong>半音</strong>上がります。同じように二つ分上がると、<strong>全音</strong>上がると考えてください。</p>
+<p>ピアノの鍵盤を見ると、ミとファの間には黒鍵がありません。でも、ミからファへ上がるときの音程は<strong>半音</strong>です。</p>
+<p>黒鍵がないからといって、全音になるわけではありません！</p>
+<p>それでは、音について説明していきます。</p>
+<p>音は、物体の振動によって生まれます。</p>
+<p>音源が振動すると、その振動が周りの空気の粒子に伝わります。その粒子が隣の粒子に振動を伝え、さらにその隣の粒子へと伝わっていく……というように、振動が次々と広がっていきます。</p>
+<p>やがて、その振動が私たちの耳に届き、鼓膜を振動させます。そして、その信号を脳が「音」として認識するわけです。</p>
+<p>私たちが聞いている音は、目に見える形にしたり、数値で表したりすることができます。簡単な表し方の一つが、<strong>波形グラフ</strong>です。</p>
+<p>波形と聞くと、同じ形を繰り返すグラフや、それに対応する<strong>220 Hz</strong>のような数値を思い浮かべるかもしれません。</p>
+<p>思い浮かばなくても大丈夫です。これから覚えていけばいいのですから！</p>
+<p>[画像]</p>
+<p>このように、ある音は<strong>周波数</strong>という数値で表すことができます。単位は**Hz（ヘルツ）**で、1秒間に何回振動するかを示します。</p>
+<p>この例では、<strong>220 Hz</strong>なので、<strong>1秒間に220回振動する</strong>という意味です。</p>
+<p>この繰り返しの振動をグラフにしたものが、<strong>波形グラフ</strong>です。</p>
+<p>横軸は時間を表し、縦軸は振動による変位を表します。<strong>振幅</strong>とは、振動の中心からどれだけ離れるかを示すものです。ここでは、上下にどれくらい大きく揺れるか、と考えてください。</p>
+<p>一般に、振幅が大きいほど音は大きく聞こえます。</p>
+<p>また、周期が短いほど、つまり横方向の繰り返しの間隔が狭いほど、音は高くなります。</p>
+<p>音楽を勉強していると、<strong>協和音</strong>や<strong>不協和音</strong>という言葉をよく耳にします。</p>
+<p>一緒に鳴らすと、きれいに調和して聞こえる音もあれば、「ん？ 何だか不思議な響きだな」と感じる音もありますよね。</p>
+<p>協和する音の組み合わせを見つける方法として、音同士の周波数の比を単純にする、という考え方があります。</p>
+<p>とても単純な比には、どのようなものがあるでしょうか？</p>
+<p>例えば、**1:2、1:3……**といった比が考えられますね。</p>
+<p>つまり、ある周波数を整数倍するということです。</p>
+<p>**1、2、3、4、5……**のような整数を、周波数に掛けていきます。</p>
+<p>例えば、次のようになります。</p>
+<ul>
+<li>220 × 2 = <strong>440 Hz</strong></li>
+<li>220 × 3 = <strong>660 Hz</strong></li>
+<li>220 × 4 = <strong>880 Hz</strong></li>
+<li>……といった具合です。</li>
+</ul>
+<p>このように、ある基本の周波数と、その正の整数倍に当たる周波数を並べたものが、<strong>倍音列</strong>です。</p>
+<p>音の中で、最も低く、基本となる音を**基音（Fundamental）**と呼びます。</p>
+<p>そして、基音と同時に鳴る、<strong>基音の整数倍の周波数を持つ高い音</strong>が、ここでいう<strong>倍音</strong>です。</p>
+<p>第1回はここまでです。</p>
+<p>それでは、第2回でお会いしましょう！</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Learning the Basics of Music Theory — Part 1 (ver.261023)</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/eng-lessons-music-basicsofmusictheory1/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/eng-lessons-music-basicsofmusictheory1/</id>
+            <category term="Music"/>
+            <category term="Lessons"/>
+            <category term="English"/>
+
+        <updated>2026-10-23T14:53:29+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    I’ve started studying music so I can compose my own pieces. Let me share what I learned today. I hope you find it helpful! The piano is an instrument we’re all familiar with. On a piano, moving up to the&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>I’ve started studying music so I can compose my own pieces.</p>
+<p>Let me share what I learned today. I hope you find it helpful!</p>
+<p>The piano is an instrument we’re all familiar with.</p>
+<p>On a piano, moving up to the next adjacent key—counting both white and black keys—means going up a <strong>semitone</strong>, or <strong>half step</strong>. Moving up two such steps means going up a <strong>whole tone</strong>, or <strong>whole step</strong>.</p>
+<p>If you look at a piano keyboard, there is no black key between E and F. Moving from E to F is still a <strong>semitone</strong>. The absence of a black key does not make it a whole tone!</p>
+<p>Now, let’s talk about sound.</p>
+<p>Sound comes from vibrations. When a sound source vibrates, it transfers those vibrations to the surrounding air particles. Those particles pass the vibrations to neighboring particles, which pass them to other particles, and so on…</p>
+<p>Eventually, the vibrations reach our ears and make our eardrums vibrate. Our brains then interpret the signals as “sound.”</p>
+<p>The sounds we hear can be visualized and described numerically. One simple way to visualize them is with a <strong>waveform graph</strong>.</p>
+<p>When you think of a waveform, you might picture a repeating graph and a number such as <strong>220 Hz</strong>. If that doesn’t ring a bell, that’s fine—you can start learning about it now!</p>
+<p>[Image]</p>
+<p>As shown here, a tone can be described using its <strong>frequency</strong>, measured in <strong>hertz (Hz)</strong>. This tells us how many times something vibrates per second. In this example, <strong>220 Hz</strong> means <strong>220 vibrations per second</strong>.</p>
+<p>We can represent this repeating vibration as a graph. That is a <strong>waveform graph</strong>.</p>
+<p>The x-axis represents time, while the y-axis shows the vibration’s displacement. The <strong>amplitude</strong> describes how far the vibration moves away from its resting position—think of it as how far it swings up and down.</p>
+<p>Generally, a larger amplitude means a louder sound. A shorter period—meaning the repeating cycles are more tightly packed along the horizontal axis—corresponds to a higher pitch.</p>
+<p>When studying music, we often hear the terms <strong>consonance</strong> and <strong>dissonance</strong>.</p>
+<p>Some notes blend smoothly when played together. Others produce a sound that makes us go, “Hmm? That sounds a little strange.”</p>
+<p>A common way to find consonant combinations is to keep the ratio between the notes’ frequencies simple.</p>
+<p>What would a very simple ratio look like?</p>
+<p>For example, we could have ratios such as <strong>1:2, 1:3</strong>, and so on.</p>
+<p>In other words, we multiply a frequency by whole numbers: <strong>1, 2, 3, 4, 5…</strong></p>
+<p>For example:</p>
+<ul>
+<li>220 × 2 = <strong>440 Hz</strong></li>
+<li>220 × 3 = <strong>660 Hz</strong></li>
+<li>220 × 4 = <strong>880 Hz</strong></li>
+<li>…and so on.</li>
+</ul>
+<p>If we collect a fundamental frequency and its positive integer multiples, we get a <strong>harmonic series</strong>.</p>
+<p>The <strong>fundamental</strong> is the lowest, basic frequency of a sound. The higher frequencies that sound alongside it at integer multiples of that fundamental are called <strong>harmonics</strong>.</p>
+<p>That’s it for Part 1.</p>
+<p>See you in Part 2!</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>음악이론의 기본 공부 1편 - (ver.261023)</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/kor-lessons-music-basicsofmusictheory1/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/kor-lessons-music-basicsofmusictheory1/</id>
+            <category term="한국어"/>
+            <category term="음악"/>
+            <category term="강의글"/>
+
+        <updated>2026-10-23T11:41:41+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    작곡을 위한 음악 공부를 시작했습니다. 오늘 공부한 것을 가르쳐봐야지요. 도움이 되면 좋겠습니다. 우리가 잘 아는 악기로 피아노가 있죠. 피아노의 건반 하나 올라가는 건 반음 올라가는 거라고 생각하면 되고, 피아노의 건반 두개가 올라가는 건 온음이 올라가는 것이라고 생각하시면 됩니다. 피아노의 건반을&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>작곡을 위한 음악 공부를 시작했습니다. <br><br>오늘 공부한 것을 가르쳐봐야지요. 도움이 되면 좋겠습니다. <br><br>우리가 잘 아는 악기로 피아노가 있죠.<br>피아노의 건반 하나 올라가는 건 반음 올라가는 거라고 생각하면 되고,<br>피아노의 건반 두개가 올라가는 건 온음이 올라가는 것이라고 생각하시면 됩니다. <br>피아노의 건반을 보면 미에서 파로 올라갈 때는 흑건 하나가 없는데, <br>이때 올라가는 건 반음이 올라가는 것 입니다. 흑건이 없다고 해서 한 온음이 올라가는게 아닙니다! </p>
+<p>그리고 이제 음에 대한 설명을 해볼게요. <br>음은 소리의 진동으로 나타납니다. 진동을 만드는 곳에서 진동을 만들면 진동이 공기 입자에 전달되고 이 공기 입자가 이웃한 공기 입자에 진동을 전달하고 이 공기 입자가 또 다른 공기 입자에 진동을 전달 전달 전달... 해서 우리 귀에 진동이 전달되어 귀의 고막까지 도달하면 이 진동을 우리가 뇌에서 '소리'라고 인식할 수 있는 것입니다. </p>
+<p>우리가 듣는 소리의 음은 시각화와 수치화가 가능합니다. 단순하게 표현을 하면 파형 그래프 시각화 가능합니다. 보통 파형하면 떠오르는 것은 주기가 있는 그래프와 그에 대응되는 220hz 같은 수치였을 것입니다 (안떠오르셔도 좋습니다. 이제 부터 알아가면 되니까요!). <img loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABH4AAADGCAYAAACkY0cSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAGWJSURBVHhe7d13XJXl+wfwT6nsLUMBB+BiqOwN4kDLsExt2dRfliNHlpSDxJWFZbmxoba0oTYcqeQCZU8FcTCUJco+bJBvvz84Hn0e0BBBDofP+/U6r1f3fV8P6RE451zPfV/XY/V1Vf+CiIiIiIiIiIgUzuPiCSIiIiIiIiIiUgxM/BARERERERERKSgmfoiIiIiIiIiIFBQTP0RERERERERECoqJHyIiIiIiIiIiBcXEDxERERERERGRgmLih4iIiIiIiIhIQTHxQ0RERERERESkoJj4ISIiIiIiIiJSUEz8EBEREREREREpKCZ+iIiIiIiIiIgUFBM/REREREREREQKiokfIiIiIiIiIiIFxcQPEREREREREZGCYuKHiIiIiIiIiEhBMfFDRERERERERKSgmPghIiIiIiIiIlJQTPwQERERERERESkoJn6IiIiIiIiIiBQUEz9ERERERERERAqKiR8iIiIiIiIiIgXFxA8RERERERERkYJi4oeIiIiIiIiISEEx8UNEREREREREpKCY+CEiIiIiIiIiUlBM/BARERERERERKSgmfoiIiIiIiIiIFBQTP0RERERERERECoqJH+rEcrBrihWsbPwRKl5qQ6GLrWBlYwX/U+IVap1Q+Nu0/79bS+TumNxF/m2lz/mUncgVLzVx++dqMnZlideIiIiIiKizYeKHOtDtD5gtfCzu6DTBw3jUyY7b/7/WPB7gA39JKvYFTYefl53setfRUzF/cwhya8XB7aihHKm/r8O0iS6wu/33cPeG31vrsO9iuTiaiIiIiIioy2DihxTcgyVAFH/nR9uRRK+Gn89kBHwfiYySO1keyY1EhATPh6/7VOxKewTZH0kkVk10weSAnYhKK4fs/ygpREb4TgRM8YZfUCQkwquIiIiIiIi6BLlK/Egu7kXQWxMwwv32B3E7uE6cjqBjOXc+zDWjtdfhrmtdh9/ZJTB11V5k3ONT4u2jIZN35IiXmtWZjgm1/nmsRW7YTvi/fGe3hZ3XBMzfHImCBnFscyzhf/gCLiTf47HZT3wBtdSQRQgRP5//+diHN/qKv5BIykZMnr4bGQ3KMH9hJfYdT5Bem4DIP4Lxto8+UJuIoMlTW757qDUa0rFrxnTsyQRgNgWrfglFQlLj3yMh/Bh2LvSGQbdaZHw/HdN2pIuvljn4zt0JwLbblVV7bH4bfs1UbBjf+Ge81++f27+fmj5m4iAAXFwH3yZrVg+2y4uIiIiIiDoVOUn8lCNq7QS4TvkIu8LTUSBLutRCkhaJXQvHYuysvchokkRo7XWNMr6fihHSayW3YySFSPzlI/g9PRP7MkUXKKyHeR7LERroC99Z63Aw6c5ui9qSdIQET8eIiasRdY8k2qPhjaAmiY2mj+AJ4use1H8dW5N+8MZBzGyydtejRTVYOloOdi0PRi4Ay4V7cTBgCiyNlKVrytAa4I35m0Nw8B1LoCEVQV+G/EfisPUK9gYgKAWA9SIc/GMlJlvrQ7lb45qylilcpgfj2L55sASQumEjQqrEX6E9pSL4yxDxZKvVHgvGdiZniIiIiIjoAclJ4icB+35KB4y88fa2A4iMln4gjw6V3rEHCsI+wqLvxHe5W3sdgPjVmBaUiFrow3vhDpyOk+4SOLABk80AFIYi4MPO8CG8LbT+eSzYOx8z9xYC3Swwef0B6W6LBJzesQje+gAyd8N/fWi7ffCnDpAVggMXAdgvQ/B0C/GqlDLMZyzCS1oAjh1sp4RLIUKPJgLQxEvvTYO5NOEjpjxgJvxf0AQaQnDwVPPfiX6b704EBsFbHNAKksNtmKhpaFkSyWT6viZJzZY9WrDLi4iIiIiIOiU5SfwAVjN2I/JYMOZ7WUBLTTqppg+X6cE4sNYXAJD6836kCq5q7XWF2PPlbhQAcAncj+DprjCQblhQNvPFqp82wE8LQEowdkQLLlRYrXoeGyIRvD4SgD5e2nkAq8ZaSHdbKMPAeRqCdzbutCjYG4z9N+6+UBGZ4o294g/Tdz1OrYQLAMAXQbcTa8099k6DifhLy5srqUgFYO7lAgPx2t26uWLECACIRMJF8WJbyMGFiwAwAq4O4jUhWwdXAEBOfoF4qX00JGJDUAgw2rdNkkgFv6/D9ixT+I6+V6KteZKLe7Fh/tS7jm9Kj7PO38ii10REREREXYScJH688cZ8W2jd44691jg/+AFAXg6EH9taeV3WAeyNB2A8E/5T9O9eaaTli2lTTQGU49DxRPGqAmrl8xi2H3skAEb7w9/+7gUps2mYORYAEnEsrFC82qWk/vQVogAAIdj5071rzbS5e9Z0uf/jXjVkACD3WuOfX7nb7eNd92Yx0BJAOco79Ljfo5exYxX2FFrC/73J0BIvPihJCNatj4TWhGWYOVxJvHoP5QgN9IbrlI+w/XjiXcc3pcdZjwcjYIoL/Nay6DURERERkaKTk8TPf2jBB8xm3eO6gugwpAIwecoXluJFKcuRfjABIImKRIZ4sau5x/OYGHEaAOA7zhfNRyjDe0zjbqGo6ATxYpchOe6PmV/nAN2UodwNSN0wDf7HO+9uCxPzxl0ntQ3NH5u6W/qVVACa0Gw2+yGsd3S/ZFPzTGE1BABOIzJOvCaUGBcJADDtdd89Sm0jcycWbU6FwcsBbXB8qhyha1fhYKUrFi3wbnESKePrN6RHMPXhPTMYB8NvF9++gISwAwie2XiEM+On6Zj2/YM+70RERERE1Jl0jsRPlaSxRoyWVos/+AD3vi41ufFDoJ3NvdI+AIZYwg4A0jLQ5h+LTvk32WHR7GP6XtEOpw7S7POYg8TEcgAWsLJsPu0DAMqWljAHgIyc+9RLSkWQtFtRs493Gssit07L2rnPPCC+rg00lCNx81SMmH8QBdCH79oD2BfgDQMU4uB8b0zdnHinqHibu3dR65CFjd/3lguPNVm7/dg33VT8Be8wt4QlgIywqPt/fzZE4vRpAHCF3RDxYlvQh/d4VwDl2PP5znsUHwdq04IR9Es50M0Xfj7Nf6+2WVevhnTs+nAdUtX9sGyOrXj1gUlOrULAgUJYvrMUk43Eq/fQEIrgzakALDH/j1AEv+MNc607f29lXQt4vxOMAxv8YAAgNXgXusK+RiIiIiKirqpTJH4KDuxGCACM8MaDfJRq/rpCFGQBgAUszO8KFutmChNjAEhHRlsVaH0Q3SzhHzDl/jVUHpF7PY/Z2QBgCfP77WowMoUFAFxMxSM84NTBapEbthEzx7pganAiarvpwy9oPzaMN4X5lGDsDfKDQbdaJAZPhevY6Qg6lo7aeyQt5FLfCZhi31ggfeY9W6TXIuPrddgjAbQmTIbv7bpRAn4Ibmmy6R4Mnl0Kf2sAKevgN/Ej7EsplD2XtZIcRO2YibGTNyIVgOX8eff4c7SdjO/8EZQC+C4LgO8DZambIQnF6sCDKOg7E6vvWUS7GbnpSG8A4PwSJpmJF+/Q8nkbUwcAkCQgsSN+xxERERER0SMh/4mfzJ2Y+XEiAEv4z3qAMqn3vK5GWm9ESdb2uXma0L7PB7fU9WOb7Bpp7tHsThKfoCY7LG4/Di60BKAPvw278MZ9PrQ9Mvd8HiWyui33fR7VtO5xDAz/XRBZ/Fj7AP/+TQiTDPd6BPmIr2uhqnLkpoRgV+B0+LnbwXdWMEJvAMoDpmLDsVAEjb9TS8pgfBBOH9uAlwYoAzcisWvhBNg5u2Dq/I3YE52OAsl/H6HqWPp4acUiWHYDUtdPgd+qvUi9cfvPXAtJWig2vOMLv82pQDdfLFvsfZ/vgYfUzQJvfL0DL5kByNyLgBe8YTe88WfPzn0spq0PRUGDMsxf24Gd90metElXr8xgLFqfCjivxLLxmuLVB1SOkNWLcLBQHy+tngfL+/2M3YumSst3SHYXTxARERERkaKQ68RPbdpuzJy2DqkNyrD1D2pxvYzWXtfRasM+wrT1qTCYshqrfB7wg2NDOna9Zgcrh6nYlSlebJ3O+jw+cg2JWDXeBb4vzEfQ3khkSADlvr54e9sxRP6xDL7NHdEx8kXAHwmI/H4Z/AYoA7XlSDwejFXTJ2DEEwEIeeCKuznYNaVp4rG5h+/6xt5sLU1eWk3Z2fSYntk07Px6GsyVa5Hxy0eYPNpOGm8H14kzsf1UIaDvjVV/SDvktSctVwT8EYV9q6bBZYDmnSSTlj7M3adhw4FIHPR3bXkSpDWqQhEwbSNSu/ki6MuH36mX+/0bmH+4HCYztiOgucLp92NiAYtuAI7vvP/vgpRD2JsGwHgEXIzFi0REREREpCjkNPFTi9zf/TF28mqEFurDO3Avdr9277v1d7T2ugd3v/oodz+CJ4ivvAdJKAIC9qLAehF2BrRih0RuKA7E1wK1ifjpkLjp/YN6dM/jw7m9Y6iVOzTaSjdbBKyfCgMtC7hMWYTgAwlIOLwB871M7/p3vF1rSFg/Rst+KoL+SEDCgR0IeM0V5rqabXNM6BHQcl6Eg//sw6rXXGGue+dvqmVkC7+FwQg5GozJj2rXWjdNWD67CDv/iELC7Z+/8FAc/GoRfM0e+KfpAZUjdNUy7CvUh9+G1Q+f6MrciXmfpwLWi7D9nfvUIbuXbt6YNt0UQCo2TJmAVb+nIveuXWS1knSEbp6JEVODkQvA5a2p9yxyT0REREREnZ/8JX5q07Fnli98Aw6iQN8b/j8dQvCUFiQdWnvdPdWi9hYAaEOzneuCoCEdu2bMxMESV6zaOA3mrTnWYeKNCfbKgLItXn7qIT7GtfXzeLvz038W5m5ZEebmHw9RjLet2C/D6fAD2Bk4Dd6tSDQom7niJf8dOBgWhQ2tOib0gMfmHuSxdxpMxP+723QtMdl/Bw6G3ekaFXl8N4Kme8PkwZ+GR85k+j5ceJgjfgAydryBmQcKYTBhNZY96E49MUko/KetQyos4f9JK38XALB8ZzeCxuo3/jwHTIav++0dWVawc5+AmcGhKGgAzF/egQ1T7hxDJCIiIiIixSNfiZ8bB+E/fgJWhRXCYPxKhBwOxhvDW/BB6oGuM4WJOQCk4sJ9+7TnIj2tscizQTt/LsrY4Y+gFH34bdjQ8s49Yt0s8Mb3CbgQt7v1tYEe6Hk0gcUA/Hfx69ycxqLOfUwe+vgLtU5tZiT2bPbHtIlj4eogSpq5e8N34nT4b96NqEx5ry10Hy3tlHePh/8p8RdsGckpf0xbnwr0nYng1S1vt96s2wngQsB37UPW+OqmD7/1IQjZtgiT3S1wV1MvQFkT5u7TsGpvFA4ubucjcERERERE1OHkJ/GTuRczX/DHwRv68F11DMeCprRsx0ArrjM1aewelJ5xn0btKYlIAACHYe16DEJyyh/TNqTCZMZ2BD3sboGH8cDPoylM+uE/E2i1yYlIBaBla3fvXSPAfduP3/txDP7t0iZcQUgSsWG6C+wmTMeq4IOISstBk7rRkkLkpkXiYPBqTJtghxHv7ETig9QXkiZcJu+4z8+SwsrB/s0HG1vaZwVjsrSotPAxEwcBAAcxUzp3z+cqbDuCUhr/M8TfpZmv1Vx9pvvtdlOGidc0rPrqACLjguEHAEMWISQuCge/WoTJQzrw9w0RERERET0ycpL4ycGuDz9CaKE+/DYfwoZn766Ncj+tu87Sq/HOfOqp0MYPbc1IPXkQuQAsPV3bb6eK5CAC5h9EQWtrebSZ1jyPynDxcgUAhIZFihelahH6TwgAwNvtTiP4jnHng3eLHovv/XG6U2hIx64ZU7E9uhwwcsXkhRuw71goIuNEybPoKJw+tg8bFvrBXBkoOLUOU2c0U8xZ3t2nU979HiELO/LnjoiIiIiIqP3JR+Ln1MbGO91jAx6sm1Vrrxs+Bk9pAYjfgHXHy8WrgCQEO3fnALDFlKcadwe1uYZ07JrhjxB1P2z4uvW1PNpEK59HA68xsAUg+WUdtjfXPShzJ4KPAdCaisle4kWx1tT4GYugi+Kv00Zu3LxnUrAzqD0u/Te1XoSDx3Zg1XRfWBrrC4/8AICaJgyMLeE7PQgHww9g/hAAKcHYES+Ka1O3d3d1cFHuh9aSukrSnTbwQ7B0bt/0e/xOaUHy6nai6k5x+c7+HBIRERERUXuTi8RPYsRpAICLu10Ldprc0drr0M0VMxe6AijHwYVTEXAsXXoEphaStBAEvDwfByWAwcv+eKm1NXfuqxahq6Y11vX5uOM7OLX6eTSaCv+X9Ru7B02biV3RhahtaCzoXBC9EzOnbUQqAJeFM+HSYYmt1hwhu4ALO1rYkrvFtWWaHvn5r0dr684AQGFO43Eiy3G+LU8qKlvAb7wlgHIkJt7jOBK1ncydmOpgBbvXdiKjQbzYClk7MbmZ7yPB99/FdfBtstY233NERERERCSf5CLxI5E07rqJCvRu8kFE/Li7PkZrrwMAgykbEDxBH2hIx76FE6RFb+3gOnE+9mUCBl4rsdO/fY4nSU4FIGBvIYBCHHyn+VoeVjZWsJryaI7cPMzzaOu/E/7WAApDETTdG3bDrWA13A4jpq9DaGErugYNWYQQcRLmPx/c9SBmYt7YiS31aEjLkwq16Th4OBWAJmxt77ErhdpM7smDSKwFauP34MAV8WorqGmyUDMRERERETUhF4mfjqEJ77UhCFk/DS5md443aZm54o1VB3Bg25SW75R4IKFYN19aEFYRdLPAG7ujsDvAD7a6t/cLKUNruB/8vwpV/K5BLTie09rHw7QYh9fbjQm5lHXw85oM/x0hSM0rbFrcuaocBXmpCNnhDz/3CdhwEYD1TEy3F8VRmzMZ6QdbZUDZ/iVMGChebQX9KdjZzPfRgzwe6nuOiIiIiIjk0mP1dVX/iieJHr1Q+MuOQ7XCkEUI2TvtPzqHtU7oYivMPAD4be5kH4wlidi1ZB6CThWKV+7JwGcZdn4+FeYtPfN3yh9W77T6Xw2YEIwLaztuv1bujsnwXZ/a+f5t21UOdk0Zi6CLlvA/vA9v9BWvExERERFRZ9KFd/wQKTgtW7yxORQJB3YgYKYfXAaYNi3urKUPkwGu8Ju5DDsPJOD05gdI+hAREREREZHc444fIiIiIiIiIiIFxR0/REREREREREQKiokfIiIiIiIiIiIFxcQPEREREREREZGCYuKHiIiIiIiIiEhBMfFDRERERERERKSgmPghIiIiIiIiIlJQTPwQERERERERESkoJn6IiIiIiIiIiBQUEz9ERERERERERAqKiR8iIiIiIiIiIgXFxA8RERERERERkYJi4oeIiIiIiIiISEEx8UNEREREREREpKCY+CEiIiIiIiIiUlBM/BARERERERERKSgmfoiIiIiIiIiIFBQTP0RERERERERECuqx+rqqf8WT1DYqq6uQlpWFwtISFJeVQlJRgeaebC01dQzs1x8D+/WHhpqaeJmI5ExhSQmy8vNQUFKCkrIyVFRXiUMAAIZ6PWFu2gcD+/aDspKSeJmI5EhBSTFKJBKUSiQoLCtBSWkZqutqxWF4HI/B2MgQ5qZ9Mahff/EyEcmRyuoqXMm6hrRr11BaUS5exmMANNU1oKet3fjQ0oaulg60NTXEoUQkR4pKS5GRk4UrWddQVVMjXsbjeAw6WlrQ1daGga4eBvTpCxVlZXFYl8LETxvKzM1BTPJ5xKacx8XMDBSUFItD/pOBji4s+vbFwH5m8LJ3wNCBg8UhRPQIXc3Nwbkrl5GRk40r167iSlYmyiubT/Tcj5XFADjZDIOjlQ0crW3Ey0T0iCVduoio80mITUnG+SuXxMst5mhtAwdLGzgNHQpri4HiZSJ6hKpra5CQmorYC+cRc/4c0rKzxCEtoqaiAntLazjZDIOXvQN6GxiKQ4joESorr0DshcbP2ZHnkpBfWCAO+U+9DQxhYdoHA/v1x6D+/WE72Ao6mpriMIXFxM9DqKqpQVh8LGLOn0PEuQQUl5WJQx6asaERxrp74EkPb/TtbSxeJqJ2cKO4CMfOhuFY+JlWv2n8L042w+A2zBa+bh7Q19UVLxNRO8jMzcGRs2E4djYM+UWF4uWHpq6qBkcra4xydcdYNw/xMhG1g9Lycvx18h+EJyUg6dJF8XKbsBk4CE96eGOMqzu0NLgbiOhRuJiZjuNRkYg+n4TL166Kl9uE63BbPOHhBR9HF4Xfnc/ETyvcKC7CL0cO4c+Tx1FVXS1ebkJNRQV62jroqaODxx9vWlapVCJBiaQMpeVNt6DebYiZOZ7y8sF4bx+oqaiIl4noIdTV1+HImTD8fSYUiZdSxctNDO5vBjVVVfG0zK1bDUjPbn77qZij9VBM8BnFD4pE7aCotBSHw061KJGrrKSEQf3MYKinh546OtBUv/MBr7RcguLSUtwoLsKF9DTBdc0x0NXDC+PG45lRY3iMm6gdZF3Pw0+HD+Cvk8fFS01oqqthUD9z6OvoQk9HG2oqja/f//77L4rKSlFcWorrhQVIy7omvrSJ2x8Ux7l7iZeI6CGVlpfjzxMhOHwmFFnX88TLTRjp9YSxkZF4WuB6QcF/7hBSUVaGj6MLnvD0gsvQ4eJlhcDEzwO4dDUTuw/9hWMRZ8VLMtYWA+EybDicrG1gaT7ggTKH5ZVViE5JQkRiIsLioiGprBSHAADUVFXx7GhfvDBuPAx09cTLRPSA/jp1At/s/QUFpSXiJRknm2FwthkKJ5thGNzfTLx8T/mFBbh07SouZWYgNSMNCRdTUVtXJw4DpC9eLzzxFCaOHgNVZSZ3iR5GRk42dh8+iEOhJ8VLMvaW1rAZOAjmpn1gbW4B0169xSH3lJadhcvXMpGenYWUtCv33GmgrKSEZ0aOxktP+qGXvoF4mYgeUGxKMn45cghnEuLES8Bdx7QszSww2Mwcg/r3f6D3yynpV3D56lVk5uYgOvkcruXlikMAAHra2pg8ehwm+z7BmkBEDynnRj5+PPQX/g4LRV198++T9bS14WQ9DBZ9+sDSfAAszc2hrtqyGytVNTW4kH4FUefP/ecOomGDBmPuS6/CZuAg8VKnxsRPCySnXcH23/YgNiVZvAQAGO3sBjc7O7gNs4eetpZ4udUupKfhbFI8DoeevmeWcpy7F15+agIGssAk0QM7FRuFrT/vQXZ+0zsKWurqGOPmAddhtnCwsmnTXXZxF5JxMiYKx8LDmq0XpKulhekTp2DK2CfES0T0H7Lz87Dtlz04GRMlXgIAmBr1wtM+o/CE1wgY6LTdMcuqmhrEXUhGSPhZhEQ2f4PoaZ9ReHPKC236/yXqKpIuXcTmn39E8pXL4iXo6+riSc8R8LRzwLBBbVsfMyX9Cv4+E4rDoadRXdt0F6+KsjKmPjUBLz854b47gYmoqaLSUnz7+2/4/XiIeAkA0M/YBOM9R8Ddzh4D+vQVL7fa9cICRCQmICIp4Z5JZG97R8x6cSr6G5uKlzolJn7uIyf/Ojbv+RGn42LES1BVVsHE0WPw0vgJj+QNXOLFC/jz5AkcORsqXgKkCaB5L7/epoknIkWVkHoBm/b8gNSMdPESvO0d4eczCl72juKldnEyJgo/HfwLKelXxEswNjSC/7Q3FXbLKVFbklRWYusvP+HPE/+IlwBp0mW8lw+GDx4iXmpzVdXVOBZxFj8c/BN5N2+Il/GK3zN4bcKz0FRv2Z1Koq7sam4Otvz8I84kxIuX4DpsOF580u+RvE7W1dfhVGwMfj8egsSLF8TL0NHUxIzJL2DSmLHiJSJqxvd//Y5vf9/X7A6fp7x8MGXsOAwxsxAvtTlJZSVCws9g7z9HcTU3R7wMvxGj8NaU5x9o56A8YuLnHnb8vhdf7/tVPA1tTQ1MHvMEnh87vkO2dVbV1OBY+Bns/GMfbhYXCdY01dUw96XXMMFnlGCeiBqlZ2dh26+7cbaZN4/jvX3w+oSJHVZEPfFSKr7/63dEJCWKlzDO3QvzX3kdulpM7BI158jZUHz54y6UlVcI5tVUVTFp9FhMHT+hw35+jkWcxc4/9jV5M6mproY3np6MKWPHQalHy4+FE3UVN4uLsH3vLzgcekq8hNEubnhz0nPob9Ixd+IvX7uKnb/vw6nYpjsLrS0GYsmMmTA37SNeIiLpaZrVX21t9hjlC088hZf9nn4kGyuaczImCrsP/YXktKY3ZF/2exqvT5jUaW/aMPEjkpJ+BSu2bWly9MPMxBRvPfcC3IbZPVDdnvZSV1+Hn/8+jO/+2t+keKztECssffPtB6pVQKTI6urrsHH3D9gXclS8hBEOTpj1wlT0MzYRL3WIy9eu4scDfzY5KqKlro45L76Cp0eOFswTdWV5N2/g051fI/r8OcG8loYGXhg7HlPGPiE3HXj+Onkc237d3aSRg7GhET6YNgPOQ4cJ5om6snvtBLAZOAjzp74mN7U3MnNz8OOBP3H4zGnxEl6dMBGzX5gqnibqsqqqq7Hll5+w/59jgnl1VTVMGdu4sUJeTq+cio3Cpt0/Ntm1q6Wujndfm4YnPLwF850BEz932fXHfmzf+7NgTlNdDQtefgPjvX0E8/KioLQEwb/uafZuyNtTXsQbEyeJp4m6lIycbCzZuL7JXYX+xqZYNO3/YG9pLZiXF2lZ17Dhp+8Rm3JeMG87xApLZ8yEqVEvwTxRV/P9X39g26+7xdN4Y+IkvD3lRfG0XKiurcHX+37FnsMHxUt40tMbC16dBi11dfESUZdxMTMDq7ZvQUZOtmDeQEcXs196WW4/bOUXFeLTb7cj8lySYN7Y0AgfTp8BJxsmdqlrOx0Xg3U7v0ZRaalg/vknxuP/Jk6Rm5s0Yr8cOYRv9v+GiiphTc5x7p7wnzajU9X1YuJHmjxZvmUDElKF53V9HF2waNqb0NPWFszLo7TsLKz5ahsuZgprlgwfPAQr5syHkV5PwTxRV7Av5Cg+++5bwVxPHR28NfmFTrNz5kxCPIJ2fIWCkmLZnKqyCha88nqn+TsQtaXrBTexdNMXTWp0DTGzwLK3ZsGiDYs/tpf8wgJs/On7JgWoexsY4vP3P4RZBx1fIepIh8+cxqrgLeJpvD3lRUx9yq9THIk8fOY0Nvywq0ln3iljn8B7r00XzBF1BXX1dVj/w64m9fecbIbhw+kzYGx4/1bs8qCsvALf/P4r9h47IpjvbWCI1e8sgJXFAMG8vOryiZ+w+Fis/morJBV36gJoaWhg0RtvYoyruyC2M/jx4J/Y8vNPgjlNdTV8NHMuPO0cBPNEikpSUYFV27c0qdL/lJcP5r38mtzeVbiXe22NHeXsisVvzoSGWuc8a0z0oI5FnMWnO75CVXW1bE5DTQ3L3pqNEY7OgtjO4HRcDIJ2fIXisjLZnJqKCgJnz3tkBeaJ5MGGn77Dz38fEsx15tIFm3b/gN2HDwjmLPr0xZq578rN0XKi9nbl2lUs2/wlsq7fKaGiqa6G+S+/jqe8RwpiO4PL165i1fYtSMu6Jpif/cJUvDphomBOHnXpxM/673fit2N/C+bGunng3demQ0dTUzDfmeTkX8fK7Vtx/solwfxbU17AtImTBXNEiiY1Ix0frA9CQWmJbE5fVxcfvT2n02+1jk1JxkdbvkSJRCKb69VTH6vmvgubAQMFsUSKZt2ub5okP60tBmL1vHfRq6e+YL4zKa+swqffbsfx6AjB/NTxEzB36quCOSJFc6O4CB9t/hLnLgvfsy58bRqeG/ukYK6zCU9MwIptGwW7f1SUlRHw9hyMcnYVxBIpml+OHMKXP34nmBs2aDBWz1vYYYWb20pz5WGchw7D6ncWynXh5y6Z+CktL8fiLz9D4qVU2ZyKsjLee20a/EYoTkesX4/+jW2/7kZNba1sbrSzG5a+PQuqyiqCWCJF0Nw2cdfhtlg+c26nTuberbisDMu3bmxS+4c1vUhRlZaXY/GGz5u0T571/FS89rT832Frqd+PhyBo59eCuSFm5lj1zgLW9CKFdDo2Gmu+3oryyju1M0wMe2HNvHcxuL+ZILazKi6T4LNdXzc51jlt4mS8NeUFwRyRIigrr8CK4I1NutQq2vd8ctoVLNu4Hjfu6rLd28AQ69//sMO6Df6XLpf4Scu6hvc++0TQCn1An75YM29hh7Vxbk/p2Vl4b91awTflgL798Nn7H7LuDymU5rZVz3nxZbzi94xgTlF8ve9X7Ph9r2DO084BK2bP61SF5ojuJy07C++LXsMs+vTFJwveV8hkSHp2FhatD8L1gpuyOTVVVayaswDutnaCWKLObNOeH7D7kPA128fRBQFvz1bI17CTMVFYvX2LoBOvh509Vs6er5B/X+qa0rOzsOjzT3G9sEA2p62pgZWzFyhk50pJZSVWBm/C2YR42ZyaqipWzp4PDzt7Qaw86PZRwNJA8aSiOhUbhfc/+xRlFXdaqT7l5YO1C96DfiffcnYvetraGOfhjaTLF2XJruKyMhw5E4qhAwejl37n3R5PBAAVVVXwXx+EI2dDZXNqqqr49F1/PCWn3fjagoOVNWwHWyLqfCKqpbv6svKvIyw+Fu62dtBkZyDq5G6/Zpfe9ZrtZe+IzxctRk8dHUGsotDT1saEESORV3BT1tWo/tYtHAs/A6Xu3TF8sKX4EqJOpaKqCh98EYS/z9x5zYb0aNe8l19Djx49BPOKwszEFJ52DjiTEIdKaY2ybL5mkwIJjY/Fe+vWoqT8TjkCO0srbFz8EQb16y+IVRTKSkoY6+6J6poanL9yGbj9mh1xBt0f7wbbIfL1mt1lEj/f7P8N63Z+g1sNtwBp8cSlb83G9Gcno0f37uJwhaKqrIynfUZBQ1UNUecb20zW1NXhYOhJGOrqYbCZufgSok4hOz8Ps1cHCrr79NI3wJalyzF04CBBrCIyNjTEk54jEJ96AYXSmkal5RIcCQ+Fo/VQ6OsqZkKbFN+O3/ci6K7XbAB4xe8ZLJ0xS+Ffs3v06IFRzq7Q09JGeOKdu4ixKcm4fvNmpyxiTQRpPZ/ZqwORknZFNmegq4ftH63sEsXM9bS18YSHNxIvpso6dZaWS3D4zCkMHTgIvfQNxJcQdQq/HjmMVdu3CF6zn39iPFa/swDqKoq/o81l6HAY6xsgNC5GNhd3IRlXc3Pgae+Abt26CeI7SpdI/ARu3SQo4qyloYGNHwbAdZitIE7R2QwcBAdLa4TGR6Ouvh4AcCYhDmUV5XAfzi3k1LlczEzH7DUrBG3OrSwGYPOS5TA2MBTEKjJVFRWM9/JG3s0bSJfuEKitq0NIxBlYWwzoFG0yie4WtPNr/CQ6ArLkzZkKe2zzXizNLZq8Zl/JuoaU9CvwcXRGdwVPgJFiyczNwazVywXHGG0GDMSWpStgYtR1XqdUlZXxhKeX4DW7rr4eh0JPYWC//ujPjl/UyWz7dTe2/yYsdLz4zZl44+lnBXOKbmC//rC3tEJYfIzsNTszNwcJFy9gpLMLlORgN6NCJ36qa2uw6PNPcTouWjZnoKuHrcuWY2Bfxdxy9l96GxjAx8kZp2KiUVXTuNX0Qnoazl2+hBGOzgp/J5UUQ/T5c3g3aC0qq+8UhHzS0xvrFy2GqkrXK1zerVs3jHR2xb///osEaQHc+lu38PeZUJiZmMLctI/4EiK5tHTjesEREG1NDXz5wdIuu8ult4EBRrm4IjwpEZKKCgBAzo18xF1Iho+jC5SVlMSXEMmd5CuXMXftCpRK7hzbHOfuifWLlkBVRVkQ2xXcfs3u9vjjiLuQIpv/JzIcRno9FaawNSm+1V9tw95jR2RjNRUVbPhgGXycuuprtiFGOrsiOvkcysobf9/dKCpEeFICfBxdO/z3ncImfiQVFZj3ySpB5y6XocOx7r0PYGKoeAUhH4S2hiZGu7ohPDFBVu8o7+YNRJ9Pgo+TC1SUO/abkuh+QiLP4oMv1gm2k86Y9DwWvPqGIK4rcrCyhraGhqCTwonoSOhpacPS3EIQSyRPqqqrsSDoY4QnJcjmTI16YcuSjzC4f9c+jqylrgFfVw9EJ59DcVkpAOBmcTHOJMRhhKMT1FkYluTY2YR4vP/5J4KixpPGjMXSGbMEcV2R3RAr9Dc2wcnoSNlcWHwsuj3+OOyGWAliieRJbV0dFn+5DsejImRz2poa2LxkOWy6QKmF+9HS0MATHt5IzUhDnnSHY3FZGXrr68PKYoA4/JFSyMTPjeIizFmzAmlZ12Rz4719sHb+e1BXVRPEdlXqqmoY6+aJmJRzKCptfCNZWFqC0LhYeNo7QFONReZI/uw9dgQffx0sG6soK2PlOwswacxYQVxXZm0xEKZGRjgde2enY3hiPP7Fv3CwtBbEEsmD4jIJ5ny8Ainpd+p+ONkMw6bFATDQ1RPEdlWqysoY6+6BxEupuFHU2KihtFyC41ER8LSzh7aGpvgSog53KPQklm3+Eg0NDbK5Nyc9h3deelUQ15WZm/aBp509ziTEoVqaHIu7kILyygq4sQwDyaHyyiq8u24NYlKSZXNGej2xLWAFzE37CmK7KqUePTDeawSKy0pxMTMDL433w7SJk8Vhj5zCJX6u5uZg9qrlsgwbpMWlPpg2QxBHgIqyEnzdPJB0+SJuFBUCACQV5QiNjYGPsys0mCQjObLt1z0I/nWPbKyloYGty1bA0cpGEEfAgL79MLBvP/wTGS6bS0i9gMrqqi5X24zkW35RId5asQxZ1/Nkc094eOPTd9+Xi/Pw8kSpRw+MdfNETV0tkqXFcSurqxEScRZuw+2gp60tvoSow/x65DCCdn4jG6upquLj+e9j4qgxgjgC9HX1MNrVHadjY1BRVQkASElPQ+6NG132yAzJp/LKKsz7ZCVS0tNkc6a9emPr0uVd/kRNczzsHDB04CBMHjNOvNQhFCrxk5adhdlrlqNYcqeN3PRnp2DOiy8L4ugOpR494OvmgcvXMpGdnw9IW22ejo3BSGcX7pAiubDhp+/w06G/ZOOeOjrYHrCStWvuo7+xCeyGWOJEdCRuSe+2JqddYfKH5MbN4iLMWh2I/MIC2dxk33FY8uZMQRzd0b1bN7gOs0VldZUs+VNTV4fj0eFM/pDc+O3Y3/jih12ysZaGBrYsDYSdnLU2licaqmoY4eSME1ERshqcadnXcC0vF6OcXcXhRI9cRVVj0udiZoZsblC//tiyNJC7c+/D1Eh+EmIKk/hJz87COx8Hoqy8sfghALz76jS8NmGiII6a6t6tG8a5eyErLw8Z0g4DFVWVCIuLg4+TM5M/1KE27fkBew4flI37GZsgOGAlu1W1gLGBIVyH2eJkdARqpR0GktOuoKauFs42w8ThRI/MjeIizFol7PAzfdIUzOURkBZxHWaL8qpKWVvsWiZ/SE7sPXYE67/fKRvr6+oimDdqWkRDTQ0+Ts44GROFyurG5E9GTjZy8vPh4+QiDid6ZG7v9Lk76TN04GBsXvwRtDQ0BLEkvxQi8ZORk405oqTP0hkz8exo1v14ECOdXVEiKUNqRjoAoLyygskf6lCbf/4Ru+9q69y3tzG2LVsBfV1dQRzdm76uLrzsHXE6LlpWXPP85UtM/lCHuVlchNmrAwVJnxmTnsebk54TxNH9uQ2zFXTyu538cbe1h64Wkz/06O0LOYrPv98hG/fU0cG2ZYHo29tYEEf3pqmuDh8nF5xNiIeksvFzTXp2FvJu3uiy3Q2pYzWX9HEZOhyfv/9hl+yk25l1+sTP1bwczFmzAqXSlmkA8MH0t/D0yNGCOGoZD1t7NPyvAYkXG7uhlVdW8NgXdYjNP/+Inw7eOd5latQL25atQE8dHUEc/TcdLS2McnbFmfh4lEvfSDL5Qx3hZnERZop2+rz+zCTMmPK8II5axsHKGlpq6og819jJr7auDiejI+FhZw8dTS1xOFG72f/PMXz23beysa6WFrYuDUTf3iaCOPpvmmrq8HXzQERSAkqk5SvSsq4x+UOPXEVVFeauXYFLVzNlc2Nc3RG00B/du3cXxJL869SJn6u5OZi9JlD2SxEAFr3xJp4d7SuIowfjaGWDxwDEpzbeRbx97GuUsyvU2DaWHoHg337GDwf+kI2NDY2wdRnPED8MDTV1jHZxQ1h8HCQVjYny85cv4VZDAxytWSCb2l9hSQlmrwlE3s0bsrlX/J7B7BemCuLowVgPGAhDvZ44Ex8LAKiprcWJqAgmf+iR+f14CNbtulPIWVuzsaaPmYmpII5aTlVZGWPdvBCfmoKCkmJAmvy5XliAEQ5O4nCiNldVU4O5a4U7fca5e2HlnPmCOOo8Om3iJzs/D7NWLxckfRa88jqeG/ukII5ax97SGvW36pF06SJw+9hXQhxGO7tBjdv6qB3t+H0vdvy+VzY20NXDtoAV6NVTXxBHD05NRQUjnVxwOi4G5ZWNnUOSLqWi/tYtOFkPFYcTtZnyyirMWr0c2fnXZXMvPPEU5k1lTZ+2MLi/GXpq6+BsYjwgTf6cjo3GKBc3aKhxty61n38iw7H6q62ysbqqGrYuDYRFH7Z1fljKSj0wysUNMcnnUFhaAgC4cu0qSiRl8LC1F4cTtamF6z7GucuXZOMxru5M+nRynTLxU1Railmrlst+CQLA3Kmv4qUn/QRx9HCcrIcKOodIKioQFi/d+cPkD7WDA6dOYMNP38nGhno9ERywAsYGhoI4aj01VdXG5M9dbWNvJ3jtLa1F0UQPr6a2FvM+WYW0rGuyuUljxuK916YL4ujhWJpbQFtDAxFJjce+qmpqEJGUgHHunlBWUhKHEz20mORz8F8fJBtrqKlhy9LlGNSvvyCOWk+pRw+McXVH5LlEFJeVAgBSM9Lx+GOPwc7SShxO1CaWbfxCdiMBAEY4OOHj+e8JYqjz6XSJH0llJeasCUTOjcbW4wAw6/mX8IrfM4I4ahuuw2whqajAhfQ0AICkohwRSQnw5RtJamOnY6OxfOtG2bixKOQKmMhRG0RFoa6qhhGOTjgZfadzSELqBSj36IHhg4eIw4keyqIvgpAgPToMABNHjYH/tBmCGGob1hYDoaGqhqjzSQCAsopyJKRegK+7B3qwHgO1oYuZ6Xg3aC1uNdwCpDcVNn4YAEtzC3EoPSSlHj0wytkNkecSUCwpAwDEp6bAUK8nBvc3E4cTPZR1u77B4bDTsrGXvSM+XegviKHOqVMlfurq67Dg048FBaamTZyM6c9OEcRR23Ibbifo9lVaLkHSpYsY5+GJbt26icOJHlhM8jm899knsrGOpia2f7QSfXr1FsRR29FQU8cIByf8ExmO6tpaAEBMynn06tkTg/hGktrIso1fIExaewYA/EaMwuI33xbEUNuyGTgIyj16ICblPACgoKQYSZcuYoyrO4txUpu4dDUT8z5ZKbtxoKqsgo0fBsB6wEBxKLURFWUljHR2xdnEeJSWN5a5OBMfCxNDIwzs208cTtQqn3+/A/tCjsrG7rZ2+Oy9DwUx1Hl1qsTP4g2fy97IAMBrTz+Lmc+9KIih9uFha4/8ggJcyboKSDuzpGdnwdfNQxxK9EBiU87j/c+D0PC/BkDaCWRbwAr0YyeQdqepriFL/tRIkz9h8bEYYmbO9rv00JZt+gLHoyNk4/GeI7Ds7dmCGGofwwcPweN4DPGpKQCA/KJCnLtyCaNd3Jj8oYeSlnUNcz9egfLKKgCAspISvvxgKYYNGiwOpTamqqyMUc5uOJMQizJpk4bTsdHo06sXBvRh8ocezpc/foffjv4tGzvZDMOX/ksFMdS5dZrEz5qvg/FP5FnZ+MUnn8I7L70iiKH25e3ohAvpV2TH7LKu5yG/oADejuwuQK0Tm5KM9z//FHX1dYD0CNKWZYEwN+0jDqV2oqWhCUfroTh69oxsy/7p2Bg4WlvDiAW1qZWWbfoCx6PuJH287R2xau67ghhqX3aWViirKJcd1c4vLMC5K5fg6+bO3brUKpnSbroSaXMAAAh61x9ONmwO8KioqijDx8kZJ6IiZDuuTsVEo7+xCd87UasF//Yzfjr0l2w8qF9/fPnBUh4RVjCdIvGz7dc9+O3YnQzkOHdPfPh/3CreEbwdnRB1/q7uAllXUVdfzxd9emAX0tOwIGgNausakz4AsOGDpbC2GCCIo/anr6MLS3MLHDkbCgBo+F8DjkdFwMveEbpa2uJwovsK2vm1oD7A0IGD8dn7HzDZ0AHch9shPSsLV/NyAWnyJ4O7dakVrhcWYPaaQEE33YC3ZmOUi5sgjtqfuqoqXIfZ4mh4GOrq6wEAJ6MjYTNgEExZF5Ee0K9HDiP4tz2ysbGhEYIDVkFTnR0hFY3cJ372hRzFtl93y8auw4bjkwWLBDH06PTo3h0+0nbQkooKAMC5yxehpa7Bs93UYlnX8zDn4xWyu1UA8Mm7i+A6zFYQR4+OiZER+vTqhVMx0QCA+lu32A6aHtiO/Xvx0+EDsrGZiSk2LV7OTpAdaIyrO+JSkpFfVAgAuHY9D4WlJfC0cxCHEjWrtLwcc9asQH5hgWxu1vMvYcrYJwVx9OjoaGnBbogljoaflR2VPx0bDWebYTDQ0xOHEzXrWMRZrP12u2yso6mJbQGB/B5SUHKd+DkeFYHVX22VjYeYWWC9/2JuO+tgKsrK8LZ3REjEWVlR2Mhziejb2xgWffqKw4kECkqKMWd1IIqkbUkBwH/aDDzh4SWIo0dvQJ9+UFNRQfT5cwCA6poahCcmwNfNAyrKyuJwIoG/Tp3Ahp++k42N9Hpia8AK6GppCeLo0Rvp7ILwxHhZR6BLmRkAAHtLa1EkkVBNbS3mfbIK6dlZsrnJvuMw64Wpgjh69Ix66mNgv34IiWgshXGroQGnYqMwwsEJ2pqa4nAigZjkc/jgi3WysaqyCjYt/ohHBhWY3CZ+4i401v64zdSoF7YuXcE7z3JCQ00dLkOH4+jZMNTfaqwLciomCsMGDoaJkZE4nAgAUFtXhzkfr0BW/nXZ3BsTJ+EVv2cEcdRxhg4cjPLKCqRI64JIKsoRdyEF4zw8mXSne4o+fw5LN62XjTXU1LB1aSBMDPl6IA+UevSAj5MLTkRHoqKqsShvQuoF6Glps/023df7n3+KxEupsvFIJxcEvD1HEEMdp29vY/Tq2VPWPbG2rg5hcTEY7eYBdRVVcTgRAOBiZjoWBH2MWw2Nu8UA4PP3P8TwwUMEcaRY5DLxc/naVSz4dLUsoaCnrY3ggJXQ19UVh1IH0tPWwdCBgwS1HE7HRsNl2DDo63KLIDW1bNMXSEi9IBtP8BmFd195QxBDHc9tuB2yr+chPScbAFBYWoJL1zK5K4uadS0vF/M/XYP6W421JpSVlLDxg2UY1N9MHEodSFVFBZ629jgafkZWWy08MR4WffrCzMRUHE6ElcGbcSq28fgvpAXD1y9aIoihjjeovxm6Pf444i40dvGrrK5GZFIifN09oaykJA6nLi7nRj7mrFkhuwkAAIGz52EEm/UoPLlL/OTcyMfs1ctRLv1mVFNRwZZlK9haWE71NjCEuWkfnJB2b7nVcAunYqPg4+gMLQ1uM6U7gn/7GX+e/Ec29rSzx6p3FghiSH6MdHZF8pXLyL15A5D+bs67eQMjHJ3FodSFSSoqMHvNChTfdXTzkwXvw9GaBf/lkZaGJhytbHA0/IzsTu/xqAg4Wlmjl76BOJy6sG2/7sa+kKOy8YC+/bDxw2VQ6tFDEEfywW6IFYpKS3BReoyztFyCpEsXMc7Dk4X1SaasvAKzVi9HQUmxbG7+y69j4qgxgjhSTHKV+CkuK8Os1YEoLGnsGAUAX36wFNYWLBosz8xMTKGnpY3wxHjg9jbT+DiMdfOEKgt6EoBDoSexafcPsrHNgIH47P3F6M43I3LN29EZkUkJsnpMaVnXoNyjB7cCEwCgrr4OC4I+Rnr2NdncsrdmYYyruyCO5IuBrp60i1+YbC4sLgajXFyhpa4hiKWu6VDYKcFrdm8DQ2xbtgLavKEn1zztHJCWdQ3XpF38bhYXIet6Hkaz8xpJzf90FdKy7rxmv+z3NKY/O0UQQ4pLbhI/ldVVmLt2leyXFQCsnvsuPGztBXEknyzNLdDwvwYkXmw8B15RVYWo80kY6+7Ju0Nd3JmEeARs/lI27m9iik1LlkNdlWfP5d3tLn6nYqJRXtnYxS8m5TyGmFmgb+/e4nDqYhZv+BwxKedl47emvIDnx40XxJB8MjXqBRNDI5yWHuOpra9H9PnzeNLTi6/ZXVzSpYvwXx8kG+toamLbshUw6qkviCP55O3giISLF3BD2sUvMzcHj+Mx2FlaiUOpi1n11VaciY+TjZ/w8Ib/tDcFMaTY5Cbx895na5F85bJs/O4rb2CCzyhBDMk3RysbXC8swJVrVwEAJZIypGakY7zXCHEodRHJVy7j/c8/QYP0SIGBrh62LQuEnra2OJTklKqyMjzt7BEScRY10i5+Z+Jj4W5rh546OuJw6iI+/iZY1kkGACaOGoN3XnpVEEPybWDfflBRUkJMcmPyrrRcgstZV1nLqwu7XnAT76xdIasB1djlJwDmpuzY2ll069YNPk4uOJsQhxKJBAAQn5oCM1NTmJuwW1NX9ePBP7H70AHZ2HW4LdbOf08QQ4pPLhI/SzZ8jvDEBNl44qgxePu5FwUx1DmMcHDCxcx0ZEu7NuUV3ESJpIw7t7qgq7k5mLt2JapqagBpl59tywJhYtRLHEpyTlNdA042w3DkbChuNTTcqeXl5MyjIV3QV3t/wS9HDsvGPo4uWD5rriCGOodhg4ZAUlGBC9Iufjk38nG9sAAjHFjks6spK6/ArDWBKCi+U/ujscuPpSCO5J9Sjx7wcXTBiagIVFQ31kw9Ex8PBytr7tzqgv4+E4rPdn0rGw8xs8D6RYvZqbUL6vDEz2fffSvoCuVoPRRr5i0UxFDn4u3ghNiUZFnhsNSMdLaM7WJuFhdhzpoVKJaUAezyoxB66ujAZsBA/H0mFABQU1uLswkJ8HXzgKqysjicFNT+f45hy88/ycZ2llb4wp9dfjozt+F2yMrLQ4a0i9+Va1dxq6EBjtY24lBSUNW1NZi7dhUycrJkc+zy07mpqajA3dYOxyIau/g1/K8Bp2Ki4GXvCF0tLXE4KaiIpEQs2fi5bGxq1AtblgZCU01dEEddQ4cmfr77cz9+OPCnbGxq1AsbPgxg68FOrru0LkhoXAzKKsoBactYK/MB6NOLdUEUnaSyEnM+XiHrBgUAa+a+C+ehwwRx1PkYGxqhv7EJTkZHAgDKKysQk3wO4zy8eOeoCzgRHYlV27fIxn16GWPzko9YE0YBjHR2xbnLl5An/b2ddCkVuppasLIYIA4lBbTo80+RdKmxRiMAzH3pVTw72lcQQ52PtqYmhg4chEOhpwAAdfX1OBUbhdGu7tBQVROHk4JJzUjHws/Wyjo46mlrY9uyFTDQ1ROHUhfxWH1d1b/iyUch50Y+nntvnmysq6WFbUsDYWxoKIijzutGURHeWhkgO2OsoqyEDf5LufNHwc35eCXO31Wv660pz+OVp54WxFDntjfkKDbe1fHFfogVvvyAuz4UWfzFC1jw6ceysZqKCr4JXANTIyNBHHVeVTW1eGftSkHHl8CZ72CUi6sgjhTLyu1b8E9khGz8whNPYs4LLwtiqHP7+0wY1n67XTbu26s3ggNWQEONyR9FlZ1/HTNXr5A15lBTUcaWJcth0Yf1ujpKjx4dv7GlwxI/AHDkzGmsCN4CFSUlBLz5JvqxS4zCybpxAyu2f4Xa+sZCgeqqaljx9gz04hljhbR9/36EJdyp1+U+bDhmP8c2kYpoz7GjOBR2RjZ2GzoUc55/XhBDiiErPx+rvvkG1dLi3gCwZPo0WJmZC+Ko8yurqETgV9tRUFIim1s8bRqszflvrYh+OHwIRyMad3CCr9kKbfeRIzh89k5B/gGmfbBk2jQoKXHHpqIpq6jA8u3bUVhaKptb+n/TYclyCx1GQ10TRobG4ulHrkMTP3V1tTgdE4Ue3XvAdvBg8TIpiKjk8wgMvnM8wFBPD+sX+rMjkILZ+88xfPvHftnY0swc69/zF8SQYgncvhVR58/Jxs+OGo23Jj0niKHO7UZRIRZ8FoTS8sadmwCw8JXX4OvqLogjxZGdn48Fn32KqppqQNrZ77N334e5KTsCKRK+Znc9K7dvQ8T5JNnYxWYoAmfOEcRQ51ZdW4uFn32Kq9fzZHN8zZYPOjodf8SuQxM/1HX8cOAPbP1lt2xsZmKK7R+thqY6t5kqgrD4WPivD5KN+xmb4Ovla/jvq+Cqamrw1oplSM++UxB0yZszMcFnlCCOOqfK6ipMC1iC7Pw7byDfmvICpk2cLIgjxRN1PgkLPl0jG/fU0cHO1Z/CQEdXEEedk/g1u7e+Ab5duZZFfxVcXX0d3vl4Fc5fuSSbm+AzCkvenCmIo87r/c8/wdmEeNn4pfF+mDf1NUEMdV0dWtyZuo7hg4cg7+YNWe2A0nIJEi+lYpyHJ7p16yYOp04k+cplzPtklWxsoKuHrQEroKetLYgjxdOje3e42drhWPgZ1EiPAYXFx8LB0hq9DQzE4dTJLFr/KVIzGtt8A8CkMWMx58VXBDGkmEyNekFTTQ2R5xp3B1TX1CD+Qgqe9ByB7nzN7tTSsrOw4NM1aPhfY8FXNRUVbF6yHMYGrLGp6Lp16wYfJ1ecSYiV7eK8fDUTOhqaLOSuADbt/kHQKdvDzh4Bb3NHF93BxA89MiMcnXExMx3Z+dcBacvvq7m5GMPth53W1dwczF27ErX19QAALXV1bF0aCFOjXuJQUlCaaupwthmGo+FhqL91CwAQFh+Dkc6u0NLQEIdTJ/H59zsQEnGnHsRoZze+gexibAYMgqSiAhfSG5N/RaWlyLmRj1HOLPbcWRWXlWHO6kBIpAVfAWDdex9g6MBBgjhSXMpKPTDC0RmnYqJQUVUFAIhISsDwQYNhYshi/Z3V4dBT2PLzT7KxpbkFPnv/Q3ZcJQEmfuiR8nZwQnTyORRKC0dezctFw/8a4GhlIw4lOXezuAizVgfKurYBwOYlyzGIxeO6nJ46OrAZMFB2p6m2vh5nE+Ph6+oBVRUVcTjJuf3/HMM3+36VjR2sbPDZ+x8KYqhrcBtuh6y8PGTkZAMAMnKyUVdfDyeboeJQknPVtTWY/8kaXLueK5tbMWc+Rjg4CeJI8ampqsJtuB2OnA1FnfTGXVh8LDxs7blbuxOKTErEkk3rZWPTXr2xZclyaKqpC+KImPihR6p79+7wcXRFWEIsysrLAQCJF1PRz9gYFqZsMdhZSCorMefjFci7eUM2t+69D+BozQ8DXZWxgSH6G5vgZHRjh5jyykrEpJzHOA8v3nHqRE7FRmHlXcX4B/brjw0fLEWPHuz80lWNdHZF0qVU5BXcBACcu3wRuppaPBrSyfiv/xSJl1Jl43dfnYanWY+ty9LW1ISDlTWOhp9BQ0MD6urrcSo2EqNd3dnmvRNJzUjHws/W4lZD49HNnjo6CF62Avq6rMdGTTHxQ4+cirISvByc8E9kOKpqagAAZxMS4Dx0KAz1eorDSc7U1ddhwacf4/LVTNnc0hkzMcbVQxBHXY+5aR/oamohPCkBAFBcVooL6WkY7zVCHEpyKPHiBbwbtFY2NjY0wtalgTyyR/BxckHUuUQUSdsDhyclwMzElJ2+OomVwZtxKiZaNn51wkS88cwkQQx1PYZ6PTG4vzmOhocB0o5QEUkJGOfuCWUlJXE4yZmc/OuYvSYQldWNHRg11NSwdWkg+vTqLQ4lApj4oY6ioaoG9+F2OBoehrr6ejT8rwGnYqLg7eAEHU12lZBnizd8jpiU87Lxy35P4xW/ZwQx1HVZWQzArYYGJEnvLOcV3ERmTjZGu7iJQ0mOpGdnYd4nq1F/S1qvS0MDwQErYNRTXxxKXVCP7t0xwtEFp2KiUS6tD3MiOpJ1QTqBTXt+wO/HQ2Tjp7x88N7r0wUx1HX16dULfXr1kiUGyyrKEZ+agic9vdh8RY4Vl5Vh1ppAFJU2ls4AgE2LP8IQM3NBHNHdmPihDqOjpQW7IZY4FnEWDQ0NqK2vx5n4OPi6eUCNdUHk0tpvtwsKvnraOWDZW7MFMUSO1jbILyzElWtXAQCZuTmQVFTAbbidOJTkwPXCAsxa/REkFY0f6G93+TEz4W4OukNVWRkednYIiTgr6+J3MiYK7rb26KmjIw4nObD78AF8u/832djTzh6r574riCEa0KcfVJWUEZ18DgBQUFKMy9cyMc7dSxxKcqCyugrvfLwSWdfzZHOfvLsILkOHCeKIxJj4oQ5l1FMfA/r2R0jEGQBARXUVIs8lYpy7F5RYU0KufLv/N+z5+6BsPKBPX6z3X8L6LdQsbwcnXMrMQJa0i9+F9DSoKClh2KAh4lDqQJKKCsxevQI3igplc5+99yGGD+a/EzWlpa4h6OJ3q6EBp2OjMNLJBZrqPBIoT46GhyFox9eysbXFQHz23ofoztdsasawQYNRUVWFlLQrAIDs/HzkFxTA25HFv+XNe5+tRbL03wkAFr85E+PcPQUxRM1h4oc6XN/evWGsb4DQuBgAQIlEgqRLqZgwgkUH5cVfJ49j4+7vZeNePfWxddkK1v6g+xrh6IyY5PMoKCkGAMQkn4exoSEG9u0vDqUOUFdfh7mfrEJ69jXZnP+0GRjj6i6II7pbTx0dDB04SNbFr6a2FmcTEjDO3QsqyqwLIg+iz5/Dh19+Jhv37W2MLUuWQ51Fe+k+XIfZIif/OtKzswAAV7Kuov7WLTixcYfcWLpxPc4mxsvGb015AS8+8ZQghuhemPghuTCwX38ode+O2JRkAMCNoiKkXbuKMW4sGNzRwuJjsXzrRtlYS0MDW5cForeBgSCOSKx7t24Y6eyG0PgYWRe/0NgY2AwYBFOjXuJwesT8vwhCfOoF2fi5sU9i+rOTBTFEzeltYAhz0z44ERUBACivrEB0chK7+MmBy9euYv6nq2Vdfgx09bB1WSCP41GL+Di5IPnKZeRKu7YmXboIPS1tWJpbiEPpEfv8+x04FHpKNp40ZizmvPiKIIbofpj4IbkxfLAlJBUVuJCeBgC4dj0PBSXF8LJ3FIfSI3L+yiW8/3kQGv7X+AZSVVkFmxYHYEDffuJQomYpK/XACEdnnIiKkHWeOB0bDWebYTDQ0xOH0yOyevtWnIiOlI097eyxfNZcQQzR/ZiZmKKnto7s7nNRWSkuZWbgCU9vcSg9Irk38zFnTSAqqqoAAFrq6ti6NJCJdnogI5ycEZ18DoUljYWDwxPjYWZqCnPWfesw3//1B77/63fZeLSLGwLeniOIIfovTPyQXHEbbodrebnIyMkGAFy6monScgncbe3FodTO0rOzMHftKlTX1gAAlJWU8OUHS2EzcJA4lOi+1FVV4TbcDkfONnbxu9XQgBPREXAZOhz6OrricGpnX/74HX4/cafLj/PQYVi/aIkghqglLM0t8C/+RYJ051juzRvcrdtBbhYXYc6albKjtQCwZVkgBvUzE8QR/ZfbXfxOx8XIiv6fiIrkbt0OsvfYEUG5BUfrofjsvQ8EMUQtwcQPyZ1Rzq5IupSKvIKbAIDUjHRUVlfBdZitOJTaydXcHMxZEwhJZSUAQEVZGV/6L4HtEEtxKFGL6GhqwcHKGscizuJWQwPq6utxIioCbrb20NPWFodTO9n2627sPnRANnYeOgzrFvqzbS+1moOlNW4WF+Hy1UxAulv3Wl4uRjm7ikOpnRSWlGDW6kDkFTQezwGAz99fDAcra0EcUUupKCvD294R/0SGo7qm8Qbg0bNhsB1sCWNDQ3E4tZPfj4fgs+++lY0H9euPDR8u45FaahUmfkgu+Ti5IOpcIopKSwEAyWlXUFNXC2cbtipsb1nX8zB7zXKUSBprsij1UJImfazEoUQPxFCvJwb3N8fR8DAAQG19PU5Eh8PDzgG6WlricGpjX+39Bd/9eWer+LBBg/GF/xIo9WBBXno4XvaOSMu6hmt5uQCAjJxs5N64AR8nZ3EotbGi0lLMWhOI3Bv5srmAmXOYeKOHpqGmDtdhtjgWfgZ19fUAgJMxkbAdYole+qzz2N7+OnUCn+74SjY2NeqFLUsDoamuLogjaikmfkgu3d5meiomGuWVjdtMz1++xO4C7Swn/zpmrQlEcVmZbG7tgvfgMnS4II6otfr06oU+vXrhVEw0AKC2rg4noiPgYWcPHU0mf9rLd3/uxzf7f5ONLfr0xabFH0FVRUUQR9Ra3g6OiE9NwY2iIgBAWvY15N28gRGOTP60lxKJBHPWrEDW9TzZ3NyXXsWkMWMFcUStpaulDdvBljh4+iQA4FZDA45HRcBuiBV66euLw6mNHAo7hY+/3iYb62lrYduyFayNSA+FiR+SW6rKyvC0s8eJ6EhUSbeZJl26iMfxGOwsufukrV0vuIm3VgYIkj5L3pwJX9ZqoDY2oE8/qCmrIDr5HCBtB308MhwjHJ2graEpDqeH9OPBP7Ht1z2ycW8DQ2xbtgLamnyuqe1069YNo53dcDYxHiWSxteRtKxruFlcxCYN7aC0vByz1wTial6ObO7FJ5/CjMnPC+KIHpZRT30M6m+GfyLOAnclfxxtbGCo11McTg/paPgZrAzeLBurq6phy5Ll6GdsIogjelBM/JBc01TXgLeDE05ER8jOGMenpkCpe3cMH8x6M23lRnERZq8OFBSFnP3CVDw37klBHFFbGTpoMJS6d0dsSjIAoKauDieiI+Ht4AQtDQ1xOLXSL0cOYdPuH2RjfV1dbF26HEY9eaeW2l6PHj3g4+SK8MR4lJZLAACXr2aiRFIGDzZpaDOSigq88/EKWSMMAJg4agzee/3/BHFEbaVfb2MYGxoiNDYGAHCr4RaOR0XCeehQ6OtyF0pbOR4dgY82b5CN1VRVsfHDZRhiZi6II2oNJn5I7mlpNCZ//ok8i5raWgBAbEoyNNXUYDOAHaYe1s3iIsxc+RHyCwtkc7Oen4rXnp4oiCNqa8MHW+IxAPHSjkDVNTU4ER2BUc6u0FDjGfaHtf+fY1j//U7ZuKeODoIDVrIrC7UrVRVljHZxw+nYaEikR7VTM9KZ/GkjFVVVmLV6OdKzs2RzfiNG4cP/ewuPPfaYIJaoLQ3s2x+9evbEmYQ4AED9rXocj4qAB5s0tImw+Fgs3fgF/v33XwCAmooKNi4OgLXFQHEoUasw8UOdgpaGBrzsHXEyJlK28yfyXBK01DVgPYC/EFursKQEs9cEyjqoAcCMSc/jjYmTBHFE7cXe0hr//vsvEi7eSf6ExsbAx9kVGqpq4nBqoT9O/IOgnV/Lxj11dLBtWSD69OotiCNqD6rKjcmfMwlxKKtobBSQmpGOqppq1ox7CFXV1Zj36WpZBzUAeNpnFJbMmMmkDz0Sg/qbwUCvJ87ExwIA6urr8U9UONyG2zH58xDC4mPhvz6ISR9qV0z8UKehrakJD1v7xmNf0p0/kecSoaelDUtzC3E4/Yei0lLM+XgFsvOvy+amPzsFb05+ThBH1N4crITJn4qqKpyMioSnnQO0WPPngf118jg+uasTiJ62FrYuDUTf3qwPQI+OmooKRjm7Iiw+DhJp8if5ymVUVFXBdZitOJz+Q3llFd4NWoOU9DTZ3NM+o7D4zZmCOKL2Nri/GQzvSv40Nmlg8qe1jkdFYPGGz2VjNRUVbPhgGU81UJtj4oc6FR1NLXjaOeB4VITs2Fd4Yjx69eyJQf3NxOF0D/mFBXh75UfIvXlDNvfa0xPx9nMvCuKIHhUHK2vU36pH0qWLAIDK6mocizjDN5IP6Pu//sAXP+6SjXW1GjuBsCgkdYTbyZ/QuBjZsa+UtCvIysvDCCcX7lJpoeIyCWauCsCVa1dlc34jRmHxm2/zOaQOMbi/GXr17Imwu5I/R8LD4GQ9lJ2nHsBfJ49j1fYtsvHtnT5M+lB7YOKHOp3mkj9h8bHQ19Fl8bMWSM/Owuw1gSgovlPI+fVnJmHW8y8J4ogeNSfrobjV0ICkS6mA9I3k0fAzGOHoxFbvLbBx9/fY+cc+2ZhJH5IHaioqGOnsgrCEOEgqGpM/GTnZyMjOxhhXd3E4ieQXFmD2mkDB7ly/EaOwlMe7qIMN6m8GPS1thCfGAwDqb93CsYgzsDS3YC25Fth77AiCdn0jG6sqq+DLD5Zi6EAmfah9MPFDnZKOppbs2Nft5M/ZhDhU19SwfsB9XMzMgP/nn6KgpEQ2N+v5l/B/k3i8i+SDo7WNIPlTf6seh0JPw8rCAiaGRuJwktq0+wfsOXxQNtbVajze1d/EVBBH1BHUVVUx0skFoXGxKJfu/Lmal4ukS6nwcXJBj+7dxZeQNEE2e00g8gsLZXPjvX2w7K1ZgjiijmJpbiFI/txqaEDkuUSY9uqF/sZ8/bmXTXt+wFd7f5GNVZVV8IX/EgwfPEQQR9SWmPihTktHqzH5czLmTs2f81cu42JmOsa6e4rDu7zYlPNY8OnHKJXWWgCAJW/OxPPjxgviiDqaOPlzq+EW/j4TCjNTU5ib9BGHd3nLNn6Bv04dl42Z9CF5pK6qCh8nZ4TFxcmSP3kFNxGTfA4jnd2grKQkvqRLS75yGXM/WYlSyZ3X7PHePgh4a7YgjqijiZM/NXV1OB4ZwTIM97Dm62DsCzkqG6soK+ML/yWwHWwpiCNqa0z8UKemo6WFEY7OCIuPRUVVFQAgO/86os4nYaSTK5SVeogv6ZJiks9h3iercavhlmzuk3cXMUFGcsvR2gZK3bsjNiVZNhd9/hz0tXUwsF9/QWxXVVVTgxVbN+F4dIRsTldLC1uWBsKMSR+SQ+qqahjp7IKIpESUlksAaXfJpEsX4TJsONTZyQ+Q/q77cMNnKK+slM097TMKS2dwpw/JJ0tzCxjo6MpavUNahoENWIQ+2fEVDtx1o0ZTXQ0b/Jdh2CDu9KH2x8QPdXpaGhrwdfVA9PkkFEvKAAA3i4twNjEOIxycoaaqKr6kS/nx4J9YGXyncJy6qho2fLCUXVVI7g0fbAkjvTvFI+vq6xEaFwMNVTXYdPEz8DeKizDv45WIS02RzfU2MERwwAr07W0siCWSJ+qqqhjr7omE1AsoKGmsNXezuAjHwsMwfLAlDPV6ii/pUn48+CdWbt+C2ro62dxrTz+Ld1+dJogjkjdDzMxhZmqKE1GRsrnwxHjcLC6Cl72jILarqa6twfuff4ITUXdu1Bjo6GLrshXcFUWPDBM/pBDUVFQwzsMTl65myjpVlUgkiLuQDAcra2hrds2W0Ku3b8VPhw/IxnrajbsBrC0GCOKI5NXg/mYYYmaOM/Fxsh1rUeeToNS9O4Z30W3RV3NzMCNwKfIKCmRzg/r1x9alK2DYs2t/aKbOQVlJCWPdPXH5WiZybuQDAKpra3Hg1AlYmQ9An169xZd0CV/8uAu7/tgvmHv3lTfwxjOTBHNE8srcpA9sBw/B6dho1N9qfM2+fDUTcRdS4OftIw7vEkrLy/HR5i8Rdf6cbM7MxBRbAlawCDY9Ukz8kMJQ6tEDT3h6o6qmGslXLgMAispKceRsKKzMLWDchQrDSiorEbD5S/wTFS6b621giGB2+KFOqG9vY3jYOyA8IQ6V1dUAgNiUZMRdSGk8HqLSdXb1HYs4i3c+Xomau3YDeNo54LP3PoSWhoYglkiede/eHeM8vFBdW4Pz0tdsADgWfgb/4l84WFoL4hWZpLISC9etxT+Rd16z1VRV8fH89/Gkl7cglkjeGRsawdPOARFJCbIyDPmFBTh6Ngyuw4Z3qZuxsSnJmLt2Ja5kXZPNedjZ44tFS6CrxW6l9Ggx8UMKx2XocPQ2MEBoXAwgPR7y95lQSCoq4DbcThyucK7m5WDW6kCkpF+RzXE3AHV2etraeMJzBJLTLuNGUWOHm/zCAhwOOwUHKxsY6OqJL1E4wb/9jC9/2CWYe2PiJCx+cyZ69GA9M+qcXIYOh6mREU7HRsvmElIv4FpeLkY5uwpiFVFhSQn+b/kSXLl2VTbX28AQW5csx7BBgwWxRJ2FnrY2nvAYgZSMK8gvbNydKqms6FI3Y3cfPoDAbZtkDWgA4PVnJmEJX7OpgzDxQwppUL/+GDpwEE7HxsiOh1xIT0NEUgK87J2gqqIsvkQhRJ5LwpIvP8eN4iLZnPPQYfhi0RLuBqBOT0VZGX4jRqKotAQXMzMAALV1dfjz5HH873//g4OVjfgShSCprMQn336FfSFHZHMqysoInDMPz/k+KYgl6owG9O0HTzt7nE2MR1VNDSBtZX4qJgqO1jYKu0Pgn8hwzA9ag5KyxvqEAOBkMwybFn8EI96ooU5ORVkJT3n7oERShtSMdEB6M/ZsQhwee+wxhS1oXFRaig++CMIfJ/6Rzd1+zX5+LF+zqeM8Vl9X9a94kkhRpGakY0HQGkgqGlvHAoChXk9sWhygcAVQN/z0HX7++5Bg7sUnn8L8l18XzBEpgv3/HMO6Xd8I5lyH2+Kjt99RqO3T569cwrJNX+LmXclcQ72e+Oy9D9jdjBROYUkJ/L8Ikn1IhPQD04o58+GtYMVhP/vuW0FLZ/A1mxTYnyf+wSc7vhLMuQ4bjuWz5kFHgRK7FzMz8G7QGpSWl8vm+JpN8oKJH1J4+UWFCNj8pazuz21Tn5qAtya/AGUlJcF8ZxOemIDVX21BiaSxNe5tATPnYLznCMEckSJJvJSKD79ch7LyO4ldXS0tBM6aB+ehwwSxndHX+3/FvpAjgr+fg5UNVs99V6HeKBOJBe38Gr8fDxHMPe0zCu+9Ph1KPTr3a3ZO/nUs2fSF4GiXmooK/Ke/hXHunoJYIkWSeCkVyzZ9gaLSUtlc397GmDv1VXjaOQhiO6Nv9/+Gb/b/JpgbOnAwPlmwCHrainNDijovJn6oy/hq7y/Y+cc+wdzg/mZY+Nr0TnuOfuPu77Hn8EHBXD9jE3w8byHMTfsI5okU0Y3iIry/bi3SsrME83NefBmv+D0jmOssruXlwv+Ldci6nieYf3vKi3hjIrv7UNdwOjYaa77eivLKxuKwkL6+vTXlhU5Z+6e2rg6/Hj2MnX/sR3Vt43E2ALA0t8DKOfPZ3Ye6hNLycqzavhnhiQmC+dEublg9913BXGdRVFqKT77djjMJcYL5p0eOxuL/e1swR9SRmPihLiXxUio+2rwBBSXFgvkpY5/ArOenQk1FRTAvryLPJeG7P/cj8VKqYH7SmLGY//Jrnf6OKNGDqK6twdZfdmPvsTs1cCBtlxrw9hxYmlsI5uXZ1l9244cDfwjmeukbYM3cd2FlMUAwT6TobhYXYfnWTUi8eEEw7zrcFh/+39sw0uscdXBiks/h46+DkS8tTH/bK37PYM6LLwvmiLqCX48cxhc/CpsV6GlrYeHr/4fRzm6CeXn254l/sPnnH2XdywBAS10d8155HU95dc329SS/mPihLkdSWYk127cgND5WMG/Rpy9enfAMxrl7CeblyfWCm9jw0/eC7icA0KeXMZa8+RZsh1gJ5om6kpT0K/j462Bk5GQL5mdMeh7PjRsPTXU1wbw8Scu6hg+//By5N/MF82PdPOA/fQbUVeX3z07U3nb9sR/b9/4smNNSV8ecF1/B0yNHC+blSWFJCX44+Ad+Pfq3YF5PWxuBs+bCyabzH0klaq207Cws3bi+ye7Wp7x88PYLL8FAR1cwL08ycrLx1W8/47S0g/Bt49y9MP+V1xWq1iApDiZ+qMs6cjYUG378TlCADQCGmJlj+ax30N/YVDDfkUokEnyz/1fs/+eYeAn/N+k5vDnpOfE0UZe1+ecf8dPBvwRzWhoamDf1VTzlPVIw39Gyrudhy54fmySitdTVMf/VN1ini0jqQnoaVn+1FZm5OYJ5E8NeWDLjbdhbWgvmO9r3f/2Ob3/fh7r6OsH8WDcPLHh1Gj8YEgGoq6/Dlp9/apIcBYBpEyfj1QnPQFVZvnbjr/k6GAdPnxDMaamrY8mMWRjh6CyYJ5InTPxQlyapqMDGn77HobBT4iWMdnHDy0893aHHRIrLyvDTob9wMiYK1wtuCtaGDRqMJW/ORD9jE8E8EQGxKeexfOtGFN/VJhkADHR0MfWpp/H0yNEderTzWl4ufjj4F84mxDZJPo9z98S8l99gMUiiZjS3+wfSXbuvPf0sxrp5iJcemdLycvwW8neTouwA0FvfAB/+39sKUXieqK0lp13Bmq+24WqeMLHbz9gET48YhWdGje7Qna85N/Lx3V9/NEn4AIDtECusnDMPBrp64iUiucLED5F0u2nwr7txNiFevIT+JqaY+qQfJviMEi+1m5vFRfjjxD9NilEDgLqqGua9/BqefoR/HqLOqKKqCj8c/BPf//W7eAmmRr3gPHQYnvTwhs3AQeLldhMaH4uz8bH461TTN48D+vbD/Jdfg6P1UPESEd3lRnERvtr7Cw6HNr1pM8TMAs+MHI2Jo8aIl9pNUWkp9hw5iOMR4U3q+Giqq+H1CZPw3LgnWH+P6D/8euQwvv1jLyQVwsSpqrIKXp3wDDzsHDDoEbZFPxp+Bscjw5F46YKg0DykbdpnvfASnvDwFswTySsmfojuEp+agk27f8TFzHTxEgb07Qd3W3s85TUCfXsbi5cfWkFpCY6EnUZ8agoizyWJlwHpFvH5r0zjTgCiB1BQWoJv9v7SbLIFAOwsreBp64BxHl7oqaMjXn5oV/NyEBobg91/H2iyCwDSoyozpjzPVs5EDyg9Owvb7nHTxtjQCJNG+WKUiyt6GxiKl9tE4sULOJMY3+Ro6W1Tn5qA15+eBC11dfESEd1DZXUVvj/wJ347+regA95t9pbW8HXzwCgXt3b52bqYmY7DYaGITj6Ha3m54mVoa2pg+jNT8PwT48VLRHKNiR+iZpyMicL2335u9hc+ADhY2cDS3AJPeY94qFpA1/JyEZ18DhevZjZ75/K2ce6eeGn8BAzubyZeIqIWyrqeh22/7MGp2CjxEiB9MzekvwVsB1vimVFjWl2DIyMnGzW1tYhPTUF8agoikhLFIQAA28GWePHJp1gTgOghJV5KxZY9PyI57Yp4CZB2Cxrc3xyuw+zw/Lgnxcstdr2wAAdOnUDU+SRczctFVXW1OAQAMMFnFGZMfp5HP4geQmV1Ff46eQK/HDmEG8VF4mUAwGTfcbAw7Yvhg4dATUUFvfQNxCEtculqJo6cDcWlq5lISBV2EbxNqYcSXvF7Gi+PnwA1VVXxMpHcY+KH6D7OJMTh578PIe5CsnhJoLeBIXzd3NGjew9oqWtgQN++4hCZ9OwsRCQloKau7p4vLpCeax7n7onx3j6dpmUtUWeQcyMff58JxdGzZ5p00RKzNLeAu609AMBY3wC9DIRvKv/3v/8hIzsbkqpKxKem3Pdn+jZfVw+8NN6vQ+uHESmi2JRk7Pn7AMITE8RLTbgOt4W1xUDo6+iirr4eairKMNDrieraGhSXlqF7t26QVFagpq4OR8PPICf/uvhLCKgqq8BvxEi8+MR4GBsaiZeJ6CEciziL3Yf+wqWrmeIlATUVFXjZO6JPr94wNjSCUc+m758vZmSgqrYGFVVVOBEVgYKSYnGIgIOVDca5e2Kksys01DquzhDRw2Lih6gFcvKv4++zYS36oPgw9HV1MdbNE75u7hhixg+FRO0tJf0KjpwNw4mocBSXScTLbaZvb2M84eHFRC7RI5B1PQ+Hwk7j6JnQe+4UaCs2AwfhSQ9vjHX35IdConZ27vIlHD5zGieiwpvU3GlLg/r1xxhXd4zz8IIhX7NJQTDxQ/SAMnNzEJN8HrEp5xF3IRlVNU3PHz8Ia4uBcLC2hrPNMDhY2YiXiegRSUm/gpjz5xF7Ifk/d/m1hIOVDRytbOBma8djmkQdJOnSRUSdT0JsSjLOX7kkXn5gaioqjT/b1kPhZe/QbvWDiOj+IpISEXk+EXEpyUjPzhIvPxAtDQ042wyDk/VQOA8d1uojY0TyjIkfooeUfOUyEi5eQH5RIYpLy1BaLkFhWSlKyspQWV0FQ72e0NXSgp62NvS0dNBTVxcmBoYw79MXA/r0hYqysvhLElEHq6uvQ8LFVCRfuYybJcUoKStDWUU5CkpKUCIpw7///gtdLW0Y6OpBW0MDetra0NfTQx+jXhjQpx8G9O0n/pJEJAdSM9KRnn0NOTdvorCkBCWSUkgqKlBQXIwbxUVQU1WFnpY29HV0oa2p2fizraOL/iamGNCnb7s0dyCih1NVXY3LWVeRkZ2N3Js3UFxWhhJJGYrKShvfl5eUQEtdHbraOo3vxzW1oaujDRMDI9hbWT/STmFEHYWJHyIiIiIiIiIiBfW4eIKIiIiIiIiIiBQDEz9ERERERERERAqKiR8iIiIiIiIiIgXFxA8RERERERERkYJi4oeIiIiIiIiISEEx8UNEREREREREpKCY+CEiIiIiIiIiUlBM/BARERERERERKSgmfoiIiIiIiIiIFBQTP0RERERERERECoqJHyIiIiIiIiIiBcXEDxERERERERGRgmLih4iIiIiIiIhIQTHxQ0RERERERESkoJj4ISIiIiIiIiJSUEz8EBEREREREREpKCZ+iIiIiIiIiIgUFBM/REREREREREQKiokfIiIiIiIiIiIFxcQPEREREREREZGCYuKHiIiIiIiIiEhBMfFDRERERERERKSgmPghIiIiIiIiIlJQTPwQERERERERESkoJn6IiIiIiIiIiBQUEz9ERERERERERAqKiR8iIiIiIiIiIgXFxA8RERERERERkYJi4oeIiIiIiIiISEEx8UNEREREREREpKCY+CEiIiIiIiIiUlBM/BARERERERERKSgmfoiIiIiIiIiIFNT/Ay4vQxG358ixAAAAAElFTkSuQmCC" data-is-external-image="true">이런식으로 어떤 한 음은 hz라는 1초에 이만큼 진동한다는 <strong>주파수 </strong>수치로 바꾸고 (여기에서는 220hz, 1초에 220번 진동한다) 이를 주기가 있는 그래프로 표현이 가능합니다. 이 그래프가 <strong>파형 그래프</strong>이죠. x축은 시간일 것이고 y축은 <strong>진폭(진동의 폭이라고 생각해주세요. 즉, 위 아래가 얼마나 왔다갔다 하는지를 의미합니다.)</strong>을 의미합니다. </p>
+<p>보통 진폭이 크면 소리가 큼을 의미하고, 주기가 짧으면(왼쪽 오른쪽 넓이가 좁으면) 더 높은 음이라고 판단합니다.</p>
+<p>저희가 음악을 하면 정말 많이 듣는 협화음, 불협화음이라는 개념이 있습니다. 어떤 음들은 같이 재생 시 잘 어우러지는 소리가 들리고 어떤 음들은 같이 재생 시 윙? 이런 느낌의 소리를 내죠. 어떤 음의 협화음을 쉽게 만들려면 어떤 음의 주파수와 다른 음의 주파수 비율을 간단하게 유지하라고 합니다. 아주 간단한 비는 어떤게 있을까요.. 예를 들어 1:2, 1:3,... 이런 비율들이 있을 수 있겠죠? 즉, 어떤 주파수를 정수배 하는 것 입니다. 즉, 1,2,3,4,5... 같은 정수들을 주파수에 곱한다는 의미이죠. 220*2 = 440, 220*3 = 660. 220*4 = 880..... 이런 식으로 특정 주파수의 정수배로 만들어진 주파수들을 모두 모으면 <strong>배음열</strong>이 만들어집니다. 즉, <strong>배음</strong>이란 <span class="iNqyIf" data-sfc-cp="" data-sfc-root="c">어떤 소리가 울릴 때, 가장 낮은 기본이 되는 소리(<!--TgQPHd|||[]--></span><strong class="rQesXe MPyX" data-sfc-cp="" data-sfc-root="c">기음<!--TgQPHd|||[]--></strong>, Fundamental) 외에 <strong class="rQesXe MPyX" data-sfc-cp="" data-sfc-root="c">정수 배의 진동수를 가지고 동시에 울리는 높은 음들</strong>을 의미합니다. </p>
+<p> </p>
+<p>여기까지 1편입니다. 2편에서 봐용.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>お知らせ (ver.261023)</title>
         <author>
             <name>Seongmin-aistatdata</name>
         </author>
@@ -22,17 +166,20 @@
         <updated>2026-10-22T11:21:00+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                    記事は、新しい内容や、より分かりやすい内容に更新されることがあります。最新の内容で学習できるよう、バージョンをご確認ください 韓国語以外のコンテンツは、AIを使用して翻訳しています。
+                    記事は、新しい内容や、より分かりやすい内容に更新されることがあります。最新の内容で学習できるよう、バージョンをご確認ください 韓国語以外のコンテンツは、AIを使用して翻訳しています。 ブログで知識を学ぶ中で、不便に感じていたことがあります。 知りたい概念や知識だけをピンポイントで取り出して、さっと確認するのが難しかったことです。 必要な情報を得るために、記事を最初から最後まで読まなければならないことがよくありました。そこで、このブログでは、 解説記事がある程度たまったら、重要な概念や知識を一つずつ独立した記事にまとめて公開してみようと思います。つまり、一つの知識だけを扱う短い記事も投稿していく、ということです。 というわけで……これからも長くブログを続けていけるよう、下のボタンから応援していただけたらうれしいです……へへ。
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>記事は、新しい内容や、より分かりやすい内容に更新されることがあります。最新の内容で学習できるよう、バージョンをご確認ください<br>韓国語以外のコンテンツは、AIを使用して翻訳しています。</p>
+<p>ブログで知識を学ぶ中で、不便に感じていたことがあります。<br><strong>知りたい概念や知識だけをピンポイントで取り出して、さっと確認するのが難しかったことです。</strong></p>
+<p>必要な情報を得るために、記事を最初から最後まで読まなければならないことがよくありました。そこで、このブログでは、<br><strong>解説記事がある程度たまったら、重要な概念や知識を一つずつ独立した記事にまとめて公開してみようと思います。つまり、一つの知識だけを扱う短い記事も投稿していく、ということです。</strong></p>
+<p><del>というわけで……これからも長くブログを続けていけるよう、下のボタンから応援していただけたらうれしいです……へへ。</del></p>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>Announcement (ver.261022)</title>
+        <title>Announcement (ver.261023)</title>
         <author>
             <name>Seongmin-aistatdata</name>
         </author>
@@ -44,12 +191,15 @@
         <updated>2026-10-22T11:19:29+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                    These articles may be updated with new or improved content. Please check the version to make sure you’re learning from the latest information. Content in languages other than Korean is translated using AI.
+                    These articles may be updated with new or improved content. Please check the version to make sure you’re learning from the latest information. Content in languages other than Korean is translated using AI. One thing I found inconvenient about learning&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>These articles may be updated with new or improved content. <br>Please check the version to make sure you’re learning from the latest information.<br>Content in languages other than Korean is translated using AI.</p>
+<p>One thing I found inconvenient about learning from blogs was that<br><strong>it wasn’t easy to jump straight to the specific concept or piece of information I needed, check it quickly, and move on.</strong></p>
+<p>I often had to read an entire article just to find what I was looking for. To make that easier on this blog,<br><strong>once I’ve built up a collection of tutorial posts, I’ll try publishing separate articles for individual key concepts. In other words, I’ll also post short articles that each focus on just one specific piece of knowledge.</strong></p>
+<p><del>So, with that said… I’d really appreciate a little support through the button below to help me keep this blog going for a long time… hehe.</del></p>
             ]]>
         </content>
     </entry>
@@ -236,7 +386,7 @@
         </content>
     </entry>
     <entry>
-        <title>공지사항 (ver.261022)</title>
+        <title>공지사항 (ver.261023)</title>
         <author>
             <name>Seongmin-aistatdata</name>
         </author>
@@ -248,12 +398,13 @@
         <updated>2026-10-22T09:16:57+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                    문서들은 새로운 내용/더 나은 내용으로 업데이트 될 수 있습니다. 버전을 체크를 잘 하시면 최신 내용으로 학습하실 수 있습니다. 
+                    문서들은 새로운 내용/더 나은 내용으로 업데이트 될 수 있습니다. 버전을 체크를 잘 하시면 최신 내용으로 학습하실 수 있습니다. 제가 블로그에서 지식들을 배우면서 불편했던 점은 원하는 개념이나 지식만을 딱딱 뽑아서 바로바로 확인하고 넘어가기가 쉽지 않았다는 점입니다. 보통 글을 전부 다 읽어야&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>문서들은 새로운 내용/더 나은 내용으로 업데이트 될 수 있습니다. <br>버전을 체크를 잘 하시면 최신 내용으로 학습하실 수 있습니다. </p>
+<p>제가 블로그에서 지식들을 배우면서 불편했던 점은 <br><strong>원하는 개념이나 지식만을 딱딱 뽑아서 바로바로 확인하고 넘어가기가 쉽지 않았다는 점입니다. </strong><br>보통 글을 전부 다 읽어야 원하는 지식을 알 수 있었는데, 이를 방지하기 위해서<br><strong>강의글들이 많이 모이다 보면 핵심 지식들 하나하나를 각각의 문서들로 만들어 올려보겠습니다. 즉 단편적인 지식들만 쓴 글들을 업로드해보겠다는 것 입니다.<br><br></strong><s>그래서 말입니다만.. 제가 블로그 활동을 오래 이어나갈 수 있도록 밑에 후원 한 번만 해주시면 감사하겠습니다......헤헤</s><strong><br></strong></p>
             ]]>
         </content>
     </entry>
@@ -333,7 +484,7 @@
         <updated>2026-10-21T23:40:12+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                    GitHubでブログを始めました。 こんにちは。韓国に住む、ごく普通の大学生です。 大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。 ずっとこれをやってみたくて、このブログを開設しました。 私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。 このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。 最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。 このブログが皆さんの学習の助けになれば、心からうれしく思います。 これからどうぞよろしくお願いします。
+                    GitHubでブログを始めました。 こんにちは。韓国に住む、ごく普通の大学生です。 大学に入ってから講義を受け、一生懸命勉強してきました。でも、苦労して身につけた知識を忘れてしまうのは、あまりにももったいないと思ったんです。 ずっとこれをやってみたくて、このブログを開設しました。 私自身、専門分野を勉強する際に、ほかの方々のブログから多くのことを学んできました。だからこそ、今度は私も知識を共有して、誰かの役に立てたらうれしいです。 このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。 最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。 このブログが皆さんの学習の助けになれば、心からうれしく思います。 お役に立ちましたら、1ドルからご支援いただけます。ページの一番下にKo-fiの支援ボタンがあります！皆さんのご支援が、ブログを続ける大きな励みになります。 これからどうぞよろしくお願いします。
                 ]]>
             </summary>
         <content type="html">
@@ -349,87 +500,8 @@
 <p>このブログは、学習記事を投稿する場所として、自分の復習の場として、日記帳として……本当にいろいろな用途に使っていくつもりです。</p>
 <p>最近は読むものもたくさんありますし、わざわざ長く書く必要もないので、自己紹介はこの辺で終わりにします。</p>
 <p>このブログが皆さんの学習の助けになれば、心からうれしく思います。</p>
+<p>お役に立ちましたら、1ドルからご支援いただけます。ページの一番下にKo-fiの支援ボタンがあります！皆さんのご支援が、ブログを続ける大きな励みになります。</p>
 <p>これからどうぞよろしくお願いします。</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>About Me?</title>
-        <author>
-            <name>Seongmin-aistatdata</name>
-        </author>
-        <link href="https://seongmin-aistatdata.github.io/github-blog/about-me/"/>
-        <id>https://seongmin-aistatdata.github.io/github-blog/about-me/</id>
-            <category term="English"/>
-
-        <updated>2026-10-21T23:39:43+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    I've just started my GitHub blog. Hello! I'm just an ordinary undergraduate student living in South Korea. Since starting university, I've attended lectures and studied hard. But it would be such a waste to forget all the knowledge I worked&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>I've just started my GitHub blog.</p>
-<p>Hello! I'm just an ordinary undergraduate student living in South Korea.</p>
-<p>Since starting university, I've attended lectures and studied hard. But it would be such a waste to forget all the knowledge I worked so hard (and suffered!) to gain.</p>
-<ul>
-<li>I wanted to try teaching others what I've learned in lectures and what I've spent time studying, and put that knowledge to good use in the process.</li>
-</ul>
-<p>I've been wanting to do this for a long time, so I finally decided to start this blog.</p>
-<p>I've also learned a lot from other people's blogs while studying my major, so I'd love to share what I know and hopefully help others in the same way.</p>
-<p>I plan to use this blog for all sorts of things: sharing educational articles, reviewing what I've learned, keeping a diary... and much more.</p>
-<p>There's already so much to read these days, so there's no need to make this introduction any longer than necessary. I'll wrap it up here.</p>
-<p>I sincerely hope this blog will be helpful to you in your studies.</p>
-<p>Thanks for stopping by, and I hope you'll stick around!</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>자기소개?</title>
-        <author>
-            <name>Seongmin-aistatdata</name>
-        </author>
-        <link href="https://seongmin-aistatdata.github.io/github-blog/jagisogae/"/>
-        <id>https://seongmin-aistatdata.github.io/github-blog/jagisogae/</id>
-            <category term="한국어"/>
-
-        <updated>2026-10-21T20:53:21+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    깃허브 블로그를 처음 열었습니다.&nbsp; 안녕하세요. 저는 대한민국에 사는 평범한 학부생입니다.&nbsp; 대학 와서 강의 듣고 공부 열심히 했는데 고통받으며 얻은 지식들을 까먹기 너무 아까워서&nbsp; - 강의 들으며 배운 것들, 시간 들여 공부한 것들 가르쳐보기. 이를 통해 배운 것들 써먹어 보기 이걸&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    깃허브 블로그를 처음 열었습니다.&nbsp;
-  </p>
-
-  <p>
-    안녕하세요. 저는 대한민국에 사는 평범한 학부생입니다.&nbsp;
-  </p>
-
-  <p>
-    대학 와서 강의 듣고 공부 열심히 했는데 고통받으며 얻은 지식들을 까먹기 너무 아까워서&nbsp;<br>- 강의 들으며 배운 것들, 시간 들여 공부한 것들 가르쳐보기. 이를 통해 배운 것들 써먹어 보기<br>이걸 너무 해보고 싶어서 블로그 개설해 봤습니다.&nbsp;
-  </p>
-
-  <p>
-    저도 전공 공부할 때 타 블로그들에서 배운 것들이 많았어서 지식적인 도움을 드리고 싶기도 합니다.&nbsp;<br><br>이 블로그는 강의글 업로드 공간, 제 복습 공간, 일기장... 정말 여러 가지 방면으로 활용해볼 예정입니다.
-  </p>
-
-  <p>
-    요즘 읽을 것도 많은데 길이 굳이 길 필요가 없으므로 여기서 자기소개 마치겠습니다.
-  </p>
-
-  <p>
-    제 블로그가 여러분들의 학습에 도움이 되었길 진심으로 바랍니다.&nbsp;
-  </p>
-
-  <p>
-    많은 관심 부탁드립니다.
-  </p>
             ]]>
         </content>
     </entry>
