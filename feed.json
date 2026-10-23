@@ -13,16 +13,16 @@
             "id": "https://seongmin-aistatdata.github.io/github-blog/studychatbot/",
             "url": "https://seongmin-aistatdata.github.io/github-blog/studychatbot/",
             "title": "STUDY!!!!",
-            "summary": "```html ```",
-            "content_html": "<p>```html</p>\n<div class=\"post__iframe\"><iframe width=\"100%\" height=\"1100\" style=\"border: 0; border-radius: 20px;\" src=\"https://seongmin-aistatdata.github.io/github-blog/study-bot.html\" title=\"결국공부 챗봇\" loading=\"lazy\"></iframe></div>\n<p>```</p>",
+            "content_html": "<div class=\"post__iframe\"><iframe width=\"100%\" height=\"1100\" style=\"border: 0; border-radius: 20px;\" src=\"https://seongmin-aistatdata.github.io/github-blog/study-bot.html\" title=\"결국공부 챗봇\" loading=\"lazy\"></iframe></div>",
             "author": {
                 "name": "Seongmin-aistatdata"
             },
             "tags": [
-                   "챗봇/chatbot/チャットボット"
+                   "챗봇/chatbot/チャットボット",
+                   "기타/Misc/その他（そのた)"
             ],
             "date_published": "2026-10-23T18:58:15+09:00",
-            "date_modified": "2026-10-23T18:58:15+09:00"
+            "date_modified": "2026-10-23T19:19:01+09:00"
         },
         {
             "id": "https://seongmin-aistatdata.github.io/github-blog/jp-lessons-music-basicsofmusictheory1/",

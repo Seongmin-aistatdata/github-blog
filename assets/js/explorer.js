@@ -12,6 +12,7 @@
   document.querySelectorAll('[data-i18n]').forEach(node => { if (typeof words[node.dataset.i18n] === 'string') node.textContent = words[node.dataset.i18n]; });
   document.querySelectorAll('[data-support-ko]').forEach(node => { node.textContent = node.getAttribute('data-support-' + language) || ''; });
   function localizedUrl(href, code) {
+    if (!/^(ko|en|ja)$/.test(code || '')) return href;
     try { const url = new URL(href, location.href); url.searchParams.set('lang', code); return url.href; } catch (_) { return href; }
   }
   document.querySelectorAll('a.home-link').forEach(link => { link.href = localizedUrl(link.href, language); });
@@ -50,12 +51,12 @@
     const query = normalized(search.value);
     if (query && !openBeforeSearch) openBeforeSearch = new Map(Array.from(explorer.querySelectorAll('details')).map(node => [node, node.open]));
     let found = 0;
-    explorer.querySelectorAll('.language-folder').forEach(folder => {
-      const languageMatch = normalized(folder.querySelector('.language-select').textContent).includes(query);
+    explorer.querySelectorAll('.top-level-folder').forEach(folder => {
+      const folderMatch = normalized(folder.dataset.folderName).includes(query);
       let matches = 0;
       folder.querySelectorAll('a.tree-post').forEach(link => {
         const category = link.closest('.tree-folder');
-        const match = !query || languageMatch || normalized(link.textContent).includes(query) || normalized(category?.dataset.folderName).includes(query);
+        const match = !query || folderMatch || normalized(link.textContent).includes(query) || normalized(category?.dataset.folderName).includes(query);
         link.hidden = !match;
         if (match) matches++;
       });
