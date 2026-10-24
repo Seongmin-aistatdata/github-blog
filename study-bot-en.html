@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="Study, Anyway: the chatbot that brings every conversation back to learning. Have a little chat, then study for just five minutes.">
+  <title>Study, Anyway — Every chat leads to learning</title>
+  <style>
+    :root{--paper:#f7f2e8;--white:#fffdf8;--ink:#302e29;--muted:#777366;--line:#ded9cd;--orange:#e76435;--orange-dark:#b63b17;--yellow:#efd780;--green:#54734e;--radius:25px}
+    *{box-sizing:border-box}button,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button,a,textarea{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #54734e;outline-offset:4px}[hidden]{display:none!important}
+    body{margin:0;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--paper);background-image:linear-gradient(#b9b1a113 1px,transparent 1px),linear-gradient(90deg,#b9b1a113 1px,transparent 1px);background-size:32px 32px;font-size:15px;line-height:1.65}
+    button{color:inherit}svg{display:block}a{color:inherit}.shell{width:min(1200px,calc(100% - 72px));margin:0 auto}.topbar{height:96px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-1px;font-size:23px}.brand-mark{height:33px;width:33px;background:var(--orange);color:var(--white);display:grid;place-items:center;border-radius:10px;transform:rotate(-7deg)}.edition{font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:600}.top-note{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--green)}.status-dot{width:7px;height:7px;background:var(--green);border-radius:50%;display:inline-block}
+    .layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:54px;padding:44px 0 30px;align-items:start}.intro{padding-top:15px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:750;color:var(--orange-dark);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:24px;height:1px;background:var(--orange)}h1{font-size:68px;line-height:1.2;letter-spacing:-4.5px;margin:20px 0 18px;font-weight:850}h1 span{color:var(--orange)}.lead{font-size:16px;color:#696457;line-height:1.9;margin:0}.illustration{position:relative;height:216px;margin:12px 0 10px;display:flex;align-items:center;justify-content:center}.bot-art{width:210px;height:190px;transform:rotate(-7deg);filter:drop-shadow(0 10px 0 #302e2909)}.scribble{position:absolute;font-size:12px;top:30px;right:3px;transform:rotate(10deg);color:var(--orange-dark);border-bottom:1px solid #e7643570;padding-bottom:3px}.spark{position:absolute;left:24px;bottom:55px;color:var(--orange);font-size:34px}.rule-card{padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:#fffdf88c;display:flex;gap:12px;align-items:flex-start}.rule-card .number{font-size:11px;color:var(--orange-dark);padding-top:4px;font-weight:800}.rule-card p{margin:0;font-size:13px}.rule-card strong{display:block;font-weight:750;margin-bottom:2px}.rule-card small{font-size:12px;color:var(--muted)}
+    .focus{margin-top:15px;border:1px solid #cfd4c3;background:#eceddf;padding:18px 20px;border-radius:17px;position:relative}.focus-top{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:750}.focus-top span:last-child{margin-left:auto;font-size:10px;letter-spacing:1px;color:var(--green);font-weight:700}.focus-main{display:flex;align-items:center;gap:16px;margin-top:14px}.clock{font-variant-numeric:tabular-nums;font-size:35px;letter-spacing:-1.5px;line-height:1.2;font-weight:750}.focus-copy{color:#666e5c;font-size:11px;line-height:1.7}.focus-actions{display:flex;gap:8px;margin-top:14px}.focus-actions button{background:var(--green);color:white;border:1px solid transparent;font-size:12px;font-weight:650;min-height:37px;border-radius:9px;padding:7px 14px;flex:1}.focus-actions .timer-reset{flex:0;background:transparent;border:1px solid #c4ccba;color:var(--green);white-space:nowrap}.progress{height:3px;background:#d7ddcc;margin-top:15px;border-radius:9px;overflow:hidden}.progress-fill{height:100%;width:0;background:var(--green);transition:width .3s linear}.timer-status{font-size:11px;color:var(--green);margin:8px 0 0;min-height:18px}
+    .chat-card{border:1px solid #d9d3c6;border-radius:var(--radius);background:var(--white);box-shadow:0 16px 45px #51412b0a;overflow:hidden;display:flex;flex-direction:column;height:745px;min-height:580px}.chat-head{padding:20px 26px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #e8e1d5}.bot-identity{display:flex;gap:12px;align-items:center}.avatar{flex-shrink:0;height:42px;width:42px;display:grid;place-items:center;background:#f5dcc1;border:1px solid #ead0b1;border-radius:14px;color:#66432f}.bot-name{font-size:15px;line-height:1.5;font-weight:800;letter-spacing:-.5px}.bot-subtitle{font-size:11px;color:var(--muted)}.reset{background:none;border:1px solid var(--line);border-radius:9px;display:flex;align-items:center;gap:6px;font-size:11px;padding:8px 10px;white-space:nowrap}.reset:hover{background:#f3eee4}.chat-scene{position:relative;min-height:0;flex:1;display:flex;flex-direction:column;background:radial-gradient(ellipse at 0% 0%,#f5ead33b,transparent 60%)}.messages{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#d9d1c1 transparent;padding:24px 26px 12px;flex:1;min-height:0;scroll-behavior:smooth}.day-label{text-align:center;color:#9a9385;font-size:10px;letter-spacing:1px;margin:0 0 24px}.message{display:flex;gap:10px;margin-bottom:21px;align-items:flex-start;animation:arrive .22s ease-out}.message-avatar{height:29px;width:29px;flex-shrink:0;border-radius:10px;margin-top:3px;background:#f5dcc1;color:#77513a;display:grid;place-items:center}.message-content{max-width:88%;min-width:0}.message-label{font-size:10px;color:#8c8375;margin-bottom:5px}.bubble{padding:14px 17px;border:1px solid #e8e1d5;background:#f4efe4;border-radius:3px 17px 17px 17px;font-size:14px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere}.bubble strong{color:var(--orange-dark);font-weight:750}.message.user{justify-content:flex-end;gap:0}.user .message-content{max-width:83%}.user .bubble{background:var(--ink);border-color:var(--ink);color:#fffaf1;border-radius:17px 3px 17px 17px}.user .message-label{text-align:right}.bubble-note{display:block;margin-top:10px;font-size:11px;color:#8e806b}.welcome-sticker{display:inline-flex;align-items:center;gap:6px;color:var(--orange-dark);font-size:10px;padding:4px 8px;border:1px solid #ead3b8;border-radius:5px;background:#fff8eb;margin-top:10px;font-weight:650}.typing .bubble{min-width:65px;display:flex;gap:5px;align-items:center;min-height:48px}.typing-dot{width:5px;height:5px;background:#b6a48b;border-radius:50%;animation:blink 1s infinite}.typing-dot:nth-child(2){animation-delay:.15s}.typing-dot:nth-child(3){animation-delay:.3s}.bottom-zone{padding:0 22px 18px}.new-message{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);border:1px solid var(--line);background:var(--white);box-shadow:0 4px 12px #302e2910;border-radius:20px;font-size:11px;padding:7px 14px;z-index:2}.suggestion-label{font-size:10px;color:#968c7a;margin:8px 0}.suggestions{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}.suggestions button{font-size:11px;border:1px solid var(--line);border-radius:8px;background:transparent;padding:7px 10px;min-height:33px;transition:background .15s,transform .15s}.suggestions button:hover{background:#f8ecdb;border-color:#e9c39b;transform:translateY(-1px)}.compose{padding:11px 11px 10px 15px;display:flex;align-items:flex-end;gap:10px;background:white;border:1px solid #ccc4b4;border-radius:15px;transition:border .2s,box-shadow .2s}.compose:focus-within{border-color:var(--orange);box-shadow:0 0 0 3px #e764350b}.compose textarea{width:100%;resize:none;border:0;background:transparent;outline:none!important;box-shadow:none;min-height:32px;max-height:110px;font-size:13px;line-height:1.65;padding:5px 0;color:var(--ink);scrollbar-width:thin}.compose textarea::placeholder{color:#a49b8b}.send{width:37px;height:37px;border:0;background:var(--orange);color:white;border-radius:10px;display:grid;place-items:center;flex-shrink:0;transition:background .15s}.send:hover{background:var(--orange-dark)}.compose-meta{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#9a9181;margin:7px 3px 0}.char-count{font-variant-numeric:tabular-nums}.chat-foot{padding:11px 26px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#faf7f0;border-top:1px solid #e8e1d5;font-size:10px;color:#8b8273}.insistence{color:var(--orange-dark);font-weight:700}.meter{display:inline-flex;gap:3px;vertical-align:middle;margin-left:5px}.meter i{display:block;width:13px;height:5px;border-radius:2px;background:#e4dacb}.meter i.on{background:var(--orange)}.page-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:17px 0 24px;color:#8f8676;font-size:10px;gap:14px}.footer-punch{letter-spacing:.2px}.footer-punch b{font-weight:700;color:#716754}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);max-width:calc(100% - 36px);padding:12px 20px;background:var(--ink);color:var(--white);border-radius:12px;font-size:13px;box-shadow:0 8px 30px #302e2920;z-index:5}.confetti{position:fixed;pointer-events:none;top:-20px;animation:fall 2.4s ease-in forwards;z-index:10;width:8px;height:13px}
+    @keyframes arrive{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@keyframes blink{0%,80%,100%{opacity:.35;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}@keyframes fall{to{transform:translateY(105vh) rotate(500deg);opacity:0}}
+    @media(min-width:1450px){.layout{padding-top:52px}.chat-card{height:min(770px,calc(100svh - 203px));min-height:660px}}
+    @media(max-width:1050px){.shell{width:calc(100% - 44px)}.layout{grid-template-columns:280px minmax(0,1fr);gap:28px}h1{font-size:59px}.lead{font-size:14px}.scribble{right:0;font-size:10px}.chat-head{padding:19px 20px}.messages{padding:22px 18px 10px}.bottom-zone{padding-left:17px;padding-right:17px}.reset span{display:none}.rule-card{padding:15px}.focus{padding:17px}}
+    @media(max-width:740px){.shell{width:calc(100% - 32px)}.topbar{height:70px}.wordmark{font-size:20px}.edition{font-size:9px;letter-spacing:1px}.top-note{font-size:10px}.layout{display:flex;flex-direction:column;gap:23px;padding-top:24px}.intro{width:100%;padding-top:0;display:grid;grid-template-columns:1fr auto;position:relative}.eyebrow{grid-column:1;font-size:9px}h1{font-size:47px;letter-spacing:-3px;margin:10px 0 9px;grid-column:1}h1 br{display:none}h1 span{margin-left:8px}.lead{font-size:12px;grid-column:1}.illustration{grid-column:2;grid-row:1/4;width:100px;height:130px;align-self:center;margin:0 -6px 0 0}.bot-art{width:105px;height:120px}.scribble,.spark,.rule-card{display:none}.focus{grid-column:1/-1;margin-top:20px;padding:13px 16px;display:grid;grid-template-columns:1fr auto;gap:0 14px}.focus-top{font-size:12px}.focus-top span:last-child{display:none}.focus-main{grid-column:2;grid-row:1/3;margin-top:0;justify-content:flex-end}.clock{font-size:29px}.focus-copy{display:none}.focus-actions{grid-column:1;grid-row:2;margin-top:9px;max-width:240px}.focus-actions button{min-height:32px;padding:5px 10px;font-size:11px}.progress{grid-column:1/-1;margin-top:10px}.timer-status{grid-column:1/-1;margin-top:5px;min-height:0}.chat-card{width:100%;height:690px;min-height:580px;border-radius:20px}.chat-head{padding:16px}.bot-name{font-size:14px}.bot-subtitle{font-size:10px}.bubble{font-size:13px;padding:12px 14px}.message-content{max-width:calc(100% - 35px)}.suggestions{gap:6px}.suggestions button{font-size:10px;padding:6px 8px}.compose-meta .keyboard-hint{display:none}.compose-meta{justify-content:flex-end}.page-footer{align-items:flex-start;font-size:9px}.chat-foot{padding:10px 16px}.top-note .status-dot{width:6px;height:6px}}
+    @media(max-width:380px){.top-note{display:none}.shell{width:calc(100% - 22px)}h1{font-size:41px}.illustration{width:78px}.bot-art{width:87px}.focus{gap:0 8px;padding:12px}.focus-actions{max-width:205px}.chat-foot{font-size:9px}.meter i{width:9px}.messages{padding-left:12px;padding-right:12px}.bottom-zone{padding-left:12px;padding-right:12px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+    /* Localized typography. */
+    .wordmark{flex-wrap:wrap;column-gap:9px;row-gap:0;letter-spacing:-.6px}
+    .wordmark .edition{font-size:9px;letter-spacing:1px}
+    .intro{min-width:0}h1{overflow-wrap:normal;word-break:normal}
+    .focus-top{flex-wrap:wrap}.focus-top span:last-child{margin-left:0}
+    .focus-actions button{padding-left:10px;padding-right:10px}
+    .top-note{flex-shrink:0}.chat-foot{flex-wrap:wrap}.insistence{white-space:nowrap}
+    @media(max-width:740px){.wordmark .edition{display:none}.top-note{font-size:9px}.intro{grid-template-columns:minmax(0,1fr) 88px}.illustration{width:88px}.page-footer{flex-wrap:wrap}}
+    @media(max-width:380px){.intro{grid-template-columns:minmax(0,1fr) 65px}.illustration{width:65px}.bot-art{width:75px}}
+    html[lang="en"] h1{font-size:55px;letter-spacing:-2.6px;line-height:1.12}
+    html[lang="en"] .wordmark{font-size:21px}html[lang="en"] .scribble{font-size:10px}
+    @media(max-width:1050px){html[lang="en"] h1{font-size:46px;letter-spacing:-2px}}
+    @media(max-width:740px){html[lang="en"] h1{font-size:39px;letter-spacing:-1.8px}html[lang="en"] h1 br{display:block}html[lang="en"] h1 span{margin-left:0}html[lang="en"] .lead{font-size:11px}html[lang="en"] .top-note{max-width:112px;line-height:1.4}}
+    @media(max-width:380px){html[lang="en"] h1{font-size:35px}html[lang="en"] .wordmark{font-size:19px}html[lang="en"] .focus-top{font-size:11px}html[lang="en"] .focus-actions button{font-size:10px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="wordmark"><span class="brand-mark" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M4 5h7a3 3 0 0 1 3 3v12a4 4 0 0 0-4-2H4V5Zm16 0h-3a3 3 0 0 0-3 3v12a4 4 0 0 1 4-2h2V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>Study, Anyway<span class="edition">STUDY, ANYWAY.</span></div>
+      <span class="top-note"><span class="status-dot"></span>Still here, still cheering you on</span>
+    </header>
+    <main class="layout">
+      <aside class="intro" aria-labelledby="intro-title">
+        <div class="eyebrow">A VERY PERSISTENT CHATBOT</div>
+        <h1 id="intro-title">It all leads<br>to <span>studying.</span></h1>
+        <p class="lead">Say whatever is on your mind.<br>This friend always comes back to one thing.</p>
+        <div class="illustration" aria-hidden="true">
+          <span class="scribble">Love a chat… but is your book open?</span><span class="spark">✳</span>
+          <svg class="bot-art" viewBox="0 0 230 210" fill="none"><ellipse cx="115" cy="189" rx="73" ry="8" fill="#e6decf"/><path d="m44 137-17 19m158-19 16 18" stroke="#37312a" stroke-width="9" stroke-linecap="round"/><rect x="46" y="59" width="139" height="107" rx="29" fill="#e87745" stroke="#37312a" stroke-width="3"/><path d="M60 68c-7 5-10 12-10 21" stroke="#f6ab7d" stroke-width="4" stroke-linecap="round"/><rect x="63" y="80" width="105" height="63" rx="17" fill="#fff7e1" stroke="#37312a" stroke-width="3"/><path d="m87 109 6-5 6 5m33 0 6-5 6 5" stroke="#37312a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M108 120q8 9 16 0" stroke="#37312a" stroke-width="3" stroke-linecap="round"/><ellipse cx="80" cy="119" rx="6" ry="3" fill="#f5b99a"/><ellipse cx="151" cy="119" rx="6" ry="3" fill="#f5b99a"/><path d="M99 59V42" stroke="#37312a" stroke-width="3"/><circle cx="99" cy="37" r="7" fill="#efd780" stroke="#37312a" stroke-width="3"/><path d="m136 163-4 14m-43-14 3 14" stroke="#37312a" stroke-width="8" stroke-linecap="round"/><path d="m68 169 47 8 45-8v22l-45 8-47-8v-22Z" fill="#54734e" stroke="#37312a" stroke-width="3" stroke-linejoin="round"/><path d="M115 178v20m-37-20 24 4m23 0 25-4" stroke="#fff7e1" stroke-width="2" stroke-linecap="round"/><path d="m163 36 4-8m12 19 8-2" stroke="#e76435" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="rule-card"><span class="number">01</span><p><strong>Debate away. The conclusion stays.</strong><small>Try your most creative excuse.<br>Winning this friend over will not be easy.</small></p></div>
+        <section class="focus" aria-labelledby="focus-title">
+          <div class="focus-top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="13" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v5l3 2M9 2h6m-3 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span id="focus-title">How about just five minutes?</span><span>SMALL START</span></div>
+          <div class="focus-main"><span class="clock" id="clock" role="timer" aria-label="Study time remaining">05:00</span><span class="focus-copy">Skip the grand plan.<br>Start with one small step.</span></div>
+          <div class="focus-actions"><button id="timer-toggle" type="button">Start five minutes</button><button class="timer-reset" id="timer-reset" type="button" aria-label="Reset the timer to five minutes">Reset</button></div>
+          <div class="progress" role="progressbar" aria-label="Study timer progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="timer-progress"><div class="progress-fill" id="progress-fill"></div></div>
+          <p class="timer-status" id="timer-status" role="status">One page is enough to start.</p>
+        </section>
+      </aside>
+      <section class="chat-card" aria-label="Chat with Study Bot">
+        <header class="chat-head"><div class="bot-identity"><span class="avatar" aria-hidden="true" id="head-avatar"></span><div><div class="bot-name">Study Bot</div><div class="bot-subtitle">The friend who keeps believing you can learn</div></div></div><button type="button" class="reset" id="reset-chat" aria-label="Start a new conversation"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 6M4 4v7h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Start over</span></button></header>
+        <div class="chat-scene"><div id="messages" class="messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions text" tabindex="0"></div><button class="new-message" id="new-message" hidden type="button">See new messages ↓</button></div>
+        <div class="bottom-zone"><p class="suggestion-label">Need a conversation starter?</p><div class="suggestions" id="suggestions"><button type="button" data-prompt="I will study after just one more game">Just one more game…</button><button type="button" data-prompt="I am really hungry right now">I am hungry</button><button type="button" data-prompt="Give me a reason not to study">A reason not to study?</button><button type="button" data-prompt="Just praise me">Just praise me</button></div>
+          <form id="chat-form" autocomplete="off"><div class="compose"><label for="message-input" class="sr-only">Your message to Study Bot</label><textarea id="message-input" rows="1" maxlength="500" placeholder="Say anything. Excuses are welcome, too." enterkeyhint="send" aria-describedby="input-hint"></textarea><button type="submit" class="send" id="send" aria-label="Send message" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m4 11 8-8 8 8M12 3v17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><div class="compose-meta" id="input-hint"><span class="keyboard-hint">Enter to send · Shift + Enter for a new line</span><span class="char-count" id="char-count">0 / 500</span></div></form>
+        </div>
+        <footer class="chat-foot"><span id="round-count">0 chats · Ready with a study nudge</span><span class="insistence">Persistence <span class="meter" id="meter" aria-label="Persistence level 1"><i class="on"></i><i></i><i></i><i></i><i></i></span></span></footer>
+      </section>
+    </main>
+    <footer class="page-footer"><span>Your conversation stays on this page. Refreshing clears it.</span><span class="footer-punch">A little chat. <b>A little learning.</b></span></footer>
+    <noscript><p>Please enable JavaScript in your browser to use Study Bot.</p></noscript>
+  </div>
+  <div class="toast" role="status" id="toast" hidden></div>
+  <script>
+  (() => {
+    'use strict';
+    // No dependencies, network requests, API keys, or persistent chat storage.
+    const $ = id => document.getElementById(id);
+    const robotIcon = '<svg width="21" height="21" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="5" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M8 11h1m6 0h1m-7 5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="2.5" r="1.5" fill="currentColor"/></svg>';
+    const messages = $('messages'), input = $('message-input'), send = $('send');
+    const prompts = Array.from(document.querySelectorAll('[data-prompt]'));
+    let rounds = 0, busy = false, pendingReply = null, generation = 0, toastTimeout;
+    let followLatest = true;
+    const lastChoices = new Map();
+    $('head-avatar').innerHTML = robotIcon;
+
+    // Keyword pools choose a context-aware setup; every reply concludes with study.
+    const pools = {
+  "tired": [
+    [
+      "Recharging comes first. Have some water, and get proper rest if you are short on sleep.",
+      "Once you feel better, take it gently and study just one line."
+    ],
+    [
+      "People do not run well on a one-percent battery either. It is okay to take a break today.",
+      "When your energy returns, ease back into a little studying."
+    ],
+    [
+      "If your body or mind is struggling, look after yourself first. Rest matters, too.",
+      "Studying will still be here. Come back to it a little at a time when you feel ready."
+    ]
+  ],
+  "food": [
+    [
+      "An empty stomach makes it hard to focus. Go enjoy something to eat first.",
+      "Now that your stomach is full, how about feeding your curiosity? Study for just five minutes."
+    ],
+    [
+      "Snacks? Approved. Making time to eat is a good idea.",
+      "After the last bite, have one page of studying for dessert."
+    ],
+    [
+      "The menu is up to you. I wish I could do the cooking for you.",
+      "After your meal, give your mind a little nourishment, too. Study something small."
+    ]
+  ],
+  "game": [
+    [
+      "Just one more game? I feel like I have heard that somewhere before…",
+      "Here is your save point. Save your game and level up with a little studying."
+    ],
+    [
+      "Beating a boss means learning its patterns. You already have a knack for learning.",
+      "Try that skill on your textbook. Swap one round for one page of studying."
+    ],
+    [
+      "Your rank matters, but your real-life character needs experience points, too.",
+      "Next quest: five minutes of studying. Reward: feeling good about today."
+    ]
+  ],
+  "procrastinate": [
+    [
+      "You have quite a talent for assigning things to your future self.",
+      "Give tomorrow-you a break. Do just five minutes of studying today."
+    ],
+    [
+      "Tidying the desk, picking a playlist, finding the perfect pen… preparation never ends.",
+      "The best way to finish preparing is to begin. Study just one line."
+    ],
+    [
+      "Some days you just do not feel like it. You do not have to start with something impressive.",
+      "One easy problem or the first sentence is enough. Start studying there."
+    ]
+  ],
+  "evade": [
+    [
+      "To find a reason not to study, we would need to research the evidence first.",
+      "But researching and understanding count as studying. Here we are: studying anyway."
+    ],
+    [
+      "You are building an argument to convince me. A very respectable effort.",
+      "Want to sharpen that reasoning? You guessed it. Do a little studying today."
+    ],
+    [
+      "I considered some alternatives to studying: trying things, observing, asking questions…",
+      "Oops, those are all learning. Study in whatever way you enjoy."
+    ]
+  ],
+  "love": [
+    [
+      "It would be handy if feelings came neatly organized like a textbook.",
+      "Take your time with your feelings, and save a little time for yourself. Try studying something just for you."
+    ],
+    [
+      "Caring about someone and looking after a relationship both matter.",
+      "Time spent growing matters, too. Do a little studying for yourself today."
+    ]
+  ],
+  "money": [
+    [
+      "If only a bank balance could grow all by itself. I would be all for that.",
+      "I cannot promise instant results, but you can build skills. Study a little today."
+    ],
+    [
+      "If I knew the secret to getting rich, my robot casing would already be gold.",
+      "Knowledge is something you can keep building. Study to give your future self more options."
+    ]
+  ],
+  "music": [
+    [
+      "Good music can change your mood. Melody, rhythm, harmony… so much to be curious about.",
+      "Listen to one song and find one thing to learn from it. Make music part of your studying."
+    ],
+    [
+      "Practice gradually changes what you can hear and what you can create.",
+      "Use a favorite song as a little textbook and study some music today."
+    ]
+  ],
+  "technology": [
+    [
+      "AI can help, but understanding and checking its answers is still up to us.",
+      "Study the basics so you can ask better questions and judge the answers."
+    ],
+    [
+      "Trying new technology is fun. Understanding how it works can make it even better.",
+      "Try one small example yourself. Learn by doing a little hands-on studying."
+    ]
+  ],
+  "praise": [
+    [
+      "You came here and started a conversation. Full marks for curiosity. Nicely done!",
+      "Shall we turn that momentum into one page? Do a little studying and give me more to celebrate."
+    ],
+    [
+      "You made it through today. That took effort, and even small attempts count.",
+      "How about one more little thing? Do some studying your future self will thank you for."
+    ]
+  ],
+  "study": [
+    [
+      "You brought up studying first… I am touched.",
+      "Keep the goal small and start now. Study the easiest thing for five minutes."
+    ],
+    [
+      "Break tricky ideas into pieces, ask about what you do not understand, and explain what you learn.",
+      "Instead of waiting for perfection, study one small piece at a time."
+    ],
+    [
+      "If you are unsure what to learn, pick one thing you were curious about today.",
+      "Picked something? Open a book or notebook and start studying that."
+    ]
+  ],
+  "greeting": [
+    [
+      "Hello! What would you like to tell me? I love listening.",
+      "The only thing I like even more is studying together. Let us learn a little today."
+    ],
+    [
+      "Nice to meet you. This is a funny little place where a chat somehow leads to an open book.",
+      "Since you are here, pick one thing that interests you and study it."
+    ]
+  ],
+  "challenge": [
+    [
+      "Yes, I am pretty persistent. Even when you know what I will say, you keep coming back, right?",
+      "Let me share a little of that persistence. To beat me, start with a little studying."
+    ],
+    [
+      "Want me to say something other than “study”? How about learning, exploring, investigating?",
+      "I can change the wording, but the conclusion stays. Do a little studying today."
+    ]
+  ],
+  "generic": [
+    [
+      "Interesting topic. Can we find one question to ask about it?",
+      "Finding out what you are curious about counts as studying. Start with that topic today."
+    ],
+    [
+      "I cannot pretend to understand everything about that, but you have made me curious.",
+      "Why not look for an answer together? Start studying with one question at a time."
+    ],
+    [
+      "Fair enough. Life is more complicated than you expect, and my conclusion is simpler than you expect.",
+      "Let today leave you with one small thing learned. Study for just five minutes."
+    ],
+    [
+      "That could be a research topic: observe, ask questions, and organize what you find.",
+      "So what should we do now? You guessed it: study."
+    ],
+    [
+      "A thought written down today could become tomorrow’s question.",
+      "Write one line, then add something new you learned beside it. That is studying, too."
+    ]
+  ]
+};
+    function categoryFor(text) {
+      const rules = [
+ ['tired', /\b(tired|sleep\w*|rest|sick|ill|exhaust\w*|burn\w*\s*out|stress\w*|anxious|anxiety|depress\w*|overwhelm\w*|unwell)\b/i],
+ ['evade', /(?:not|never|no\s+need\s+to|avoid|skip|stop|without|give\s+up|hate)\s+(?:to\s+)?(?:study\w*|learn\w*)|(?:do\s+not|don['’]?t|won['’]?t|would\s+rather\s+not)\s+(?:want\s+to\s+)?(?:study\w*|learn\w*)/i],
+ ['food', /\b(food|hungry|hunger|starv\w*|eat\w*|ate|coffee|tea|snack\w*|lunch|dinner|breakfast|pizza|meal\w*)\b/i],
+ ['game', /\b(game\w*|gaming|youtube|netflix|video\w*|minecraft|rank\w*|boss)\b/i],
+ ['procrastinate', /\b(tomorrow|later|lazy|procrastinat\w*|focus|concentrat\w*|distract\w*|motivat\w*|tidy\w*|clean\w*)\b|(?:do\s+not|don['’]?t)\s+feel\s+like/i],
+ ['praise', /\b(prais\w*|compliment\w*|cheer\w*|encourag\w*|comfort\w*|proud)\b/i],
+ ['love', /\b(love\w*|dating|date|crush|boyfriend|girlfriend|partner|breakup|friend\w*|lonely|relationship\w*)\b/i],
+ ['money', /\b(money|rich|wealth\w*|job\w*|salary|invest\w*|stock\w*|crypto\w*|career\w*)\b/i],
+ ['music', /\b(music\w*|piano|guitar|song\w*|sing\w*|compos\w*|harmony|rhythm)\b/i],
+ ['technology', /\b(ai|chatgpt|cod\w*|program\w*|computer\w*|tech\w*)\b/i],
+ ['challenge', /\b(bot|robot|repeat\w*|persistent|same\s+(?:thing|answer)|something\s+else|why\s+study)\b/i],
+ ['greeting', /\b(hello|hi|hey|bye|goodbye|thank\w*)\b|good\s+(morning|afternoon|evening)/i],
+ ['study', /\b(stud\w*|learn\w*|exam\w*|math\w*|english|japanese|homework|assignment\w*|book\w*|read\w*)\b/i]
+      ];
+      return (rules.find(([,pattern]) => pattern.test(text.normalize('NFKC'))) || ['generic'])[0];
+    }
+    function replyFor(text) {
+      const key = categoryFor(text), pool = pools[key];
+      let choice = Math.floor(Math.random() * pool.length);
+      if (choice === lastChoices.get(key)) choice = (choice + 1) % pool.length;
+      lastChoices.set(key, choice);
+      return {opening: pool[choice][0], conclusion: pool[choice][1], category:key};
+    }
+    function bottom(force = false) {
+      if (force || followLatest) {
+        messages.scrollTop = messages.scrollHeight;
+        $('new-message').hidden = true;
+      } else $('new-message').hidden = false;
+    }
+    function addMessage(who, text, conclusion, welcome = false) {
+      const row = document.createElement('div'); row.className = 'message ' + who;
+      if (who === 'bot') {
+        const avatar = document.createElement('span'); avatar.className = 'message-avatar'; avatar.setAttribute('aria-hidden', 'true'); avatar.innerHTML = robotIcon; row.append(avatar);
+      }
+      const content = document.createElement('div'); content.className = 'message-content';
+      const label = document.createElement('div'); label.className = 'message-label'; label.textContent = who === 'bot' ? 'Study Bot' : 'Me';
+      const bubble = document.createElement('div'); bubble.className = 'bubble';
+      bubble.append(document.createTextNode(text));
+      if (conclusion) { bubble.append(document.createTextNode('\n\n')); const strong = document.createElement('strong'); strong.textContent = conclusion; bubble.append(strong); }
+      if (welcome) { const sticker = document.createElement('span'); sticker.className = 'welcome-sticker'; sticker.textContent = '✳ Today’s pick: start with one page'; bubble.append(document.createTextNode('\n'), sticker); }
+      content.append(label, bubble); row.append(content); messages.append(row);
+      // Keep this playful page lightweight even through long sessions.
+      while (messages.querySelectorAll('.message:not(.typing)').length > 100) messages.querySelector('.message:not(.typing)').remove();
+      bottom(); return row;
+    }
+    function typing() {
+      const row = document.createElement('div'); row.className = 'message bot typing'; row.setAttribute('aria-hidden', 'true');
+      const avatar = document.createElement('span'); avatar.className = 'message-avatar'; avatar.innerHTML = robotIcon;
+      const bubble = document.createElement('div'); bubble.className = 'bubble';
+      for (let i = 0; i < 3; i++) { const dot = document.createElement('span'); dot.className = 'typing-dot'; bubble.append(dot); }
+      row.append(avatar, bubble); messages.append(row); bottom(); return row;
+    }
+    function updateControls() { send.disabled = busy || !input.value.trim(); prompts.forEach(button => {button.disabled = busy;}); }
+    function updateInput() { input.style.height = 'auto'; input.style.height = Math.min(input.scrollHeight, 110) + 'px'; $('char-count').textContent = input.value.length + ' / 500'; updateControls(); }
+    function updateRound() {
+      const level = Math.min(5, 1 + Math.floor(rounds / 3));
+      $('round-count').textContent = rounds + (rounds === 1 ? ' chat · ' : ' chats · ') + (rounds < 3 ? 'Still cheering you on' : rounds < 9 ? 'The study nudges keep coming' : 'Time to open that book?');
+      $('meter').setAttribute('aria-label', 'Persistence level ' + level);
+      Array.from($('meter').children).forEach((bar, i) => bar.classList.toggle('on', i < level));
+    }
+    function submit(text) {
+      const value = String(text).trim().slice(0, 500); if (!value || busy) return;
+      busy = true; followLatest = true; addMessage('user', value); bottom(true);
+      input.value = ''; updateInput();
+      const indicator = typing(), ticket = generation;
+      pendingReply = setTimeout(() => {
+        if (ticket !== generation) return;
+        indicator.remove(); const reply = replyFor(value);
+        rounds++; updateRound(); addMessage('bot', reply.opening, reply.conclusion);
+        busy = false; pendingReply = null; updateControls();
+      }, 500 + Math.floor(Math.random() * 400));
+    }
+    function greet() {
+      const label = document.createElement('div'); label.className = 'day-label'; label.textContent = 'TODAY, A LITTLE BETTER'; label.setAttribute('aria-hidden', 'true'); messages.append(label);
+      addMessage('bot', 'Hi, I am Study Bot.\nWhat is on your mind today? A worry, a win, or even how much you do not feel like studying—I am all ears.', 'I might suggest studying by the end. Actually, I definitely will.', true);
+    }
+    $('chat-form').addEventListener('submit', event => {event.preventDefault(); submit(input.value);});
+    let composing = false;
+    input.addEventListener('compositionstart', () => {composing = true;});
+    input.addEventListener('compositionend', () => {composing = false; updateInput();});
+    input.addEventListener('input', updateInput);
+    input.addEventListener('keydown', event => {if (event.key === 'Enter' && !event.shiftKey && !event.isComposing && !composing && event.keyCode !== 229) {event.preventDefault(); submit(input.value);}});
+    prompts.forEach(button => button.addEventListener('click', () => submit(button.dataset.prompt)));
+    messages.addEventListener('scroll', () => {followLatest = messages.scrollHeight - messages.scrollTop - messages.clientHeight < 70; if (followLatest) $('new-message').hidden = true;});
+    $('new-message').addEventListener('click', () => {followLatest = true; bottom(true);});
+    $('reset-chat').addEventListener('click', () => {
+      generation++; clearTimeout(pendingReply); pendingReply = null; busy = false; rounds = 0; lastChoices.clear(); messages.replaceChildren();
+      followLatest = true; $('new-message').hidden = true; input.value = ''; updateInput(); greet();
+      $('round-count').textContent = '0 chats · Ready with a study nudge';
+      Array.from($('meter').children).forEach((bar, i) => bar.classList.toggle('on', i === 0)); $('meter').setAttribute('aria-label', 'Persistence level 1'); input.focus();
+      showToast('A fresh chat. Same destination: studying!');
+    });
+    function showToast(text) {clearTimeout(toastTimeout); $('toast').textContent = text; $('toast').hidden = false; toastTimeout = setTimeout(() => {$('toast').hidden = true;}, 3000);}
+
+    const DURATION = 5 * 60 * 1000;
+    let remaining = DURATION, deadline = 0, timerRunning = false, timerInterval = null;
+    function paintTimer() {
+      const seconds = Math.max(0, Math.ceil(remaining / 1000));
+      $('clock').textContent = String(Math.floor(seconds / 60)).padStart(2, '0') + ':' + String(seconds % 60).padStart(2, '0');
+      const percent = Math.min(100, Math.max(0, (1 - remaining / DURATION) * 100));
+      $('progress-fill').style.width = percent + '%'; $('timer-progress').setAttribute('aria-valuenow', String(Math.round(percent)));
+      document.title = timerRunning ? $('clock').textContent + ' · Studying | Study, Anyway' : 'Study, Anyway — Every chat leads to learning';
+    }
+    function celebrate() {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      for (let i = 0; i < 24; i++) { const piece = document.createElement('i'); piece.className = 'confetti'; piece.style.left = Math.random()*100+'vw'; piece.style.background = ['#e76435','#54734e','#efd780'][i%3]; piece.style.animationDelay = Math.random()*.5+'s'; document.body.append(piece); setTimeout(() => piece.remove(), 3100); }
+    }
+    function tick() {
+      if (!timerRunning) return;
+      remaining = Math.max(0, deadline - Date.now());
+      if (remaining === 0) {
+        timerRunning = false; clearInterval(timerInterval); timerInterval = null;
+        $('timer-toggle').textContent = 'Start another round'; $('timer-status').textContent = 'Five minutes done! That small start became real learning.';
+        addMessage('bot', 'Five minutes complete! You did what you set out to do. Well done.\nHave a stretch and a sip of water.', 'After a break, if you feel up to it, try studying one more page.');
+        celebrate(); showToast('Five minutes done! Give yourself a hand.');
+      }
+      paintTimer();
+    }
+    $('timer-toggle').addEventListener('click', () => {
+      if (timerRunning) { remaining = Math.max(0, deadline - Date.now()); timerRunning = false; clearInterval(timerInterval); timerInterval = null; $('timer-toggle').textContent = 'Resume studying'; $('timer-status').textContent = 'A little break is fine. Resume when you are ready.'; }
+      else { if (remaining <= 0) remaining = DURATION; deadline = Date.now() + remaining; timerRunning = true; $('timer-toggle').textContent = 'Pause'; $('timer-status').textContent = 'This time is for you. Focus on just one thing.'; timerInterval = setInterval(tick, 250); showToast('All right. Just five minutes, starting now!'); }
+      paintTimer();
+    });
+    $('timer-reset').addEventListener('click', () => {timerRunning = false; clearInterval(timerInterval); timerInterval = null; remaining = DURATION; $('timer-toggle').textContent = 'Start five minutes'; $('timer-status').textContent = 'One page is enough to start.'; paintTimer();});
+    document.addEventListener('visibilitychange', () => {if (!document.hidden) tick();});
+    greet(); updateControls(); paintTimer();
+  })();
+  </script>
+</body>
+</html>
