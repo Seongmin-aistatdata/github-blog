@@ -3,7 +3,7 @@
     <title>A blog for lecture notes, reviews, diary entries, and everything in between!</title>
     <link href="https://seongmin-aistatdata.github.io/github-blog/feed.xml" rel="self" />
     <link href="https://seongmin-aistatdata.github.io/github-blog" />
-    <updated>2026-10-24T18:54:15+09:00</updated>
+    <updated>2026-10-24T19:46:14+09:00</updated>
     <author>
         <name>Seongmin-aistatdata</name>
     </author>
@@ -35,6 +35,7 @@
 <p>sdf</p>
 <p>sdf</p>
 <p>sdf</p>
+<!-- Set data-oe-src once. A fresh query value is generated on each page load. -->
 <div class="oe-paid-embed">
 <div class="post__iframe"><iframe loading="lazy" width="100%" height="360" style="border: 0; display: block; width: 100%;" data-oe-paid="" data-oe-src="https://seongmin-aistatdata.github.io/github-blog/OrangeExplorer-Obsidian.html" title="구매자 전용 본문"></iframe></div>
 </div>
@@ -42,115 +43,63 @@
 <script>
 (function () {
   'use strict';
-
   function setup() {
-    const frames = Array.from(
-      document.querySelectorAll('iframe[data-oe-paid]')
-    );
-
-    if (!window.__oePaidHeightListener) {
-      window.__oePaidHeightListener = true;
-
-      window.addEventListener('message', function (event) {
-        const frame = Array.from(
-          document.querySelectorAll('iframe[data-oe-paid]')
-        ).find(function (item) {
+    const frames = Array.from(document.querySelectorAll('iframe[data-oe-paid]'));
+    // A page may contain multiple paid sections. One listener handles all of them.
+    if (!window.__oePaidBridgeV3) {
+      window.__oePaidBridgeV3 = true;
+      window.addEventListener('message',function(event) {
+        const frame = Array.from(document.querySelectorAll('iframe[data-oe-paid]')).find(function(item) {
           return item.contentWindow === event.source;
         });
-
         if (!frame) return;
-
         let origin;
-
-        try {
-          origin = new URL(frame.src, document.baseURI).origin;
-        } catch (_) {
-          return;
-        }
-
+        try { origin = new URL(frame.src,document.baseURI).origin; } catch (_) { return; }
         if (origin === 'null' || event.origin !== origin) return;
-
         const data = event.data;
-
-        if (
-          !data ||
-          data.type !== 'orangeexplorer:height' ||
-          data.version !== 1
-        ) {
+        if (!data || data.version !== 1) return;
+        if (data.type === 'orangeexplorer:ready') {
+          frame.contentWindow.postMessage({type:'orangeexplorer:measure',wheelRelay:true,viewportHeight:window.innerHeight},origin);
           return;
         }
-
-        if (
-          typeof data.height !== 'number' ||
-          !Number.isFinite(data.height) ||
-          data.height < 80 ||
-          data.height > 1000000
-        ) {
+        if (data.type === 'orangeexplorer:scroll') {
+          if (typeof data.deltaX !== 'number' || typeof data.deltaY !== 'number' || !Number.isFinite(data.deltaX) || !Number.isFinite(data.deltaY)) return;
+          if (Math.abs(data.deltaX) > 2000 || Math.abs(data.deltaY) > 2000) return;
+          window.scrollBy({left:data.deltaX,top:data.deltaY,behavior:'instant'});
           return;
         }
-
+        if (data.type !== 'orangeexplorer:height') return;
+        if (typeof data.height !== 'number' || !Number.isFinite(data.height) || data.height < 80 || data.height > 1000000) return;
         const height = Math.ceil(data.height);
-
         if (frame.dataset.oeHeight === String(height)) return;
-
         frame.dataset.oeHeight = String(height);
-        frame.style.setProperty('height', height + 'px', 'important');
+        frame.style.setProperty('height',height+'px','important');
       });
     }
-
-    frames.forEach(function (frame) {
+    frames.forEach(function(frame) {
       if (frame.dataset.oeHeightBound) return;
-
-      frame.dataset.oeHeightBound = '1';
-
+      frame.dataset.oeHeightBound='1';
       function requestHeight() {
         let origin;
-
-        try {
-          origin = new URL(frame.src, document.baseURI).origin;
-        } catch (_) {
-          return;
-        }
-
-        if (origin !== 'null' && frame.contentWindow) {
-          frame.contentWindow.postMessage(
-            { type: 'orangeexplorer:measure' },
-            origin
-          );
-        }
+        try { origin = new URL(frame.src,document.baseURI).origin; } catch (_) { return; }
+        if (origin !== 'null' && frame.contentWindow) frame.contentWindow.postMessage({type:'orangeexplorer:measure',wheelRelay:true,viewportHeight:window.innerHeight},origin);
       }
-
-      frame.addEventListener('load', requestHeight);
-
+      frame.addEventListener('load',requestHeight);
+      // Set the actual URL only after the listener is attached. Keep the post's URL unchanged.
       const originalURL = frame.getAttribute('data-oe-src');
-
       if (originalURL) {
         try {
           const freshURL = new URL(originalURL, document.baseURI);
-
-          if (
-            freshURL.protocol !== 'https:' &&
-            freshURL.protocol !== 'http:'
-          ) {
-            return;
-          }
-
+          if (freshURL.protocol !== 'https:' && freshURL.protocol !== 'http:') return;
           freshURL.searchParams.set('v', Date.now().toString(36));
           frame.src = freshURL.href;
-        } catch (_) {
-          return;
-        }
+        } catch (_) { return; }
       }
-
       requestHeight();
     });
   }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setup, { once: true });
-  } else {
-    setup();
-  }
+  if (document.readyState==='loading') document.addEventListener('DOMContentLoaded',setup,{once:true});
+  else setup();
 })();
 </script>
 </p>
