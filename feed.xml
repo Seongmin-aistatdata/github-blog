@@ -3,12 +3,41 @@
     <title>A blog for lecture notes, reviews, diary entries, and everything in between!</title>
     <link href="https://seongmin-aistatdata.github.io/github-blog/feed.xml" rel="self" />
     <link href="https://seongmin-aistatdata.github.io/github-blog" />
-    <updated>2026-10-24T11:50:13+09:00</updated>
+    <updated>2026-10-24T17:22:37+09:00</updated>
     <author>
         <name>Seongmin-aistatdata</name>
     </author>
     <id>https://seongmin-aistatdata.github.io/github-blog</id>
 
+    <entry>
+        <title>test</title>
+        <author>
+            <name>Seongmin-aistatdata</name>
+        </author>
+        <link href="https://seongmin-aistatdata.github.io/github-blog/jeungmyeong-gibeobemf-1pyeon-ver261014/"/>
+        <id>https://seongmin-aistatdata.github.io/github-blog/jeungmyeong-gibeobemf-1pyeon-ver261014/</id>
+
+        <updated>2026-10-24T14:08:19+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    testswetsetsetsetsetsetestsetsetsetsetsetsetsetesttestsetestestesteststessdFsd fsd f sdf sdf sdf sdfsdf sdf sdf sdf
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>testswetsetsetsetsetsetestsetsetsetsetsetsetsetesttestsetestestesteststessdFsd</p>
+<p>fsd</p>
+<p>f</p>
+<p>sdf</p>
+<p>sdf</p>
+<p>sdf</p>
+<p>sdfsdf</p>
+<p>sdf</p>
+<p>sdf</p>
+<p>sdf<br></p><div class="post__iframe"><iframe loading="lazy" width="100%" height="1000" style="border: 0; display: block;" src="https://seongmin-aistatdata.github.io/github-blog/OrangeExplorer-Obsidian.html" title="구매자 전용 본문"></iframe></div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>勉強しろ!!!!</title>
         <author>
@@ -258,7 +287,7 @@
         </content>
     </entry>
     <entry>
-        <title>人工知能の基本 ― 第1回（ver.261022-1）</title>
+        <title>人工知能の基本 ― 第1回（ver.261022）</title>
         <author>
             <name>Seongmin-aistatdata</name>
         </author>
@@ -348,94 +377,6 @@
 <p>線形回帰モデルは、数学的にデータを処理したり、予測したりする仕組みの一つです。そのような仕組みを、ここではモデルと呼んでいるわけですね。</p>
 <p>それでは、「人工知能の基本」第1回はここまでです。</p>
 <p>第2回に続きます！</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>The Basics of Artificial Intelligence — Part 1 (ver.261022-1)</title>
-        <author>
-            <name>Seongmin-aistatdata</name>
-        </author>
-        <link href="https://seongmin-aistatdata.github.io/github-blog/eng-lessons-aibasics-1/"/>
-        <id>https://seongmin-aistatdata.github.io/github-blog/eng-lessons-aibasics-1/</id>
-            <category term="Lessons"/>
-            <category term="English"/>
-            <category term="Artificial Intelligence (AI)"/>
-
-        <updated>2026-10-22T11:05:10+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    This post is related to the following keywords: #ArtificialIntelligence #MachineLearning #DeepLearning #Learning #Models #Patterns #Features What is artificial intelligence? To put it in one sentence: The broadest concept of enabling machines to automate intellectual tasks performed by humans. But you&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>This post is related to the following keywords:<br>#ArtificialIntelligence #MachineLearning #DeepLearning #Learning #Models #Patterns #Features</p>
-<hr>
-<p>What is artificial intelligence? To put it in one sentence:</p>
-<p><strong>The broadest concept of enabling machines to automate intellectual tasks performed by humans.</strong></p>
-<p>But you might be wondering, “How exactly does artificial intelligence do the intellectual work that people do?” Well, let me explain.</p>
-<p><strong>When people provide inputs—such as data—AI methods allow computers to discover shared features, or patterns, within those inputs on their own. There are countless methods for doing this. One of them is the Transformer. The Transformer architecture, a core component of large language models such as those behind ChatGPT, can be described as an AI approach that is particularly good at identifying patterns in language.</strong></p>
-<p>Once those features have been identified, they can be used to carry out intellectual tasks that humans would otherwise perform.</p>
-<p><strong>If we build on those identified features and add components that produce outputs, generate content, or perform tasks that people normally do, we get generative AI systems such as ChatGPT. That is how these systems can take over some of the work people do.</strong></p>
-<p>For example…</p>
-<p>Imagine that a friend gives you a notebook containing daily observations of someone’s behavior.</p>
-<p>You could read through it yourself and think, “Okay, this person seems to have these characteristics or patterns.”</p>
-<p>But if there is an AI method that can analyze the notes and identify those recurring characteristics, you can simply feed the contents into it and have it extract the patterns for you.</p>
-<p>AI may even discover patterns that we missed. For example, we might conclude that someone has a pattern of being rude, while AI might identify something in the notes that points to a reason behind that behavior. In other words, AI methods can identify patterns—including shared patterns in the inputs or data that people might not notice.</p>
-<p>This becomes especially useful when there is an enormous amount of input or data.</p>
-<p>Imagine having to identify patterns in a CSV file with one million rows and thirty million columns. You might spend the rest of your life analyzing that one file. (Maybe?)</p>
-<p>Now imagine using an AI method that can analyze the patterns you are interested in or find what you want to examine in that CSV file. It lets you do this without having to inspect every single entry yourself.</p>
-<p>Life gets easier… right?</p>
-<p>By now, in this age of AI, you have probably heard of plenty of AI methods.</p>
-<p>Transformers, neural networks, random forests, and so on and on… There are so many that it can get confusing.</p>
-<p>Now that you have an idea of what AI is, are you thinking, “But which things actually count as AI? I’m going to figure this out once and for all!!!!”?</p>
-<p><strong>AI ⊃ ML ⊃ DL</strong></p>
-<p>Remember this relationship!</p>
-<p>For reference, here is what the symbol <strong>⊃</strong> means.</p>
-<p>For example, <strong>A ⊃ B</strong> means:</p>
-<p>→ A contains every element of B, and A also contains elements that are not in B.</p>
-<ul>
-<li>A = {1, 2, 3}</li>
-<li>B = {1, 2}</li>
-</ul>
-<p>Therefore, <strong>A ⊃ B</strong>.</p>
-<p>Keep this example in mind when you see the symbol.</p>
-<p>We defined artificial intelligence as <strong>the broadest concept of enabling machines to automate intellectual tasks performed by humans</strong>.</p>
-<p>Within that broad concept, <strong>ML, or machine learning, is an approach to implementing AI in which computers learn rules from data and answers or objectives, rather than having people explicitly code every rule.</strong> This allows computers to perform tasks that people would otherwise do.</p>
-<p>For example, imagine that we have a table containing the characteristics of different flowers. Let’s say those characteristics include petal area and flower color.</p>
-<p>In this table, each flower—flower 1, flower 2, and so on—would occupy a row. The characteristics would go in the columns.</p>
-<p>Now suppose we use <strong>a machine learning method—which is itself one type of AI method—to teach a computer rules about which characteristics correspond to which flowers</strong>.</p>
-<p>If we then want to classify a new flower, we can enter its characteristics into the computer we trained, and it can classify the flower for us.</p>
-<p>But this might raise another question.</p>
-<p>What exactly does “learning” mean?</p>
-<p>In <strong>AI</strong>, <strong>learning</strong> can be described, in brief, as <strong>the entire process of adjusting a model’s numerical values so that they describe patterns well</strong>. What we get at the end of this <strong>learning process</strong> is a <strong>trained model</strong>.</p>
-<p>But that raises yet another question, doesn’t it?</p>
-<p>What is a <strong>model</strong>, anyway?</p>
-<p>You can think of it as:</p>
-<ol start="1">
-<li><strong>A structure that represents a real-world phenomenon mathematically.</strong></li>
-<li><strong>A structure that processes data or makes predictions.</strong></li>
-</ol>
-<p>If that still feels a little abstract, let me explain further.</p>
-<p>Let’s use a <strong>linear regression model</strong> as an example. Linear regression is one of the methods used in AI—or, more specifically, machine learning.</p>
-<figure class="post__image"><img loading="lazy"  src="https://seongmin-aistatdata.github.io/github-blog/media/posts/7/ChatGPT-imiji-2026nyeon-10weol-22il-ojeon-11_08_29.png" alt="" width="1448" height="1086"></figure>
-<p>First, let’s add a visual to make this easier to understand.</p>
-<p>The main thing you can see here is a coordinate plane with an x-axis and a y-axis.</p>
-<p>Suppose our data consists of pairs such as <strong>(x, y) = (1, 2)</strong>.</p>
-<p>When we plot these data points on the coordinate plane, they appear as the blue dots.</p>
-<p>But what if we want to know the value of y when <strong>x = 4</strong>, and we do not have an observation for that?</p>
-<p>We can use a linear regression model to predict the value of y at <strong>x = 4</strong>.</p>
-<p>The linear regression model is:</p>
-<p><strong>y = wx + b</strong></p>
-<p>Our goal is to use the <strong>(x, y)</strong> data to <strong>learn</strong> the numerical values of <strong>w</strong> and <strong>b</strong>.</p>
-<p>Think about it intuitively. If we want to predict a value such as <strong>y = 4 when x = 4</strong>, based on the data we have, we would want to draw a straight line like the one in the figure. We would not want a line so steep that it almost looks like the y-axis, right?</p>
-<p>Well, some very clever people have already developed methods for fitting a straight line to the data without ending up with a line like that. In other words, they have developed methods for training a linear regression model.</p>
-<p>One such approach is to <strong>minimize the sum of the squared differences—the residuals—between the observed y-values and the values predicted by the line</strong>. This is the idea behind methods such as least squares.</p>
-<p>The result of this training—adjusting the numerical values of <strong>w</strong> and <strong>b</strong> and putting them into the linear equation—is a <strong>trained linear regression model</strong>.</p>
-<p>So, a linear regression model is one example of a mathematical structure for processing data or making predictions. That is what we mean by a model here.</p>
-<p>That wraps up Part 1 of The Basics of Artificial Intelligence.</p>
-<p>To be continued in Part 2!</p>
             ]]>
         </content>
     </entry>
