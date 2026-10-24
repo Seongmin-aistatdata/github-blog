@@ -3,7 +3,7 @@
     <title>A blog for lecture notes, reviews, diary entries, and everything in between!</title>
     <link href="https://seongmin-aistatdata.github.io/github-blog/feed.xml" rel="self" />
     <link href="https://seongmin-aistatdata.github.io/github-blog" />
-    <updated>2026-10-24T18:30:53+09:00</updated>
+    <updated>2026-10-24T18:54:15+09:00</updated>
     <author>
         <name>Seongmin-aistatdata</name>
     </author>
@@ -36,7 +36,7 @@
 <p>sdf</p>
 <p>sdf</p>
 <div class="oe-paid-embed">
-<div class="post__iframe"><iframe loading="lazy" width="100%" height="360" style="border: 0; display: block; width: 100%;" data-oe-paid="" src="https://seongmin-aistatdata.github.io/github-blog/OrangeExplorer-Obsidian.html" title="구매자 전용 본문"></iframe></div>
+<div class="post__iframe"><iframe loading="lazy" width="100%" height="360" style="border: 0; display: block; width: 100%;" data-oe-paid="" data-oe-src="https://seongmin-aistatdata.github.io/github-blog/OrangeExplorer-Obsidian.html" title="구매자 전용 본문"></iframe></div>
 </div>
 <p>
 <script>
@@ -121,6 +121,27 @@
       }
 
       frame.addEventListener('load', requestHeight);
+
+      const originalURL = frame.getAttribute('data-oe-src');
+
+      if (originalURL) {
+        try {
+          const freshURL = new URL(originalURL, document.baseURI);
+
+          if (
+            freshURL.protocol !== 'https:' &&
+            freshURL.protocol !== 'http:'
+          ) {
+            return;
+          }
+
+          freshURL.searchParams.set('v', Date.now().toString(36));
+          frame.src = freshURL.href;
+        } catch (_) {
+          return;
+        }
+      }
+
       requestHeight();
     });
   }
